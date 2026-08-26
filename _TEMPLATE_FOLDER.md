@@ -1,10 +1,19 @@
 ---
-id: {{FOLDER_ID}}
+id: {{ID}}
+folder_id: {{FOLDER_ID}}
 tipo: mapa-de-pasta
+owner: Não determinado
+versao: "2.0"
+data: {{date}}
 status: ativo
+projeto: ECOSSISTEMA_15-08_FILESYSTEM
+tags:
+  - obsidian
+  - moc
+  - {{tag}}
 ---
 
-# {{NOME}}
+# {{N}} · {{NOME}}
 
 ## Tasks
 - [ ]
@@ -14,7 +23,7 @@ status: ativo
 ## Docs
 
 ## Inicio
-**Entrada:** condição que inicia o trabalho.
+**Entrada:** registrar contexto, origem ou condição que inicia o trabalho neste domínio.
 
 ## Fim
-**Saída:** condição objetiva de encerramento, evidência ou próximo destino.
+**Saída:** registrar condição objetiva de encerramento, evidência ou próximo destino do objeto.

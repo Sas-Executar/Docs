@@ -1,0 +1,17 @@
+object_id,folder_id,path,type,status
+SYS-VAULT-001,FS-ROOT-001,HOME.md,mapa-do-vault,ativo
+OPS-DROP-001,FS-DROP-001,00-dropzone/00-dropzone.md,mapa-de-pasta,ativo
+DATA-INDEX-001,FS-IDX-001,01-master-index/01-master-index.md,mapa-de-pasta,ativo
+BUS-MOC-001,FS-BUS-001,10-business/10-business.md,mapa-de-pasta,ativo
+PROD-MOC-001,FS-PRD-001,20-produtos/20-produtos.md,mapa-de-pasta,ativo
+MKT-MOC-001,FS-EDT-001,30-editorial-marketing/30-editorial-marketing.md,mapa-de-pasta,ativo
+COM-MOC-001,FS-COM-001,40-comercial-servicos/40-comercial-servicos.md,mapa-de-pasta,ativo
+PORT-MOC-001,FS-POR-001,50-portfolio-carreira/50-portfolio-carreira.md,mapa-de-pasta,ativo
+DATA-MOC-001,FS-DAT-001,60-dados/60-dados.md,mapa-de-pasta,ativo
+GOV-MOC-001,FS-OPS-001,70-operacao-governanca/70-operacao-governanca.md,mapa-de-pasta,ativo
+TECH-MOC-001,FS-TEC-001,80-tecnologia-plataformas/80-tecnologia-plataformas.md,mapa-de-pasta,ativo
+ASSET-MOC-001,FS-AST-001,90-assets-compartilhados/90-assets-compartilhados.md,mapa-de-pasta,ativo
+PRIV-MOC-001,FS-SEC-001,98-private-pointers/98-private-pointers.md,mapa-de-pasta,ativo
+ARCH-MOC-001,FS-ARC-001,99-archive/99-archive.md,mapa-de-pasta,ativo
+MVP-MOC-001,FS-MVP-001,500-saas-mvp/500-saas-mvp.md,mapa-de-pasta,ativo
+AGT-MAESTRO-001,FS-TEC-029,80-tecnologia-plataformas/05-gpt/02-agents/maestro/AGENT_MAESTRO.md,agente-orquestrador,ativo
