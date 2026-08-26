@@ -1,48 +1,30 @@
-# EXECUTAR Docs · Maestro
+# ECOSSISTEMA 15-08 · Docs
 
-Repositório documental, de handoff e de orquestração de conhecimento do EXECUTAR.
+Este repositório opera como camada documental, de handoff e de orquestração do ECOSSISTEMA 15-08.
+
+Todo material deve ser classificado por Folder ID antes de ser registrado.
+
+## Fluxo
+
+1. Entrada sem classificação -> `00-dropzone/`.
+2. Maestro lê o mapa e o `01-master-index/CENTRAL_CONTROL.csv`.
+3. Maestro triangula contexto, domínios, plugins e skills.
+4. Um único `canonical_home` é escolhido.
+5. Relações cross-domain são links, não cópias.
+6. O resultado recebe proveniência e resumo executivo de no máximo 300 palavras.
+
+## Áreas
+
+`00-dropzone` · `01-master-index` · `10-business` · `20-produtos` · `30-editorial-marketing` · `40-comercial-servicos` · `50-portfolio-carreira` · `60-dados` · `70-operacao-governanca` · `80-tecnologia-plataformas` · `90-assets-compartilhados` · `98-private-pointers` · `99-archive` · `500-saas-mvp`.
 
 ## Maestro
 
-Antes de criar, mover, editar, consolidar ou submeter qualquer material, o Maestro deve: entender o contexto; classificar domínios; descobrir plugins e skills; compor o workflow; executar; registrar proveniência; e devolver um resumo executivo de no máximo 300 palavras.
+Canônico em `80-tecnologia-plataformas/05-gpt/02-agents/maestro/`.
 
-Leia primeiro: `AGENT_MAESTRO.md`, `.maestro/ROUTING.md`, `.maestro/POLICY.yaml` e `.maestro/PROVENANCE.md`.
-
-## Estrutura
-
-```text
-Docs/
-├── README.md
-├── AGENT_MAESTRO.md
-├── .maestro/
-├── 01_PRODUCT/
-├── 02_EXPERIENCE/
-├── 03_ENGINEERING/
-├── 04_REFERENCE/
-├── orchestrator/
-├── proto/
-├── sql/
-├── scripts/
-├── vendor/
-└── runtime/
-```
-
-## Knowledge Work Plugins
-
-O upstream oficial da Anthropic está montado como submódulo em `vendor/anthropic-knowledge-work-plugins/`. O Maestro consulta as skills reais do upstream; não usa uma tabela manual fixa.
+Skills Anthropic em `80-tecnologia-plataformas/05-gpt/03-skills/anthropic-knowledge-work-plugins/`.
 
 ```bash
 git clone --recurse-submodules https://github.com/Sas-Executar/Docs.git
 cd Docs
-bash scripts/bootstrap.sh
+bash 80-tecnologia-plataformas/05-gpt/02-agents/maestro/scripts/bootstrap.sh
 ```
-
-## Portabilidade
-
-- Markdown/YAML: políticas e workflows.
-- JSON: envelopes e índice de skills.
-- SQL: registry, auditoria e proveniência.
-- Protocol Buffers: contrato de transporte entre runtimes.
-- Python stdlib: roteamento local e independente de fornecedor.
-
-O mesmo diretório pode ser usado por Claude, ChatGPT/OpenAI, agentes locais ou outros runtimes.
