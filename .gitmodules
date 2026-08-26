@@ -1,4 +1,4 @@
-[submodule "vendor/anthropic-knowledge-work-plugins"]
-	path = vendor/anthropic-knowledge-work-plugins
+[submodule "80-tecnologia-plataformas/05-gpt/03-skills/anthropic-knowledge-work-plugins"]
+	path = 80-tecnologia-plataformas/05-gpt/03-skills/anthropic-knowledge-work-plugins
 	url = https://github.com/anthropics/knowledge-work-plugins.git
 	branch = main

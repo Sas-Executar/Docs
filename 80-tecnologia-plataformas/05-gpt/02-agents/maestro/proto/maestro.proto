@@ -1,0 +1,26 @@
+syntax = "proto3";
+package executar.maestro.v2;
+
+message Context {
+  string what_object = 1;
+  string why_goal = 2;
+  string who_audience = 3;
+  string where_channel = 4;
+  string when_stage = 5;
+  string how_task = 6;
+  string output_artifact = 7;
+  string risk_context = 8;
+}
+message SkillRef { string plugin_id = 1; string skill_name = 2; string role = 3; string path = 4; }
+message CanonicalDestination { string folder_id = 1; string path = 2; repeated string related_folder_ids = 3; }
+message MaestroEnvelope { string request_id = 1; string raw_input = 2; Context context = 3; }
+message MaestroResult {
+  string request_id = 1;
+  repeated SkillRef skills = 2;
+  CanonicalDestination destination = 3;
+  string classification = 4;
+  repeated string provenance = 5;
+  repeated string conflicts = 6;
+  repeated string gaps = 7;
+  string executive_summary = 8;
+}

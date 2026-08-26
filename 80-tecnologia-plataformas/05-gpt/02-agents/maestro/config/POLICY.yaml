@@ -1,0 +1,16 @@
+version: 2
+orchestrator: Maestro
+architecture: ECOSSISTEMA_15_08
+folder_registry: 01-master-index/CENTRAL_CONTROL.csv
+routing:
+  context_first: true
+  keyword_only_forbidden: true
+  require_primary_skill: true
+  read_skill_before_apply: true
+  canonical_home_required: true
+write_policy:
+  single_canonical_home: true
+  relative_links_for_relations: true
+  vendor_read_only: true
+summary:
+  max_words: 300

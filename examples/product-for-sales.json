@@ -1,1 +1,0 @@
-{"request_id":"example-product-sales","raw_input":"Estruture este produto para vendas B2B e registre no handoff.","context":{"what_object":"produto","why_goal":"comercialização B2B","who_audience":"prospects","where_channel":"sales","when_stage":"go-to-market","how_task":"estruturar e registrar","output_artifact":"product spec + sales asset","risk_context":"brand consistency"}}
