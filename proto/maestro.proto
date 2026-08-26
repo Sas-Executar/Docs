@@ -1,0 +1,14 @@
+syntax = "proto3";
+package executar.maestro.v1;
+
+message Context { string what_object=1; string why_goal=2; string who_audience=3; string where_channel=4; string when_stage=5; string how_task=6; string output_artifact=7; string risk_context=8; }
+enum SkillRole { SKILL_ROLE_UNSPECIFIED=0; PRIMARY=1; SUPPORTING=2; VALIDATION=3; }
+enum DocumentClass { DOCUMENT_CLASS_UNSPECIFIED=0; CONFIRMADO=1; DECISAO=2; HIPOTESE=3; REFERENCIA=4; PENDENTE=5; }
+message DomainCandidate { string domain_id=1; int32 score=2; SkillRole role=3; string rationale=4; }
+message SkillRef { string plugin_id=1; string skill_name=2; string path=3; SkillRole role=4; string content_hash=5; string rationale=6; }
+message SourceRef { string source_type=1; string uri=2; string label=3; map<string,string> metadata=4; }
+message WriteOperation { string destination_path=1; string operation=2; DocumentClass classification=3; string summary=4; string content_hash=5; }
+message MaestroEnvelope { string request_id=1; string raw_input=2; Context context=3; repeated SourceRef sources=4; map<string,string> runtime_metadata=5; }
+message MaestroPlan { string request_id=1; repeated DomainCandidate domains=2; repeated SkillRef selected_skills=3; repeated string workflow_steps=4; repeated string conflicts=5; }
+message MaestroResult { string request_id=1; MaestroPlan plan=2; repeated WriteOperation writes=3; repeated SourceRef provenance=4; string executive_summary=5; repeated string gaps=6; string status=7; }
+service MaestroOrchestrator { rpc Plan(MaestroEnvelope) returns (MaestroPlan); rpc Execute(MaestroEnvelope) returns (MaestroResult); }

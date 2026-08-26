@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS maestro_domain (id TEXT PRIMARY KEY,label TEXT NOT NULL,description TEXT);
+CREATE TABLE IF NOT EXISTS maestro_plugin (id TEXT PRIMARY KEY,domain_id TEXT REFERENCES maestro_domain(id),upstream_repo TEXT NOT NULL,upstream_path TEXT NOT NULL,upstream_ref TEXT,manifest_json TEXT,synced_at TIMESTAMP);
+CREATE TABLE IF NOT EXISTS maestro_skill (id TEXT PRIMARY KEY,plugin_id TEXT NOT NULL REFERENCES maestro_plugin(id),name TEXT NOT NULL,description TEXT,path TEXT NOT NULL,content_hash TEXT,metadata_json TEXT,UNIQUE(plugin_id,path));
+CREATE TABLE IF NOT EXISTS maestro_request (id TEXT PRIMARY KEY,received_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,raw_input TEXT NOT NULL,what_object TEXT,why_goal TEXT,who_audience TEXT,where_channel TEXT,when_stage TEXT,how_task TEXT,output_artifact TEXT,risk_context TEXT,classification TEXT,status TEXT NOT NULL DEFAULT 'RECEIVED');
+CREATE TABLE IF NOT EXISTS maestro_route (request_id TEXT NOT NULL REFERENCES maestro_request(id),domain_id TEXT NOT NULL REFERENCES maestro_domain(id),score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 5),role TEXT NOT NULL CHECK(role IN ('PRIMARY','SUPPORTING','VALIDATION','CANDIDATE')),rationale TEXT,PRIMARY KEY(request_id,domain_id,role));
+CREATE TABLE IF NOT EXISTS maestro_skill_selection (request_id TEXT NOT NULL REFERENCES maestro_request(id),skill_id TEXT NOT NULL REFERENCES maestro_skill(id),role TEXT NOT NULL CHECK(role IN ('PRIMARY','SUPPORTING','VALIDATION')),sequence_no INTEGER NOT NULL,rationale TEXT,PRIMARY KEY(request_id,skill_id));
+CREATE TABLE IF NOT EXISTS maestro_write (id TEXT PRIMARY KEY,request_id TEXT NOT NULL REFERENCES maestro_request(id),destination_path TEXT NOT NULL,operation TEXT NOT NULL,classification TEXT,summary TEXT,content_hash TEXT,created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE IF NOT EXISTS maestro_provenance (id TEXT PRIMARY KEY,request_id TEXT NOT NULL REFERENCES maestro_request(id),source_type TEXT NOT NULL,source_uri TEXT,source_label TEXT,metadata_json TEXT);
+CREATE TABLE IF NOT EXISTS maestro_conflict (id TEXT PRIMARY KEY,request_id TEXT NOT NULL REFERENCES maestro_request(id),description TEXT NOT NULL,authority_a TEXT,authority_b TEXT,resolution TEXT,status TEXT NOT NULL DEFAULT 'OPEN');
+CREATE TABLE IF NOT EXISTS maestro_run (id TEXT PRIMARY KEY,request_id TEXT NOT NULL REFERENCES maestro_request(id),started_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,finished_at TIMESTAMP,runtime TEXT,model TEXT,result_status TEXT,executive_summary TEXT);
+CREATE INDEX IF NOT EXISTS idx_skill_plugin ON maestro_skill(plugin_id);
+CREATE INDEX IF NOT EXISTS idx_route_request ON maestro_route(request_id);
+CREATE INDEX IF NOT EXISTS idx_write_request ON maestro_write(request_id);

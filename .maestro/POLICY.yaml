@@ -1,0 +1,21 @@
+version: 1
+orchestrator: Maestro
+routing:
+  require_context_classification: true
+  require_primary_domain: true
+  allow_multiple_skills: true
+  read_skill_before_apply: true
+  keyword_only_routing_forbidden: true
+write_policy:
+  canonical_fact_single_home: true
+  prefer_relative_links_over_duplication: true
+  vendor_read_only: true
+summary:
+  max_words: 300
+authority:
+  - current_user_instruction
+  - executar_source_of_truth
+  - canonical_requirements
+  - primary_skill
+  - supporting_and_validation_skills
+  - external_reference
