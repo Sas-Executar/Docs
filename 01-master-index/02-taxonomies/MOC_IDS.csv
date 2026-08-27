@@ -15,3 +15,4 @@ PRIV-MOC-001,FS-SEC-001,98-private-pointers/98-private-pointers.md,mapa-de-pasta
 ARCH-MOC-001,FS-ARC-001,99-archive/99-archive.md,mapa-de-pasta,ativo
 MVP-MOC-001,FS-MVP-001,500-saas-mvp/500-saas-mvp.md,mapa-de-pasta,ativo
 AGT-MAESTRO-001,FS-TEC-029,80-tecnologia-plataformas/05-gpt/02-agents/maestro/AGENT_MAESTRO.md,agente-orquestrador,ativo
+MVP-SCN-001,FS-MVP-002,500-saas-mvp/01-product/SCANNER_README.md,feature-spec-readme,ativo
