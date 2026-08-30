@@ -16,3 +16,8 @@ ARCH-MOC-001,FS-ARC-001,99-archive/99-archive.md,mapa-de-pasta,ativo
 MVP-MOC-001,FS-MVP-001,500-saas-mvp/500-saas-mvp.md,mapa-de-pasta,ativo
 AGT-MAESTRO-001,FS-TEC-029,80-tecnologia-plataformas/05-gpt/02-agents/maestro/AGENT_MAESTRO.md,agente-orquestrador,ativo
 MVP-SCN-001,FS-MVP-002,500-saas-mvp/01-product/SCANNER_README.md,feature-spec-readme,ativo
+SCH-ECM-001,FS-IDX-002,01-master-index/01-schemas/ECOSYSTEM_MASTER_YAML_CARDS_V1.yaml,schema,ativo
+SCH-SAAS-001,FS-IDX-002,01-master-index/01-schemas/EXECUTAR_projetosaasentrypoint_EXPANDIDO.schema.json,schema,ativo
+TAX-ECM-001,FS-IDX-003,01-master-index/02-taxonomies/ECOSYSTEM_CARDS_REGISTER.csv,registro-de-roteamento,ativo
+TAX-SAAS-001,FS-IDX-003,01-master-index/02-taxonomies/SAAS_ENTRYPOINT_DOMAIN_MAP.csv,registro-de-roteamento,ativo
+GOV-PLAN-001,FS-OPS-002,70-operacao-governanca/01-planos-acao/PLANO_LANCAMENTO_ECOSSISTEMA.md,plano-de-acao,ativo

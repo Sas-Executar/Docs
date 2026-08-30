@@ -1,0 +1,2017 @@
+schema: ECOSYSTEM_MASTER_YAML_CARDS_V1
+language: pt-BR
+
+scope:
+  description: >
+    Lançamento, operação, evolução e retirada de um ecossistema composto
+    por negócio, aplicativo/software, operação editorial, produtos digitais,
+    produtos físicos e serviços.
+
+completeness:
+  claim: >
+    Modelo de cobertura completa para este escopo; não representa um cânone
+    universal que obrigue organizações a utilizar exatamente estes nomes de documentos.
+  rule: >
+    Cards podem ser combinados ou implementados no mesmo documento somente quando
+    ownership, rastreabilidade, dependências, requisitos, decisões, evidências
+    e critérios de aceitação permanecerem explícitos.
+  unit_of_control: YAML_CARD
+  total_phases: 12
+  total_cards: 75
+
+dependency_semantics:
+  depends_on: >
+    Predecessores lógicos que devem existir em nível suficiente de maturidade
+    antes de o card dependente ser congelado ou aprovado.
+  required_yes: >
+    Componente estrutural do sistema documental.
+  required_conditional: >
+    Torna-se obrigatório quando a condição indicada em applies_if existir.
+  concurrency: >
+    Cards sem dependência direta podem evoluir paralelamente.
+  iteration: >
+    Cards podem retornar a estados anteriores quando novas evidências invalidarem
+    premissas ou decisões.
+  traceability_direction:
+    - need
+    - business_requirement
+    - stakeholder_requirement
+    - solution_requirement
+    - design
+    - implementation
+    - verification
+    - evidence
+    - operational_result
+
+authority_model:
+  normative_standard: Norma publicada.
+  normative_guidance: Norma ou orientação normativa.
+  professional_standard: Padrão profissional reconhecido.
+  framework_standard: Framework formal reconhecido.
+  government_framework: Framework governamental reconhecido.
+  legal_regulatory: Obrigação dependente da jurisdição ou setor.
+  industry_artifact: Artefato comum da indústria, mas não universalmente obrigatório.
+  industry_practice: Prática recorrente de mercado.
+  custom_master: Artefato integrador criado para governar o ecossistema.
+  custom_integration: Artefato criado para integrar disciplinas distintas.
+
+source_registry:
+
+  S01:
+    name: ISO/IEC/IEEE 15288:2023
+    type: normative_standard
+    covers:
+      - conception
+      - development
+      - production
+      - utilization
+      - support
+      - retirement
+      - acquisition
+      - supply
+
+  S02:
+    name: ISO/IEC/IEEE 29148:2018
+    type: normative_standard
+    covers:
+      - requirements_engineering
+      - systems
+      - software
+      - hardware
+      - services
+      - information_items
+      - requirements_traceability
+    status:
+      current_as_of: 2026-08-29
+      successor: edition_3_under_development
+
+  S03:
+    name: IIBA Business Analysis Standard / BABOK
+    type: professional_standard
+    covers:
+      - strategy_analysis
+      - business_requirements
+      - stakeholder_requirements
+      - functional_requirements
+      - nonfunctional_requirements
+      - transition_requirements
+      - traceability
+      - solution_evaluation
+
+  S04:
+    name: TOGAF Standard 10th Edition
+    type: framework_standard
+    covers:
+      - enterprise_architecture
+      - business_architecture
+      - data_architecture
+      - application_architecture
+      - technology_architecture
+      - architecture_governance
+
+  S05:
+    name: PMBOK Guide 8th Edition / Standard for Project Management
+    type: professional_standard
+    covers:
+      - governance
+      - scope
+      - schedule
+      - finance
+      - stakeholders
+      - resources
+      - risk
+      - procurement
+      - value_delivery
+
+  S06:
+    name: ISO 31000:2018
+    type: normative_guidance
+    covers:
+      - risk_governance
+      - risk_identification
+      - risk_analysis
+      - risk_response
+      - monitoring
+
+  S07:
+    name: ISO 9001:2015
+    type: normative_standard
+    covers:
+      - quality_management
+      - customer_focus
+      - process_control
+      - nonconformity
+      - continual_improvement
+    status:
+      current_as_of: 2026-08-29
+      expected_successor: ISO_9001_2026
+      expected_replacement: 2026-09
+
+  S08:
+    name: ISO/IEC 25010:2023
+    type: normative_standard
+    covers:
+      - ICT_product_quality
+      - software_quality
+      - quality_characteristics
+      - quality_measurement
+      - acceptance_quality
+
+  S09:
+    name: ISO/IEC/IEEE 29119 Series
+    type: normative_standard
+    covers:
+      - testing_processes
+      - test_management
+      - test_documentation
+      - test_design
+      - test_techniques
+
+  S10:
+    name: ISO 9241-210:2019
+    type: normative_standard
+    covers:
+      - human_centred_design
+      - user_context
+      - user_requirements
+      - iterative_design
+      - evaluation
+
+  S11:
+    name: WCAG 2.2
+    type: w3c_recommendation
+    covers:
+      - accessibility
+      - perceivable
+      - operable
+      - understandable
+      - robust
+      - testable_success_criteria
+
+  S12:
+    name: ISO/IEC 27001:2022 + Amd 1:2024
+    type: normative_standard
+    covers:
+      - information_security_management
+      - security_risk
+      - policies
+      - controls
+      - continual_improvement
+
+  S13:
+    name: NIST Cybersecurity Framework 2.0
+    type: government_framework
+    covers:
+      - govern
+      - identify
+      - protect
+      - detect
+      - respond
+      - recover
+
+  S14:
+    name: ISO/IEC 27701:2025
+    type: normative_standard
+    covers:
+      - privacy_management
+      - PII_controller
+      - PII_processor
+      - privacy_accountability
+      - privacy_risk
+
+  S15:
+    name: ISO/IEC 38500:2024
+    type: normative_standard
+    covers:
+      - IT_governance
+      - direction
+      - capability
+      - policy
+      - delegation
+      - performance
+      - accountability
+
+  S16:
+    name: ISO/IEC 38505-1:2026
+    type: normative_standard
+    covers:
+      - data_governance
+      - data_accountability
+      - data_use
+      - data_protection
+
+  S17:
+    name: ISO 22301:2019 + Amd 1:2024
+    type: normative_standard
+    covers:
+      - business_continuity
+      - disruption_preparedness
+      - response
+      - recovery
+      - continuity_capacity
+
+  S18:
+    name: ISO/IEC 20000-1:2018
+    type: normative_standard
+    covers:
+      - service_management
+      - service_planning
+      - service_design
+      - service_transition
+      - service_delivery
+      - service_improvement
+
+  S19:
+    name: ISO 20400:2017
+    type: normative_guidance
+    covers:
+      - procurement
+      - supplier_decisions
+      - procurement_sustainability
+
+  S20:
+    name: ISO 14001:2026
+    type: normative_standard
+    covers:
+      - environmental_management
+      - resource_use
+      - waste
+      - environmental_performance
+      - continual_improvement
+
+  S21:
+    name: ISO 37301:2021
+    type: normative_standard
+    covers:
+      - compliance_management
+      - obligations
+      - governance
+      - compliance_monitoring
+      - improvement
+
+  S22:
+    name: ISO 10002:2018
+    type: normative_guidance
+    covers:
+      - customer_complaints
+      - complaint_resolution
+      - customer_feedback
+      - customer_satisfaction
+
+  S23:
+    name: ISO/IEC 42001:2023
+    type: normative_standard
+    covers:
+      - AI_management_system
+      - responsible_AI
+      - AI_risk
+      - AI_governance
+      - AI_monitoring
+
+  S24:
+    name: ISO 56002:2019
+    type: normative_guidance
+    covers:
+      - innovation_management
+      - innovation_pipeline
+      - experimentation
+      - continual_innovation
+
+  S25:
+    name: Jurisdiction-Specific Law and Regulation
+    type: legal_regulatory
+    covers:
+      - corporate
+      - tax
+      - consumer
+      - privacy
+      - labor
+      - intellectual_property
+      - product_regulation
+      - advertising
+      - sector_regulation
+
+  S26:
+    name: Industry Product and Marketing Practice
+    type: industry_practice
+    covers:
+      - MRD
+      - PRD
+      - positioning
+      - branding
+      - pricing
+      - portfolio
+      - GTM
+      - sales
+      - customer_lifecycle
+
+phases:
+
+  # =========================================================
+  # P00 — GOVERNANÇA
+  # =========================================================
+
+  - id: P00_GOVERNANCE
+    name: Governança e controle
+
+    cards:
+
+      - id: GOV-001
+        artifact: Ecosystem Charter
+        authority: custom_master
+        required: yes
+        purpose: Definir visão, fronteiras, componentes e mandato do ecossistema.
+        depends_on: []
+        contains:
+          - vision
+          - purpose
+          - scope
+          - ecosystem_components
+          - out_of_scope
+          - success_definition
+          - sponsor
+        basis: [S01, S03]
+
+      - id: GOV-002
+        artifact: Document and Configuration Governance
+        authority: professional_practice
+        required: yes
+        purpose: Definir source of truth, taxonomia, versões, aprovações e controle de mudanças.
+        depends_on: [GOV-001]
+        contains:
+          - repository
+          - document_taxonomy
+          - naming_rules
+          - versioning
+          - status_model
+          - approval_rules
+          - change_rules
+          - retention
+        basis: [S01, S02, S03, S05]
+
+      - id: GOV-003
+        artifact: Stakeholder and Decision Rights Register
+        authority: professional_standard
+        required: yes
+        purpose: Identificar stakeholders, responsabilidades, autoridade e direitos decisórios.
+        depends_on: [GOV-001]
+        contains:
+          - stakeholder
+          - need
+          - influence
+          - responsibility
+          - decision_authority
+          - escalation
+          - RACI_or_equivalent
+        basis: [S03, S05]
+
+      - id: GOV-004
+        artifact: Compliance and Legal Obligations Register
+        authority: legal_regulatory
+        required: yes
+        purpose: Registrar leis, contratos, licenças, regulações, padrões adotados e evidências obrigatórias.
+        depends_on: [GOV-001, GOV-003]
+        contains:
+          - jurisdiction
+          - obligation
+          - applicability
+          - owner
+          - deadline
+          - required_evidence
+          - status
+        basis: [S21, S25]
+
+      - id: GOV-005
+        artifact: Risk Assumption Issue and Constraint Register
+        authority: professional_standard
+        required: yes
+        purpose: Centralizar riscos, premissas, problemas e restrições do ecossistema.
+        depends_on: [GOV-001, GOV-003]
+        contains:
+          - risks
+          - assumptions
+          - issues
+          - constraints
+          - probability
+          - impact
+          - owner
+          - response
+          - trigger
+        basis: [S06, S03, S05]
+
+  # =========================================================
+  # P01 — ESTRATÉGIA
+  # =========================================================
+
+  - id: P01_STRATEGY
+    name: Estratégia e caso de negócio
+
+    cards:
+
+      - id: STR-010
+        artifact: Current State Assessment
+        authority: professional_standard
+        required: yes
+        purpose: Estabelecer baseline do negócio, capacidades, processos, ativos e limitações atuais.
+        depends_on: [GOV-001, GOV-003]
+        contains:
+          - baseline
+          - current_capabilities
+          - current_processes
+          - assets
+          - pain_points
+          - limitations
+          - evidence
+        basis: [S03, S04]
+
+      - id: STR-011
+        artifact: Problem and Opportunity Definition
+        authority: professional_standard
+        required: yes
+        purpose: Formalizar problema, oportunidade, atores afetados, impacto e evidências.
+        depends_on: [STR-010]
+        contains:
+          - problem
+          - opportunity
+          - affected_stakeholders
+          - evidence
+          - impact
+          - urgency
+        basis: [S03]
+
+      - id: STR-012
+        artifact: Future State and Strategic Outcomes
+        authority: professional_standard
+        required: yes
+        purpose: Definir estado futuro, capacidades necessárias e resultados mensuráveis.
+        depends_on: [STR-011]
+        contains:
+          - future_state
+          - strategic_outcomes
+          - required_capabilities
+          - constraints
+          - success_measures
+        basis: [S03, S05]
+
+      - id: STR-013
+        artifact: Business Case
+        authority: industry_and_professional
+        required: yes
+        purpose: Demonstrar viabilidade e justificar investimento entre alternativas.
+        depends_on: [STR-010, STR-011, STR-012, GOV-005]
+        contains:
+          - alternatives
+          - benefits
+          - costs
+          - risks
+          - time_horizon
+          - assumptions
+          - recommendation
+          - decision
+        basis: [S03, S05]
+
+      - id: STR-014
+        artifact: BRD
+        full_name: Business Requirements Document
+        authority: industry_artifact
+        required: yes
+        purpose: Traduzir estratégia e business case em requisitos de negócio.
+        depends_on: [STR-012, STR-013]
+        contains:
+          - business_goals
+          - business_requirements
+          - outcomes
+          - KPIs
+          - constraints
+          - assumptions
+          - acceptance
+        basis: [S03, S02, S26]
+
+      - id: STR-015
+        artifact: Strategy and KPI Map
+        authority: industry_and_professional
+        required: yes
+        purpose: Conectar objetivos estratégicos, métricas, metas e iniciativas.
+        depends_on: [STR-012, STR-014]
+        contains:
+          - objectives
+          - KPIs
+          - targets
+          - leading_indicators
+          - lagging_indicators
+          - owner
+        basis: [S03, S05]
+
+  # =========================================================
+  # P02 — MERCADO E CLIENTE
+  # =========================================================
+
+  - id: P02_MARKET_CUSTOMER
+    name: Mercado e cliente
+
+    cards:
+
+      - id: MKT-020
+        artifact: Market Research Dossier
+        authority: industry_practice
+        required: yes
+        purpose: Consolidar evidências sobre mercado, segmentos, tamanho, tendências e barreiras.
+        depends_on: [STR-011, STR-012]
+        contains:
+          - market_definition
+          - segmentation
+          - market_size
+          - trends
+          - drivers
+          - barriers
+          - evidence_sources
+        basis: [S26]
+
+      - id: MKT-021
+        artifact: MRD
+        full_name: Market Requirements Document
+        authority: industry_artifact
+        required: yes
+        purpose: Converter evidências de mercado em necessidades e requisitos mercadológicos.
+        depends_on: [MKT-020]
+        contains:
+          - target_market
+          - market_needs
+          - segments
+          - competition
+          - differentiators
+          - market_constraints
+          - market_success
+        basis: [S26]
+
+      - id: MKT-022
+        artifact: Customer and User Research
+        authority: industry_and_hcd
+        required: yes
+        purpose: Investigar necessidades, contextos, comportamentos e problemas reais de clientes e usuários.
+        depends_on: [MKT-020, GOV-003]
+        contains:
+          - research_questions
+          - methodology
+          - participants
+          - contexts
+          - findings
+          - evidence
+          - limitations
+        basis: [S10, S03, S26]
+
+      - id: MKT-023
+        artifact: ICP Personas and Jobs-to-be-Done
+        authority: industry_practice
+        required: yes
+        purpose: Formalizar clientes-alvo, usuários, jobs, dores, ganhos e contextos.
+        depends_on: [MKT-021, MKT-022]
+        contains:
+          - ICP
+          - personas
+          - jobs
+          - pains
+          - gains
+          - contexts
+          - exclusions
+        basis: [S10, S26]
+
+      - id: MKT-024
+        artifact: Competitive Landscape and Positioning
+        authority: industry_practice
+        required: yes
+        purpose: Definir concorrência, alternativas, categoria, diferenciação e posicionamento.
+        depends_on: [MKT-020, MKT-021, MKT-023]
+        contains:
+          - competitors
+          - substitutes
+          - alternatives
+          - comparison_dimensions
+          - category
+          - positioning
+          - proof_points
+        basis: [S26]
+
+  # =========================================================
+  # P03 — MODELO DE NEGÓCIO E PORTFÓLIO
+  # =========================================================
+
+  - id: P03_BUSINESS_PORTFOLIO
+    name: Modelo de negócio e portfólio
+
+    cards:
+
+      - id: BUS-030
+        artifact: Business Model
+        authority: industry_practice
+        required: yes
+        purpose: Definir como o ecossistema cria, entrega e captura valor.
+        depends_on: [STR-013, MKT-021, MKT-023, MKT-024]
+        contains:
+          - value_propositions
+          - customer_segments
+          - channels
+          - customer_relationships
+          - key_resources
+          - key_activities
+          - key_partners
+          - cost_structure
+          - revenue_streams
+        basis: [S26]
+
+      - id: BUS-031
+        artifact: Financial Model and Funding Plan
+        authority: professional_practice
+        required: yes
+        purpose: Quantificar receitas, custos, caixa, investimento, runway e cenários de viabilidade.
+        depends_on: [BUS-030, STR-013]
+        contains:
+          - revenue_forecast
+          - fixed_costs
+          - variable_costs
+          - cash_flow
+          - investment
+          - runway
+          - break_even
+          - scenarios
+          - assumptions
+        basis: [S05, S26]
+
+      - id: BUS-032
+        artifact: Pricing and Packaging Strategy
+        authority: industry_practice
+        required: yes
+        purpose: Definir preços, planos, bundles, descontos e regras de monetização.
+        depends_on: [BUS-030, BUS-031, MKT-024]
+        contains:
+          - pricing_model
+          - packages
+          - bundles
+          - discounts
+          - margin_targets
+          - tax_assumptions
+          - pricing_experiments
+        basis: [S26]
+
+      - id: BUS-033
+        artifact: Brand and Messaging Strategy
+        authority: industry_practice
+        required: yes
+        purpose: Definir arquitetura de marca, promessa, identidade, voz e sistema de mensagens.
+        depends_on: [MKT-023, MKT-024, BUS-030]
+        contains:
+          - brand_architecture
+          - promise
+          - positioning
+          - voice
+          - identity_principles
+          - message_house
+          - claims
+        basis: [S26, S25]
+
+      - id: BUS-034
+        artifact: Portfolio and Offer Architecture
+        authority: custom_integration
+        required: yes
+        purpose: Integrar todas as ofertas do ecossistema em uma arquitetura única.
+        depends_on: [BUS-030, BUS-032, BUS-033]
+        contains:
+          - offer_catalog
+          - application
+          - digital_products
+          - physical_products
+          - services
+          - editorial
+          - free_offers
+          - paid_offers
+          - entry_offer
+          - core_offer
+          - expansion_offers
+          - bundles
+          - cross_sell
+          - lifecycle
+        basis: [S01, S26]
+
+      - id: BUS-035
+        artifact: Ecosystem Capability Value Stream and Dependency Map
+        authority: custom_integration
+        required: yes
+        purpose: Mostrar capacidades, fluxos de valor, recursos e dependências necessários para operar o portfólio.
+        depends_on: [STR-014, BUS-034]
+        contains:
+          - capabilities
+          - value_streams
+          - systems
+          - people
+          - suppliers
+          - partners
+          - dependencies
+          - critical_capabilities
+        basis: [S03, S04, S01]
+
+  # =========================================================
+  # P04 — DEFINIÇÃO DAS OFERTAS
+  # =========================================================
+
+  - id: P04_OFFER_DEFINITION
+    name: Definição das ofertas
+
+    cards:
+
+      - id: OFF-040
+        artifact: PRD Application
+        authority: industry_artifact
+        required: conditional
+        applies_if: software_application_exists
+        purpose: Definir o que o aplicativo precisa entregar para usuário e negócio.
+        depends_on: [BUS-034, MKT-023, STR-014]
+        contains:
+          - problem
+          - users
+          - scope
+          - out_of_scope
+          - journeys
+          - features
+          - business_rules
+          - priorities
+          - metrics
+          - acceptance
+        basis: [S02, S03, S26]
+
+      - id: OFF-041
+        artifact: PRD Digital Products
+        authority: industry_artifact
+        required: conditional
+        applies_if: digital_products_exist
+        purpose: Definir requisitos de cursos, ebooks, templates, downloads ou produtos digitais equivalentes.
+        depends_on: [BUS-034, MKT-023, STR-014]
+        contains:
+          - audience
+          - transformation
+          - format
+          - modules
+          - content
+          - delivery
+          - access
+          - support
+          - monetization
+          - acceptance
+        basis: [S02, S26]
+
+      - id: OFF-042
+        artifact: Physical Product Requirements
+        authority: systems_engineering_artifact
+        required: conditional
+        applies_if: physical_products_exist
+        purpose: Definir finalidade, forma, materiais, ergonomia, segurança, produção e aceitação dos produtos físicos.
+        depends_on: [BUS-034, MKT-023, STR-014]
+        contains:
+          - use_case
+          - dimensions
+          - materials
+          - ergonomics
+          - safety
+          - durability
+          - packaging
+          - manufacturability
+          - acceptance
+        basis: [S01, S02, S07]
+
+      - id: OFF-043
+        artifact: Service Requirements and Service Blueprint
+        authority: industry_and_standard
+        required: conditional
+        applies_if: services_exist
+        purpose: Definir promessa, jornada, frontstage, backstage, recursos, SLA e entregáveis dos serviços.
+        depends_on: [BUS-034, MKT-023, STR-014]
+        contains:
+          - service_outcome
+          - customer_journey
+          - touchpoints
+          - frontstage
+          - backstage
+          - supporting_processes
+          - resources
+          - SLA
+          - deliverables
+          - acceptance
+        basis: [S01, S18, S07]
+
+      - id: OFF-044
+        artifact: Editorial and Content Strategy
+        authority: industry_practice
+        required: conditional
+        applies_if: editorial_operation_exists
+        purpose: Definir tese editorial, audiência, pilares, formatos, evidência, distribuição e conversão.
+        depends_on: [BUS-033, BUS-034, MKT-023]
+        contains:
+          - editorial_thesis
+          - audience
+          - pillars
+          - formats
+          - channels
+          - evidence_policy
+          - editorial_policy
+          - calendar_logic
+          - distribution
+          - CTA
+          - metrics
+        basis: [S26, S25]
+
+      - id: OFF-045
+        artifact: Commerce Channel and Customer Lifecycle Requirements
+        authority: custom_integration
+        required: yes
+        purpose: Definir aquisição, checkout, pagamento, entrega, CRM, retenção, devolução e relacionamento.
+        depends_on: [BUS-032, BUS-034, BUS-035]
+        contains:
+          - acquisition_channels
+          - commerce_channels
+          - checkout
+          - payment
+          - taxation
+          - fulfillment
+          - CRM
+          - onboarding
+          - retention
+          - cancellation
+          - returns
+        basis: [S01, S03, S25, S26]
+
+  # =========================================================
+  # P05 — REQUISITOS
+  # =========================================================
+
+  - id: P05_REQUIREMENTS
+    name: Engenharia de requisitos
+
+    cards:
+
+      - id: REQ-050
+        artifact: Stakeholder Requirements Specification
+        authority: normative_concept
+        required: yes
+        purpose: Traduzir necessidades dos stakeholders em requisitos explícitos e rastreáveis.
+        depends_on:
+          - GOV-003
+          - STR-014
+          - OFF-040
+          - OFF-041
+          - OFF-042
+          - OFF-043
+          - OFF-044
+          - OFF-045
+        contains:
+          - stakeholder_id
+          - need
+          - requirement
+          - rationale
+          - priority
+          - acceptance
+          - trace
+        basis: [S02, S03]
+
+      - id: REQ-051
+        artifact: Solution Requirements SRS Master
+        authority: normative_and_industry
+        required: yes
+        purpose: Criar baseline mestre de requisitos da solução para todos os componentes do ecossistema.
+        depends_on: [REQ-050]
+        contains:
+          - requirement_id
+          - requirement_type
+          - statement
+          - rationale
+          - source
+          - priority
+          - verification_method
+          - acceptance
+          - trace
+        basis: [S02, S03]
+
+      - id: REQ-052
+        artifact: FRD
+        full_name: Functional Requirements Document
+        authority: industry_artifact
+        required: conditional
+        applies_if: behavioral_solution_components_exist
+        purpose: Especificar comportamentos, funções, fluxos, regras, entradas, saídas e exceções.
+        depends_on: [REQ-051]
+        contains:
+          - actors
+          - triggers
+          - preconditions
+          - functional_behavior
+          - normal_flows
+          - alternative_flows
+          - business_rules
+          - outputs
+          - exceptions
+          - acceptance
+        basis: [S02, S03, S26]
+
+      - id: REQ-053
+        artifact: NFR and Quality Requirements
+        authority: normative_concept
+        required: yes
+        purpose: Especificar atributos de qualidade e níveis mensuráveis de serviço.
+        depends_on: [REQ-051]
+        contains:
+          - performance
+          - reliability
+          - availability
+          - security
+          - usability
+          - maintainability
+          - compatibility
+          - portability
+          - scalability
+          - measurable_thresholds
+        basis: [S02, S03, S08]
+
+      - id: REQ-054
+        artifact: Transition Requirements
+        authority: normative_concept
+        required: yes
+        purpose: Definir capacidades temporárias necessárias para migrar do estado atual ao futuro.
+        depends_on: [STR-010, STR-012, REQ-051]
+        contains:
+          - migration
+          - conversion
+          - training
+          - cutover
+          - parallel_operation
+          - continuity
+          - decommissioning
+        basis: [S03, S01]
+
+      - id: REQ-055
+        artifact: Data Analytics and Governance Requirements
+        authority: normative_and_professional
+        required: yes
+        purpose: Definir dados, ownership, qualidade, eventos, métricas, retenção e governança.
+        depends_on: [REQ-051, STR-015]
+        contains:
+          - entities
+          - data_quality
+          - lineage
+          - ownership
+          - events
+          - analytics
+          - KPIs
+          - retention
+          - access
+          - auditability
+        basis: [S16, S02, S08]
+
+      - id: REQ-056
+        artifact: Integration and Interface Requirements
+        authority: normative_concept
+        required: conditional
+        applies_if: integrations_exist
+        purpose: Especificar APIs, interfaces, protocolos, contratos e comportamento de falhas.
+        depends_on: [REQ-051, BUS-035]
+        contains:
+          - interfaces
+          - providers
+          - consumers
+          - protocols
+          - contracts
+          - data_exchange
+          - authentication
+          - authorization
+          - timeouts
+          - error_handling
+          - versioning
+        basis: [S02, S01]
+
+      - id: REQ-057
+        artifact: Security Privacy and Trust Requirements
+        authority: normative_and_legal
+        required: yes
+        purpose: Especificar requisitos de segurança, privacidade, identidade, consentimento e confiança.
+        depends_on: [REQ-051, GOV-004, REQ-055]
+        contains:
+          - assets
+          - threats
+          - identity
+          - access_control
+          - encryption
+          - secrets
+          - logging
+          - privacy
+          - consent
+          - retention
+          - incident_requirements
+          - evidence
+        basis: [S12, S13, S14, S25]
+
+      - id: REQ-058
+        artifact: UX Accessibility and Human Factors Requirements
+        authority: normative_and_hcd
+        required: conditional
+        applies_if: human_facing_experience_exists
+        purpose: Definir usabilidade, acessibilidade, contexto humano, carga cognitiva e prevenção de erros.
+        depends_on: [REQ-050, REQ-051, MKT-022]
+        contains:
+          - user_context
+          - user_goals
+          - usability
+          - accessibility
+          - cognitive_requirements
+          - error_prevention
+          - responsive_behavior
+          - evaluation_criteria
+        basis: [S10, S11]
+
+      - id: REQ-059
+        artifact: Domain Quality and Regulatory Requirements
+        authority: custom_integration
+        required: yes
+        purpose: Cobrir qualidade física, serviços, conteúdo, segurança de produto e requisitos regulatórios específicos.
+        depends_on: [REQ-051, GOV-004]
+        contains:
+          - physical_quality
+          - service_quality
+          - editorial_quality
+          - product_safety
+          - claims
+          - regulatory_acceptance
+          - required_evidence
+        basis: [S07, S21, S22, S25]
+
+  # =========================================================
+  # P06 — ARQUITETURA E DESIGN
+  # =========================================================
+
+  - id: P06_ARCHITECTURE_DESIGN
+    name: Arquitetura e design
+
+    cards:
+
+      - id: ARC-060
+        artifact: Enterprise Architecture Baseline and Target
+        authority: framework_standard
+        required: yes
+        purpose: Alinhar negócio, dados, aplicações e tecnologia à estratégia do ecossistema.
+        depends_on: [BUS-035, REQ-051]
+        contains:
+          - architecture_principles
+          - baseline
+          - target_state
+          - gaps
+          - building_blocks
+          - architecture_constraints
+          - roadmap_implications
+        basis: [S04]
+
+      - id: ARC-061
+        artifact: Business Architecture and Operating Model Design
+        authority: framework_and_professional
+        required: yes
+        purpose: Projetar capacidades, processos, papéis, fluxos de valor e interfaces organizacionais.
+        depends_on: [ARC-060, BUS-035, REQ-050]
+        contains:
+          - capabilities
+          - value_streams
+          - business_processes
+          - organizational_roles
+          - governance
+          - operating_model
+          - ownership
+        basis: [S04, S03]
+
+      - id: ARC-062
+        artifact: Data Architecture and Data Governance Design
+        authority: framework_and_normative
+        required: yes
+        purpose: Projetar domínios, modelos, fluxos, armazenamento, ownership e controles dos dados.
+        depends_on: [ARC-060, REQ-055]
+        contains:
+          - data_domains
+          - conceptual_model
+          - logical_model
+          - flows
+          - stores
+          - ownership
+          - quality_controls
+          - retention
+          - access
+        basis: [S04, S16]
+
+      - id: ARC-063
+        artifact: Application Integration and Technology Architecture
+        authority: framework_standard
+        required: conditional
+        applies_if: software_or_IT_exists
+        purpose: Projetar aplicações, serviços, integrações, infraestrutura e ambientes técnicos.
+        depends_on: [ARC-060, REQ-052, REQ-053, REQ-056]
+        contains:
+          - applications
+          - modules
+          - services
+          - interfaces
+          - runtime
+          - infrastructure
+          - environments
+          - resilience
+          - observability
+        basis: [S04, S01]
+
+      - id: ARC-064
+        artifact: Security and Privacy Architecture Threat Model
+        authority: normative_practice
+        required: yes
+        purpose: Projetar trust boundaries, controles e mitigação das ameaças identificadas.
+        depends_on: [REQ-057, ARC-062, ARC-063]
+        contains:
+          - assets
+          - trust_boundaries
+          - threats
+          - attack_surfaces
+          - security_controls
+          - identity
+          - secrets
+          - logging
+          - privacy_controls
+        basis: [S12, S13, S14]
+
+      - id: ARC-065
+        artifact: UX UI Information Architecture and Design System Specification
+        authority: hcd_and_industry
+        required: conditional
+        applies_if: interactive_or_content_experience_exists
+        purpose: Especificar arquitetura da informação, fluxos, telas, estados, componentes e design system.
+        depends_on: [REQ-058, OFF-040, OFF-041, OFF-044]
+        contains:
+          - information_architecture
+          - navigation
+          - user_flows
+          - screens
+          - states
+          - components
+          - design_tokens
+          - typography
+          - responsive_behavior
+          - accessibility_behavior
+        basis: [S10, S11]
+
+      - id: ARC-066
+        artifact: Physical Product Packaging and Manufacturing Design Specification
+        authority: systems_engineering_artifact
+        required: conditional
+        applies_if: physical_products_exist
+        purpose: Converter requisitos físicos em especificação pronta para fabricação e inspeção.
+        depends_on: [OFF-042, REQ-059]
+        contains:
+          - drawings
+          - dimensions
+          - materials
+          - tolerances
+          - BOM
+          - ergonomics
+          - packaging
+          - manufacturing_constraints
+          - inspection_points
+        basis: [S01, S07, S20]
+
+      - id: ARC-067
+        artifact: Service and Editorial Production Design
+        authority: custom_integration
+        required: conditional
+        applies_if: services_or_editorial_operation_exists
+        purpose: Transformar requisitos de serviço e conteúdo em sistemas repetíveis de entrega e produção.
+        depends_on: [OFF-043, OFF-044, REQ-059]
+        contains:
+          - service_scripts
+          - delivery_workflow
+          - SOP_design
+          - editorial_workflow
+          - templates
+          - review_gates
+          - handoffs
+          - capacity_model
+        basis: [S18, S07, S26]
+
+      - id: ARC-068
+        artifact: ADR and Decision Record Register
+        authority: industry_practice
+        required: yes
+        purpose: Registrar decisões relevantes, alternativas, justificativas e consequências.
+        depends_on:
+          - ARC-060
+          - ARC-061
+          - ARC-062
+          - ARC-063
+          - ARC-064
+          - ARC-065
+          - ARC-066
+          - ARC-067
+        contains:
+          - decision
+          - context
+          - alternatives
+          - selected_option
+          - rationale
+          - consequences
+          - tradeoffs
+          - status
+          - supersedes
+        basis: [S04, S01]
+
+  # =========================================================
+  # P07 — ENTREGA E CONSTRUÇÃO
+  # =========================================================
+
+  - id: P07_DELIVERY
+    name: Planejamento e construção
+
+    cards:
+
+      - id: DEL-070
+        artifact: Program and Project Management Plan
+        authority: professional_standard
+        required: yes
+        purpose: Definir governança de entrega, escopo, prazo, orçamento, recursos, riscos e stakeholders.
+        depends_on: [STR-013, BUS-034, ARC-060]
+        contains:
+          - governance
+          - scope
+          - schedule
+          - finance
+          - resources
+          - stakeholders
+          - risk
+          - quality
+          - procurement
+        basis: [S05]
+
+      - id: DEL-071
+        artifact: Integrated Implementation Plan WBS Backlog and Dependency Graph
+        authority: professional_and_custom
+        required: yes
+        purpose: Converter requisitos e arquitetura em entregáveis sequenciados e executáveis.
+        depends_on: [DEL-070, REQ-051, ARC-068]
+        contains:
+          - deliverables
+          - work_packages
+          - backlog
+          - dependency_graph
+          - critical_path
+          - milestones
+          - owner
+          - definition_of_ready
+          - definition_of_done
+        basis: [S05, S01]
+
+      - id: DEL-072
+        artifact: Resource Capacity and Budget Control Plan
+        authority: professional_standard
+        required: yes
+        purpose: Planejar pessoas, competências, capacidade, custos, caixa e contingências.
+        depends_on: [DEL-070, DEL-071, BUS-031]
+        contains:
+          - roles
+          - competencies
+          - capacity
+          - cost_baseline
+          - cash_requirements
+          - contingency
+          - financial_controls
+        basis: [S05]
+
+      - id: DEL-073
+        artifact: Procurement Supplier and Partner Plan
+        authority: professional_and_normative
+        required: conditional
+        applies_if: external_suppliers_or_partners_exist
+        purpose: Planejar make-or-buy, seleção, contratos, SLAs, qualidade e risco de terceiros.
+        depends_on: [DEL-071, DEL-072, BUS-035]
+        contains:
+          - make_or_buy
+          - supplier_criteria
+          - selection_process
+          - contracts
+          - SLAs
+          - quality_requirements
+          - supplier_risk
+          - sustainability
+        basis: [S05, S19, S25]
+
+      - id: DEL-074
+        artifact: Build and Production Plans
+        authority: custom_integration
+        required: yes
+        purpose: Definir planos executáveis de software, físico, digital, serviços e editorial.
+        depends_on: [DEL-071, ARC-063, ARC-066, ARC-067]
+        contains:
+          - software_build
+          - physical_production
+          - digital_product_production
+          - service_setup
+          - editorial_production
+          - production_handoffs
+          - release_units
+        basis: [S01, S05, S07]
+
+      - id: DEL-075
+        artifact: Environment Configuration Release and Migration Plan
+        authority: systems_engineering_practice
+        required: conditional
+        applies_if: transition_or_release_exists
+        purpose: Controlar ambientes, configuração, migração, cutover, rollback e releases.
+        depends_on: [DEL-071, REQ-054, ARC-063]
+        contains:
+          - environments
+          - configuration_items
+          - migration
+          - data_conversion
+          - cutover
+          - rollback
+          - release_strategy
+        basis: [S01, S02, S18]
+
+      - id: DEL-076
+        artifact: Quality Sustainability and Compliance Execution Plan
+        authority: normative_management
+        required: yes
+        purpose: Operacionalizar controles de qualidade, sustentabilidade e conformidade durante a construção.
+        depends_on: [GOV-004, GOV-005, REQ-059, DEL-071]
+        contains:
+          - quality_controls
+          - inspections
+          - audits
+          - nonconformity
+          - environmental_controls
+          - compliance_evidence
+          - ownership
+        basis: [S07, S20, S21]
+
+  # =========================================================
+  # P08 — VERIFICAÇÃO E VALIDAÇÃO
+  # =========================================================
+
+  - id: P08_VERIFICATION_VALIDATION
+    name: Verificação, validação e aceitação
+
+    cards:
+
+      - id: VAL-080
+        artifact: Verification and Validation Master Plan
+        authority: normative_standard
+        required: yes
+        purpose: Definir como cada requisito será verificado e a solução validada para uso pretendido.
+        depends_on: [REQ-051, DEL-071]
+        contains:
+          - verification_methods
+          - validation_methods
+          - test_levels
+          - acceptance
+          - test_environments
+          - evidence
+          - owners
+        basis: [S01, S02, S09]
+
+      - id: VAL-081
+        artifact: Test Inspection and Quality Control Specifications
+        authority: normative_and_domain
+        required: yes
+        purpose: Definir testes de software, inspeções físicas, pilotos de serviço e QA editorial.
+        depends_on: [VAL-080, REQ-053, REQ-059]
+        contains:
+          - software_tests
+          - physical_inspection
+          - digital_product_QA
+          - service_pilot
+          - editorial_QA
+          - sampling
+          - pass_fail
+          - defect_handling
+        basis: [S09, S07, S08]
+
+      - id: VAL-082
+        artifact: Security Privacy and Accessibility Assurance
+        authority: normative_and_legal
+        required: yes
+        purpose: Verificar controles de segurança, privacidade e conformidade de acessibilidade.
+        depends_on: [VAL-080, REQ-057, REQ-058, ARC-064]
+        contains:
+          - security_testing
+          - vulnerability_assessment
+          - privacy_assessment
+          - accessibility_testing
+          - findings
+          - remediation
+          - evidence
+        basis: [S12, S13, S14, S11, S25]
+
+      - id: VAL-083
+        artifact: Requirements Traceability Matrix
+        authority: normative_concept
+        required: yes
+        purpose: Rastrear necessidade até requisito, design, implementação, teste, evidência e resultado.
+        depends_on: [REQ-050, REQ-051, ARC-068, VAL-080]
+        contains:
+          - need
+          - business_requirement
+          - stakeholder_requirement
+          - solution_requirement
+          - design
+          - implementation
+          - test
+          - evidence
+          - status
+        basis: [S02, S03]
+
+      - id: VAL-084
+        artifact: Acceptance and Go No-Go Criteria
+        authority: professional_and_normative
+        required: yes
+        purpose: Estabelecer limites objetivos para aprovação, release e lançamento.
+        depends_on: [VAL-081, VAL-082, VAL-083, GOV-004]
+        contains:
+          - acceptance_thresholds
+          - blocking_defects
+          - quality_gates
+          - compliance_gates
+          - operational_readiness
+          - residual_risks
+          - signoff_authority
+        basis: [S01, S05, S07]
+
+  # =========================================================
+  # P09 — GTM E LANÇAMENTO
+  # =========================================================
+
+  - id: P09_GTM_LAUNCH
+    name: Go-to-market e lançamento
+
+    cards:
+
+      - id: GTM-090
+        artifact: Go-to-Market Plan
+        authority: industry_practice
+        required: yes
+        purpose: Coordenar público, oferta, mensagem, canais, lançamento e métricas comerciais.
+        depends_on: [BUS-032, BUS-033, BUS-034, MKT-024, VAL-084]
+        contains:
+          - target_audience
+          - offer
+          - message
+          - channels
+          - funnel
+          - campaigns
+          - launch_calendar
+          - budget
+          - metrics
+        basis: [S26]
+
+      - id: GTM-091
+        artifact: Sales Distribution and Partner Launch Plan
+        authority: industry_and_professional
+        required: conditional
+        applies_if: sales_distribution_or_partners_apply
+        purpose: Preparar vendas diretas, distribuição, parceiros, contratos e enablement.
+        depends_on: [GTM-090, DEL-073]
+        contains:
+          - sales_motion
+          - pipeline
+          - distribution
+          - partner_model
+          - enablement
+          - contracts
+          - commercial_targets
+        basis: [S26, S25]
+
+      - id: GTM-092
+        artifact: Customer Onboarding Support and Success Readiness
+        authority: service_and_quality
+        required: yes
+        purpose: Garantir ativação, onboarding, suporte, sucesso e escalonamento do cliente.
+        depends_on: [GTM-090, OFF-045, OFF-043]
+        contains:
+          - onboarding
+          - activation
+          - support_channels
+          - knowledge_base
+          - SLA
+          - escalation
+          - success_metrics
+        basis: [S18, S07, S22]
+
+      - id: GTM-093
+        artifact: Release Launch Communications and Rollout Plan
+        authority: professional_and_industry
+        required: yes
+        purpose: Coordenar release, comunicação, rollout progressivo, monitoramento e rollback.
+        depends_on: [DEL-075, GTM-090, VAL-084]
+        contains:
+          - release_scope
+          - launch_audiences
+          - communication_plan
+          - rollout
+          - monitoring
+          - rollback
+          - launch_command
+        basis: [S05, S01, S26]
+
+      - id: GTM-094
+        artifact: Launch Readiness and Launch Decision Record
+        authority: custom_control
+        required: yes
+        purpose: Registrar evidências e decisão final de lançamento.
+        depends_on: [GTM-091, GTM-092, GTM-093, VAL-084]
+        contains:
+          - product_readiness
+          - engineering_readiness
+          - physical_readiness
+          - editorial_readiness
+          - service_readiness
+          - legal_readiness
+          - operations_readiness
+          - support_readiness
+          - commercial_readiness
+          - open_risks
+          - exceptions
+          - approvals
+          - launch_decision
+        basis: [S01, S05, S21]
+
+  # =========================================================
+  # P10 — OPERAÇÃO
+  # =========================================================
+
+  - id: P10_OPERATIONS
+    name: Operação do ecossistema
+
+    cards:
+
+      - id: OPS-100
+        artifact: Operating Model and SOP Catalog
+        authority: professional_and_custom
+        required: yes
+        purpose: Operar o ecossistema através de processos, papéis, SOPs, controles e SLAs.
+        depends_on: [ARC-061, GTM-094]
+        contains:
+          - process_catalog
+          - SOPs
+          - roles
+          - responsibilities
+          - SLAs
+          - controls
+          - handoffs
+          - operating_cadence
+        basis: [S04, S07, S18]
+
+      - id: OPS-101
+        artifact: Customer Success Support Complaints and Feedback Management
+        authority: normative_and_industry
+        required: yes
+        purpose: Gerenciar suporte, sucesso, reclamações, feedback e recuperação de serviço.
+        depends_on: [OPS-100, GTM-092]
+        contains:
+          - support
+          - customer_success
+          - complaints
+          - feedback
+          - escalation
+          - root_cause
+          - service_recovery
+          - improvement_input
+        basis: [S22, S18, S07]
+
+      - id: OPS-102
+        artifact: Supply Inventory Fulfillment Returns and Supplier Management
+        authority: operations_practice
+        required: conditional
+        applies_if: physical_products_or_suppliers_exist
+        purpose: Operar estoque, fornecedores, logística, fulfillment, devoluções e qualidade.
+        depends_on: [OPS-100, DEL-073, OFF-045]
+        contains:
+          - suppliers
+          - inventory
+          - reorder
+          - fulfillment
+          - logistics
+          - returns
+          - supplier_performance
+          - quality
+        basis: [S07, S19, S25]
+
+      - id: OPS-103
+        artifact: Security Privacy Incident and Continuity Operations
+        authority: normative_management
+        required: yes
+        purpose: Operar segurança, privacidade, resposta a incidentes, backup, continuidade e recuperação.
+        depends_on: [OPS-100, ARC-064, VAL-082]
+        contains:
+          - security_operations
+          - monitoring
+          - incident_response
+          - privacy_operations
+          - backup
+          - disaster_recovery
+          - business_continuity
+          - exercises
+        basis: [S12, S13, S14, S17]
+
+      - id: OPS-104
+        artifact: IT Data and AI Governance
+        authority: normative_management
+        required: conditional
+        applies_if: IT_data_or_AI_exists
+        purpose: Governar uso de tecnologia, dados e IA com direção, accountability e monitoramento.
+        depends_on: [OPS-100, ARC-062, ARC-063]
+        contains:
+          - IT_governance
+          - data_governance
+          - policies
+          - delegation
+          - performance
+          - accountability
+          - AI_governance
+          - AI_monitoring
+        basis: [S15, S16, S23]
+
+      - id: OPS-105
+        artifact: Financial Compliance IP and Recordkeeping Operations
+        authority: legal_and_professional
+        required: yes
+        purpose: Operar faturamento, controles financeiros, compliance, contratos, IP e retenção de registros.
+        depends_on: [OPS-100, GOV-004, BUS-031]
+        contains:
+          - billing
+          - reconciliation
+          - cash_control
+          - tax_records
+          - compliance_monitoring
+          - contracts
+          - intellectual_property_register
+          - record_retention
+        basis: [S21, S25, S05]
+
+      - id: OPS-106
+        artifact: Performance Analytics and Management Review
+        authority: normative_and_professional
+        required: yes
+        purpose: Monitorar desempenho do negócio, produto, serviço, qualidade e resultados estratégicos.
+        depends_on: [OPS-100, STR-015, REQ-055]
+        contains:
+          - management_dashboard
+          - KPI_review
+          - product_metrics
+          - service_metrics
+          - editorial_metrics
+          - quality_metrics
+          - customer_metrics
+          - financial_metrics
+          - risk_review
+          - management_actions
+        basis: [S07, S03, S05]
+
+  # =========================================================
+  # P11 — EVOLUÇÃO E RETIRADA
+  # =========================================================
+
+  - id: P11_EVOLUTION_RETIREMENT
+    name: Evolução, melhoria e retirada
+
+    cards:
+
+      - id: EVO-110
+        artifact: Post-Launch and Solution Evaluation
+        authority: professional_standard
+        required: yes
+        purpose: Comparar resultado real com valor, metas e comportamento esperado.
+        depends_on: [OPS-106, STR-015]
+        contains:
+          - actual_vs_target
+          - value_realized
+          - customer_outcomes
+          - solution_limitations
+          - enterprise_limitations
+          - lessons
+          - recommendations
+        basis: [S03]
+
+      - id: EVO-111
+        artifact: Change Innovation and Improvement Backlog
+        authority: professional_and_normative
+        required: yes
+        purpose: Priorizar mudanças, experimentos, ações corretivas e oportunidades de inovação.
+        depends_on: [EVO-110, OPS-101, OPS-106, GOV-005]
+        contains:
+          - changes
+          - experiments
+          - corrective_actions
+          - preventive_actions
+          - innovations
+          - priority
+          - value
+          - risk
+          - owner
+          - decision
+        basis: [S03, S07, S24]
+
+      - id: EVO-112
+        artifact: Portfolio and Lifecycle Review
+        authority: custom_integration
+        required: yes
+        purpose: Decidir investir, manter, escalar, redesenhar, pausar ou retirar cada componente.
+        depends_on: [EVO-110, EVO-111, BUS-034]
+        contains:
+          - offer_performance
+          - strategic_fit
+          - economics
+          - customer_value
+          - risk
+          - lifecycle_state
+          - portfolio_decision
+        basis: [S01, S03, S05]
+
+      - id: EVO-113
+        artifact: Deprecation Retirement and Knowledge Transfer Plan
+        authority: normative_lifecycle
+        required: conditional
+        applies_if: ecosystem_component_is_retired
+        purpose: Retirar produtos, sistemas, serviços ou conteúdo preservando clientes, dados, contratos e conhecimento.
+        depends_on: [EVO-112, REQ-054, GOV-004]
+        contains:
+          - retirement_scope
+          - customer_notification
+          - customer_migration
+          - data_disposition
+          - contract_closure
+          - supplier_closure
+          - asset_disposal
+          - environmental_disposal
+          - knowledge_transfer
+          - final_evidence
+        basis: [S01, S17, S20, S25]
+
+execution_order:
+  - P00_GOVERNANCE
+  - P01_STRATEGY
+  - P02_MARKET_CUSTOMER
+  - P03_BUSINESS_PORTFOLIO
+  - P04_OFFER_DEFINITION
+  - P05_REQUIREMENTS
+  - P06_ARCHITECTURE_DESIGN
+  - P07_DELIVERY
+  - P08_VERIFICATION_VALIDATION
+  - P09_GTM_LAUNCH
+  - P10_OPERATIONS
+  - P11_EVOLUTION_RETIREMENT
+
+master_dependency_chain:
+  - GOV-001
+  - STR-010
+  - STR-011
+  - STR-012
+  - STR-013
+  - STR-014
+  - MKT-020
+  - MKT-021
+  - MKT-022
+  - MKT-023
+  - MKT-024
+  - BUS-030
+  - BUS-031
+  - BUS-032
+  - BUS-033
+  - BUS-034
+  - BUS-035
+  - OFF-040_to_OFF-045
+  - REQ-050
+  - REQ-051
+  - REQ-052_to_REQ-059
+  - ARC-060_to_ARC-068
+  - DEL-070_to_DEL-076
+  - VAL-080_to_VAL-084
+  - GTM-090_to_GTM-094
+  - OPS-100_to_OPS-106
+  - EVO-110_to_EVO-113
+
+document_hierarchy:
+  L0_ecosystem:
+    - GOV-001
+    - GOV-002
+
+  L1_strategy_and_business:
+    - STR-010
+    - STR-011
+    - STR-012
+    - STR-013
+    - STR-014
+    - STR-015
+
+  L2_market_and_portfolio:
+    - MKT-020
+    - MKT-021
+    - MKT-022
+    - MKT-023
+    - MKT-024
+    - BUS-030
+    - BUS-031
+    - BUS-032
+    - BUS-033
+    - BUS-034
+    - BUS-035
+
+  L3_offer_definitions:
+    - OFF-040
+    - OFF-041
+    - OFF-042
+    - OFF-043
+    - OFF-044
+    - OFF-045
+
+  L4_requirements:
+    - REQ-050
+    - REQ-051
+    - REQ-052
+    - REQ-053
+    - REQ-054
+    - REQ-055
+    - REQ-056
+    - REQ-057
+    - REQ-058
+    - REQ-059
+
+  L5_architecture_and_design:
+    - ARC-060
+    - ARC-061
+    - ARC-062
+    - ARC-063
+    - ARC-064
+    - ARC-065
+    - ARC-066
+    - ARC-067
+    - ARC-068
+
+  L6_delivery:
+    - DEL-070
+    - DEL-071
+    - DEL-072
+    - DEL-073
+    - DEL-074
+    - DEL-075
+    - DEL-076
+
+  L7_assurance:
+    - VAL-080
+    - VAL-081
+    - VAL-082
+    - VAL-083
+    - VAL-084
+
+  L8_market_release:
+    - GTM-090
+    - GTM-091
+    - GTM-092
+    - GTM-093
+    - GTM-094
+
+  L9_operations:
+    - OPS-100
+    - OPS-101
+    - OPS-102
+    - OPS-103
+    - OPS-104
+    - OPS-105
+    - OPS-106
+
+  L10_evolution:
+    - EVO-110
+    - EVO-111
+    - EVO-112
+    - EVO-113
+
+agent_rules:
+
+  source_of_truth:
+    rule: >
+      Um requisito, decisão ou status deve possuir apenas uma origem canônica;
+      outros documentos referenciam o ID e não duplicam silenciosamente seu conteúdo.
+
+  traceability:
+    rule: >
+      Todo requisito implementável deve possuir source, owner, priority,
+      acceptance criteria, verification method e evidence.
+
+  conflict_resolution:
+    priority:
+      - applicable_law
+      - approved_business_requirement
+      - approved_stakeholder_requirement
+      - approved_solution_requirement
+      - approved_architecture_decision
+      - implementation_plan
+      - implementation
+    action: >
+      Quando duas fontes entrarem em conflito, não escolher silenciosamente;
+      registrar conflito, autoridade das fontes e decisão de resolução.
+
+  requirements:
+    atomic: true
+    testable: true
+    uniquely_identified: true
+    traceable: true
+    measurable_when_possible: true
+
+  decision_records:
+    required_for:
+      - architecture_change
+      - scope_change
+      - requirement_override
+      - technology_selection
+      - security_exception
+      - compliance_exception
+      - launch_exception
+      - retirement_decision
+
+  evidence:
+    required_for:
+      - validation
+      - verification
+      - compliance
+      - security
+      - accessibility
+      - quality
+      - launch_readiness
+
+  no_document_for_document_sake:
+    rule: >
+      O card representa uma obrigação de informação e decisão;
+      ele não obriga a existência de um arquivo separado quando o conteúdo
+      puder ser mantido com clareza e rastreabilidade em outro artefato.
+
+  lifecycle:
+    states:
+      - draft
+      - evidence_pending
+      - review
+      - approved
+      - implementation
+      - verified
+      - operational
+      - superseded
+      - retired
+
+final_acceptance:
+  ecosystem_is_launchable_when:
+    - business_case_approved
+    - market_and_customer_evidence_sufficient
+    - portfolio_defined
+    - applicable_offer_requirements_defined
+    - stakeholder_requirements_traced
+    - solution_requirements_baselined
+    - architecture_approved
+    - implementation_complete_for_launch_scope
+    - verification_and_validation_passed
+    - legal_and_compliance_obligations_satisfied
+    - operational_support_ready
+    - security_privacy_and_continuity_ready
+    - GTM_ready
+    - residual_risks_explicitly_accepted
+    - launch_decision_record_approved

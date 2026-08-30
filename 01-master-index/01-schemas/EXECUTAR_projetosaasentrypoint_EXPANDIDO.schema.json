@@ -1,0 +1,2021 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:executar:projetosaasentrypoint:expandido:v2.0",
+  "title": "EXECUTAR — Projeto SaaS Entrypoint Expandido",
+  "description": "Contrato normalizado para os 94 campos canônicos da aba 01_Formulario. As abas 02–08 são visões derivadas e 09_Indice_IDs é o mapa reverso.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "2.0",
+      "description": "Versão lógica do formulário expandido."
+    },
+    "fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Valores dos campos, indexados pelos IDs canônicos e estáveis da planilha.",
+      "properties": {
+        "1.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Problema central",
+          "description": "Descreva em 1 frase o problema que o produto resolve.",
+          "x-field-id": "1.1",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B8",
+            "answer_cell": "E8",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Equipes técnicas perdem contexto entre sessões de IA e retrabalham decisões já tomadas."
+          ]
+        },
+        "1.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Público-alvo / ICP",
+          "description": "Quem é o cliente ideal — perfil, tamanho, contexto de uso.",
+          "x-field-id": "1.2",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B9",
+            "answer_cell": "E9",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Founders técnicos solo ou squads pequenos construindo produtos com IA integrada."
+          ]
+        },
+        "1.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Proposta de valor",
+          "description": "O que torna esse produto a escolha óbvia frente a alternativas.",
+          "x-field-id": "1.3",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B10",
+            "answer_cell": "E10",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Único agente que mantém memória estruturada entre sessões sem configuração manual."
+          ]
+        },
+        "1.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Canais de aquisição",
+          "description": "Como novos usuários vão descobrir o produto (orgânico, paid, parcerias, comunidade).",
+          "x-field-id": "1.4",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B11",
+            "answer_cell": "E11",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Conteúdo técnico + comunidade de early adopters + parcerias com ferramentas complementares."
+          ]
+        },
+        "1.5": {
+          "$ref": "#/$defs/answer",
+          "title": "Métrica North Star",
+          "description": "A métrica única que melhor representa sucesso do produto.",
+          "x-field-id": "1.5",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B12",
+            "answer_cell": "E12",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Número de sessões semanais com reuso de contexto salvo."
+          ]
+        },
+        "1.6": {
+          "$ref": "#/$defs/answer",
+          "title": "Métricas guardrail",
+          "description": "Métricas que não podem degradar enquanto a North Star sobe.",
+          "x-field-id": "1.6",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B13",
+            "answer_cell": "E13",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Latência de resposta, taxa de erro em produção."
+          ]
+        },
+        "1.7": {
+          "$ref": "#/$defs/answer",
+          "title": "CAC (custo de aquisição)",
+          "description": "Custo estimado para adquirir um cliente pagante.",
+          "x-field-id": "1.7",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B14",
+            "answer_cell": "E14",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: A definir após primeiro ciclo de aquisição paga."
+          ]
+        },
+        "1.8": {
+          "$ref": "#/$defs/answer",
+          "title": "LTV (valor do tempo de vida)",
+          "description": "Valor estimado que um cliente gera ao longo do relacionamento.",
+          "x-field-id": "1.8",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B15",
+            "answer_cell": "E15",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: A definir com base em churn projetado."
+          ]
+        },
+        "1.9": {
+          "$ref": "#/$defs/answer",
+          "title": "Margem por unidade/usuário",
+          "description": "Custo variável (infra, API/tokens) por usuário ativo vs. receita.",
+          "x-field-id": "1.9",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B16",
+            "answer_cell": "E16",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Custo de API de IA por usuário/mês vs. preço do plano."
+          ]
+        },
+        "1.10": {
+          "$ref": "#/$defs/answer",
+          "title": "Ponto de equilíbrio (breakeven)",
+          "description": "Quantos clientes/receita necessários para cobrir custos fixos.",
+          "x-field-id": "1.10",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B17",
+            "answer_cell": "E17",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: N clientes no plano X cobrem a infraestrutura base mensal."
+          ]
+        },
+        "1.11": {
+          "$ref": "#/$defs/answer",
+          "title": "Teto de gasto de infraestrutura",
+          "description": "Limite mensal aprovado por serviço (hosting, banco, API de IA).",
+          "x-field-id": "1.11",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B18",
+            "answer_cell": "E18",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Vercel $X, Supabase $X, Anthropic API $X — tetos configurados no console de cada provedor."
+          ]
+        },
+        "1.12": {
+          "$ref": "#/$defs/answer",
+          "title": "Gatilhos de upgrade de infra",
+          "description": "Condição objetiva que dispara upgrade de plano/tier.",
+          "x-field-id": "1.12",
+          "x-domain": {
+            "id": 1,
+            "name": "NEGÓCIO & GTM"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B19",
+            "answer_cell": "E19",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Uso de API acima de 80% do teto por 3 dias consecutivos."
+          ]
+        },
+        "2.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Nome do produto/feature",
+          "description": "Nome de referência usado em toda a documentação.",
+          "x-field-id": "2.1",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B23",
+            "answer_cell": "E23",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: EXECUTA Journal"
+          ]
+        },
+        "2.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Contexto do PRD",
+          "description": "Situação atual e por que este produto/feature é necessário agora.",
+          "x-field-id": "2.2",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B24",
+            "answer_cell": "E24",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Publicação editorial hoje exige edição manual de código; produto elimina essa fricção."
+          ]
+        },
+        "2.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Objetivos (goals)",
+          "description": "O que o produto DEVE alcançar, de forma verificável.",
+          "x-field-id": "2.3",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B25",
+            "answer_cell": "E25",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Permitir publicar um artigo do celular sem tocar em código."
+          ]
+        },
+        "2.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Não-objetivos (non-goals)",
+          "description": "O que está explicitamente fora de escopo, para evitar scope creep.",
+          "x-field-id": "2.4",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B26",
+            "answer_cell": "E26",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Não inclui edição colaborativa multi-usuário nesta fase."
+          ]
+        },
+        "2.5": {
+          "$ref": "#/$defs/answer",
+          "title": "Requisitos funcionais (FRD)",
+          "description": "Lista testável do que o sistema deve fazer.",
+          "x-field-id": "2.5",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B27",
+            "answer_cell": "E27",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Sistema deve gerar PR automaticamente a partir de um briefing preenchido."
+          ]
+        },
+        "2.6": {
+          "$ref": "#/$defs/answer",
+          "title": "Critérios de aceite",
+          "description": "Como se prova, de forma objetiva, que um requisito foi cumprido.",
+          "x-field-id": "2.6",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B28",
+            "answer_cell": "E28",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Artigo real publicado ponta a ponta sem edição manual de TypeScript."
+          ]
+        },
+        "2.7": {
+          "$ref": "#/$defs/answer",
+          "title": "Persona principal",
+          "description": "Quem usa o produto no dia a dia — nome fictício e papel.",
+          "x-field-id": "2.7",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B29",
+            "answer_cell": "E29",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: 'Marina', editora solo que aprova publicações pelo celular."
+          ]
+        },
+        "2.8": {
+          "$ref": "#/$defs/answer",
+          "title": "Jornada — Descoberta",
+          "description": "Como o usuário chega até o produto pela primeira vez.",
+          "x-field-id": "2.8",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B30",
+            "answer_cell": "E30",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Recebe link de preview gerado automaticamente pelo pipeline."
+          ]
+        },
+        "2.9": {
+          "$ref": "#/$defs/answer",
+          "title": "Jornada — Ativação",
+          "description": "O primeiro momento em que o usuário obtém valor real.",
+          "x-field-id": "2.9",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B31",
+            "answer_cell": "E31",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Primeira publicação aprovada e no ar via QR code físico."
+          ]
+        },
+        "2.10": {
+          "$ref": "#/$defs/answer",
+          "title": "Jornada — Uso recorrente",
+          "description": "O que traz o usuário de volta, sessão após sessão.",
+          "x-field-id": "2.10",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B32",
+            "answer_cell": "E32",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Fluxo semanal de briefing → preview → aprovação."
+          ]
+        },
+        "2.11": {
+          "$ref": "#/$defs/answer",
+          "title": "Momento 'aha'",
+          "description": "O instante exato em que o valor fica óbvio para o usuário.",
+          "x-field-id": "2.11",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B33",
+            "answer_cell": "E33",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Ver o artigo publicado automaticamente após aprovar pelo celular."
+          ]
+        },
+        "2.12": {
+          "$ref": "#/$defs/answer",
+          "title": "User story de referência",
+          "description": "Formato: Como [persona], quero [ação] para que [benefício].",
+          "x-field-id": "2.12",
+          "x-domain": {
+            "id": 2,
+            "name": "PRODUTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B34",
+            "answer_cell": "E34",
+            "destination_sheet": "02_Visao_Geral"
+          },
+          "examples": [
+            "Ex: Como editora solo, quero aprovar publicações pelo celular para não depender do computador."
+          ]
+        },
+        "3.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Stack — Frontend",
+          "description": "Framework, biblioteca de estilo, ferramentas principais.",
+          "x-field-id": "3.1",
+          "x-domain": {
+            "id": 3,
+            "name": "ARQUITETURA & FULL STACK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B38",
+            "answer_cell": "E38",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Next.js + Tailwind + design tokens DESK-OS."
+          ]
+        },
+        "3.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Stack — Backend",
+          "description": "Runtime, linguagem, framework de servidor.",
+          "x-field-id": "3.2",
+          "x-domain": {
+            "id": 3,
+            "name": "ARQUITETURA & FULL STACK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B39",
+            "answer_cell": "E39",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Node.js + TypeScript, funções serverless na Vercel."
+          ]
+        },
+        "3.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Banco de dados",
+          "description": "Sistema, provedor, e por quê essa escolha.",
+          "x-field-id": "3.3",
+          "x-domain": {
+            "id": 3,
+            "name": "ARQUITETURA & FULL STACK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B40",
+            "answer_cell": "E40",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Postgres via Supabase (dados de produto) + Neon (dados serverless)."
+          ]
+        },
+        "3.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Infraestrutura / hosting",
+          "description": "Onde a aplicação roda e é servida.",
+          "x-field-id": "3.4",
+          "x-domain": {
+            "id": 3,
+            "name": "ARQUITETURA & FULL STACK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B41",
+            "answer_cell": "E41",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Vercel (apps), Supabase (auth+db), GitHub (código)."
+          ]
+        },
+        "3.5": {
+          "$ref": "#/$defs/answer",
+          "title": "Autenticação",
+          "description": "Método de login e provedor.",
+          "x-field-id": "3.5",
+          "x-domain": {
+            "id": 3,
+            "name": "ARQUITETURA & FULL STACK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B42",
+            "answer_cell": "E42",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Supabase Auth com email/senha + OAuth Google."
+          ]
+        },
+        "3.6": {
+          "$ref": "#/$defs/answer",
+          "title": "Estrutura de repositório",
+          "description": "Organização de pastas (monorepo, multi-repo, apps/packages).",
+          "x-field-id": "3.6",
+          "x-domain": {
+            "id": 3,
+            "name": "ARQUITETURA & FULL STACK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B43",
+            "answer_cell": "E43",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Monorepo com apps/ (web-client, orchestrator) e packages/ (core, configs)."
+          ]
+        },
+        "3.7": {
+          "$ref": "#/$defs/answer",
+          "title": "Mapa de rotas principais",
+          "description": "Rotas-chave da aplicação e o que cada uma faz.",
+          "x-field-id": "3.7",
+          "x-domain": {
+            "id": 3,
+            "name": "ARQUITETURA & FULL STACK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B44",
+            "answer_cell": "E44",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: /app/journal — editor; /health — status; /api/health — status detalhado."
+          ]
+        },
+        "3.8": {
+          "$ref": "#/$defs/answer",
+          "title": "Decisão de arquitetura #1 (ADR)",
+          "description": "Uma decisão técnica relevante e a alternativa descartada.",
+          "x-field-id": "3.8",
+          "x-domain": {
+            "id": 3,
+            "name": "ARQUITETURA & FULL STACK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B45",
+            "answer_cell": "E45",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Monorepo único em vez de múltiplos repositórios — decidido para reduzir divergência de versão."
+          ]
+        },
+        "3.9": {
+          "$ref": "#/$defs/answer",
+          "title": "Decisão de arquitetura #2 (ADR)",
+          "description": "Segunda decisão relevante, se houver.",
+          "x-field-id": "3.9",
+          "x-domain": {
+            "id": 3,
+            "name": "ARQUITETURA & FULL STACK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B46",
+            "answer_cell": "E46",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Origem de produção lida de variável de ambiente, nunca hardcoded."
+          ]
+        },
+        "3.10": {
+          "$ref": "#/$defs/answer",
+          "title": "Trade-offs aceitos",
+          "description": "O que foi conscientemente sacrificado por outra vantagem.",
+          "x-field-id": "3.10",
+          "x-domain": {
+            "id": 3,
+            "name": "ARQUITETURA & FULL STACK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B47",
+            "answer_cell": "E47",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Menor flexibilidade de deploy independente em troca de consistência de versão."
+          ]
+        },
+        "4.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Modelo de dados / schema",
+          "description": "Entidades principais e como se relacionam.",
+          "x-field-id": "4.1",
+          "x-domain": {
+            "id": 4,
+            "name": "IMPLEMENTAÇÃO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B51",
+            "answer_cell": "E51",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: users, posts, previews, publications — relacionados por post_id."
+          ]
+        },
+        "4.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Endpoints de API principais",
+          "description": "Lista dos endpoints mais importantes, método e função.",
+          "x-field-id": "4.2",
+          "x-domain": {
+            "id": 4,
+            "name": "IMPLEMENTAÇÃO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B52",
+            "answer_cell": "E52",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: POST /api/publish — dispara publicação; GET /health — status do sistema."
+          ]
+        },
+        "4.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Agentes/Tools MCP integrados",
+          "description": "Nome de cada agente/tool, servidor MCP e escopo de permissão.",
+          "x-field-id": "4.3",
+          "x-domain": {
+            "id": 4,
+            "name": "IMPLEMENTAÇÃO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B53",
+            "answer_cell": "E53",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: 11 tools EXECUTA + 10 tools Vault, servidor executar-ai canônico."
+          ]
+        },
+        "4.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Dependências núcleo (obrigatórias)",
+          "description": "Pacotes/serviços sem os quais o build falha.",
+          "x-field-id": "4.4",
+          "x-domain": {
+            "id": 4,
+            "name": "IMPLEMENTAÇÃO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B54",
+            "answer_cell": "E54",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: 6 variáveis de ambiente núcleo exigidas no build."
+          ]
+        },
+        "4.5": {
+          "$ref": "#/$defs/answer",
+          "title": "Dependências condicionais",
+          "description": "Pacotes/serviços ativados apenas sob feature flag.",
+          "x-field-id": "4.5",
+          "x-domain": {
+            "id": 4,
+            "name": "IMPLEMENTAÇÃO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B55",
+            "answer_cell": "E55",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Tokens Editorial E2 exigidos apenas quando EDITORIAL_E2_ENABLED=true."
+          ]
+        },
+        "4.6": {
+          "$ref": "#/$defs/answer",
+          "title": "Política de atualização de dependências",
+          "description": "Como e quando dependências são atualizadas (ex: Dependabot).",
+          "x-field-id": "4.6",
+          "x-domain": {
+            "id": 4,
+            "name": "IMPLEMENTAÇÃO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B56",
+            "answer_cell": "E56",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: PRs de risco baixo mesclados imediatamente; risco alto isolado, um de cada vez, com suíte de testes rodando."
+          ]
+        },
+        "4.7": {
+          "$ref": "#/$defs/answer",
+          "title": "Componente frontend principal",
+          "description": "A tela/fluxo mais crítico do produto.",
+          "x-field-id": "4.7",
+          "x-domain": {
+            "id": 4,
+            "name": "IMPLEMENTAÇÃO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B57",
+            "answer_cell": "E57",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: Editor de Journal em /app/journal — criar, publicar, despublicar posts."
+          ]
+        },
+        "4.8": {
+          "$ref": "#/$defs/answer",
+          "title": "Testes automatizados",
+          "description": "O que é coberto por CI (lint, typecheck, test, build).",
+          "x-field-id": "4.8",
+          "x-domain": {
+            "id": 4,
+            "name": "IMPLEMENTAÇÃO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B58",
+            "answer_cell": "E58",
+            "destination_sheet": "03_Arquitetura_Tecnica"
+          },
+          "examples": [
+            "Ex: 204 testes (api) + 14 testes (web), rodando em todo PR."
+          ]
+        },
+        "5.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Checklist pré-deploy",
+          "description": "O que precisa estar verde antes de subir para produção.",
+          "x-field-id": "5.1",
+          "x-domain": {
+            "id": 5,
+            "name": "OPERAÇÃO (DEPLOY & ROLLBACK)"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B62",
+            "answer_cell": "E62",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Testes passando em CI, migrations testadas, segredos configurados."
+          ]
+        },
+        "5.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Checks de saúde pós-deploy",
+          "description": "Endpoints/sinais verificados logo após o deploy.",
+          "x-field-id": "5.2",
+          "x-domain": {
+            "id": 5,
+            "name": "OPERAÇÃO (DEPLOY & ROLLBACK)"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B63",
+            "answer_cell": "E63",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: GET /health retorna status ok; rotas principais respondem 200."
+          ]
+        },
+        "5.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Gatilho de rollback — taxa de erro",
+          "description": "Limiar objetivo de erro que dispara rollback.",
+          "x-field-id": "5.3",
+          "x-domain": {
+            "id": 5,
+            "name": "OPERAÇÃO (DEPLOY & ROLLBACK)"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B64",
+            "answer_cell": "E64",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Taxa de erro acima de 5% em 15 minutos."
+          ]
+        },
+        "5.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Gatilho de rollback — latência",
+          "description": "Limiar objetivo de latência que dispara rollback.",
+          "x-field-id": "5.4",
+          "x-domain": {
+            "id": 5,
+            "name": "OPERAÇÃO (DEPLOY & ROLLBACK)"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B65",
+            "answer_cell": "E65",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Latência P50 acima de 800ms sustentada."
+          ]
+        },
+        "5.5": {
+          "$ref": "#/$defs/answer",
+          "title": "Gatilho de rollback — fluxo crítico",
+          "description": "Qual fluxo, se falhar, exige rollback imediato.",
+          "x-field-id": "5.5",
+          "x-domain": {
+            "id": 5,
+            "name": "OPERAÇÃO (DEPLOY & ROLLBACK)"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B66",
+            "answer_cell": "E66",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Fluxo de publicação (briefing → PR → preview → produção)."
+          ]
+        },
+        "5.6": {
+          "$ref": "#/$defs/answer",
+          "title": "Procedimento de rollback",
+          "description": "Passo a passo de como reverter um deploy problemático.",
+          "x-field-id": "5.6",
+          "x-domain": {
+            "id": 5,
+            "name": "OPERAÇÃO (DEPLOY & ROLLBACK)"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B67",
+            "answer_cell": "E67",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Reverter para o último deploy estável via painel Vercel + confirmar /health."
+          ]
+        },
+        "6.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Estratégia de branch",
+          "description": "Trabalho direto em main vs. PR obrigatório — e quando cada um se aplica.",
+          "x-field-id": "6.1",
+          "x-domain": {
+            "id": 6,
+            "name": "GOVERNANÇA & SEGURANÇA"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B71",
+            "answer_cell": "E71",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: PR obrigatório para mudanças de produto; correções de config podem ir direto com aprovação."
+          ]
+        },
+        "6.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Gate humano obrigatório",
+          "description": "Em quais mudanças um humano precisa aprovar antes do merge/deploy.",
+          "x-field-id": "6.2",
+          "x-domain": {
+            "id": 6,
+            "name": "GOVERNANÇA & SEGURANÇA"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B72",
+            "answer_cell": "E72",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Toda mudança de schema de banco exige aprovação humana explícita."
+          ]
+        },
+        "6.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Armazenamento de segredos",
+          "description": "Onde credenciais vivem — nunca em código versionado.",
+          "x-field-id": "6.3",
+          "x-domain": {
+            "id": 6,
+            "name": "GOVERNANÇA & SEGURANÇA"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B73",
+            "answer_cell": "E73",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Variáveis de ambiente na Vercel, nunca em .env commitado."
+          ]
+        },
+        "6.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Rotação de credenciais",
+          "description": "Frequência e gatilho para trocar chaves/segredos.",
+          "x-field-id": "6.4",
+          "x-domain": {
+            "id": 6,
+            "name": "GOVERNANÇA & SEGURANÇA"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B74",
+            "answer_cell": "E74",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Rotação imediata se uma chave for exposta; revisão trimestral por padrão."
+          ]
+        },
+        "6.5": {
+          "$ref": "#/$defs/answer",
+          "title": "Riscos de segurança conhecidos",
+          "description": "Vulnerabilidades ou fallbacks inseguros já identificados.",
+          "x-field-id": "6.5",
+          "x-domain": {
+            "id": 6,
+            "name": "GOVERNANÇA & SEGURANÇA"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B75",
+            "answer_cell": "E75",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Fallback público/OWNER identificado em auditoria — remediação em andamento."
+          ]
+        },
+        "6.6": {
+          "$ref": "#/$defs/answer",
+          "title": "Escopo de autonomia do agente de AI",
+          "description": "O que um agente (Claude Code etc.) pode fazer sem aprovação humana.",
+          "x-field-id": "6.6",
+          "x-domain": {
+            "id": 6,
+            "name": "GOVERNANÇA & SEGURANÇA"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B76",
+            "answer_cell": "E76",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Pode abrir PR draft; não pode mesclar em main sem revisão humana."
+          ]
+        },
+        "7.1": {
+          "$ref": "#/$defs/answer",
+          "title": "README existe?",
+          "description": "Status do README principal do repositório.",
+          "x-field-id": "7.1",
+          "x-domain": {
+            "id": 7,
+            "name": "DOCUMENTAÇÃO FUNDACIONAL"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B80",
+            "answer_cell": "E80",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Pendente — precisa cobrir problema, público, arquitetura, resultados em até 3 min de leitura."
+          ]
+        },
+        "7.2": {
+          "$ref": "#/$defs/answer",
+          "title": "ADRs documentados",
+          "description": "Quantas decisões de arquitetura estão formalizadas como ADR.",
+          "x-field-id": "7.2",
+          "x-domain": {
+            "id": 7,
+            "name": "DOCUMENTAÇÃO FUNDACIONAL"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B81",
+            "answer_cell": "E81",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: 0 formalizados; 2 decisões implícitas identificadas, pendentes de registro."
+          ]
+        },
+        "7.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Documentação de API",
+          "description": "Status da referência de endpoints.",
+          "x-field-id": "7.3",
+          "x-domain": {
+            "id": 7,
+            "name": "DOCUMENTAÇÃO FUNDACIONAL"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B82",
+            "answer_cell": "E82",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Pendente — endpoints existem no código mas sem doc formal."
+          ]
+        },
+        "7.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Guia de onboarding",
+          "description": "Existe um guia para alguém novo configurar o ambiente?",
+          "x-field-id": "7.4",
+          "x-domain": {
+            "id": 7,
+            "name": "DOCUMENTAÇÃO FUNDACIONAL"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B83",
+            "answer_cell": "E83",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: Não existe ainda; setup depende de conhecimento tácito."
+          ]
+        },
+        "7.5": {
+          "$ref": "#/$defs/answer",
+          "title": "Catálogo de skills/ferramentas",
+          "description": "Se o projeto usa um conjunto de skills/agentes, estão documentados?",
+          "x-field-id": "7.5",
+          "x-domain": {
+            "id": 7,
+            "name": "DOCUMENTAÇÃO FUNDACIONAL"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B84",
+            "answer_cell": "E84",
+            "destination_sheet": "04_Operacao_Seguranca"
+          },
+          "examples": [
+            "Ex: 13 skills usadas no projeto, catálogo navegável pendente de publicação."
+          ]
+        },
+        "8.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Problema/oportunidade que justifica o projeto",
+          "description": "Descreva em 1 frase por que este projeto deve existir, conforme o Project Charter.",
+          "x-field-id": "8.1",
+          "x-domain": {
+            "id": 8,
+            "name": "GESTÃO DE PROJETOS & PMBOK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B88",
+            "answer_cell": "E88",
+            "destination_sheet": "05_Gestao_Projetos"
+          },
+          "examples": [
+            "Ex: Consolidar toda a gestão do projeto em uma única fonte de verdade, eliminando divergência entre documentos."
+          ]
+        },
+        "8.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Sponsor / Patrocinador",
+          "description": "Nome de quem tem autoridade para aprovar o projeto formalmente.",
+          "x-field-id": "8.2",
+          "x-domain": {
+            "id": 8,
+            "name": "GESTÃO DE PROJETOS & PMBOK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B89",
+            "answer_cell": "E89",
+            "destination_sheet": "05_Gestao_Projetos"
+          },
+          "examples": [
+            "Ex: A definir — nenhum sponsor formal designado ainda."
+          ]
+        },
+        "8.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Critério de sucesso principal",
+          "description": "Indicador objetivo que mostrará que o projeto deu certo, com meta e prazo.",
+          "x-field-id": "8.3",
+          "x-domain": {
+            "id": 8,
+            "name": "GESTÃO DE PROJETOS & PMBOK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B90",
+            "answer_cell": "E90",
+            "destination_sheet": "05_Gestao_Projetos"
+          },
+          "examples": [
+            "Ex: 100% dos domínios do formulário preenchidos até 2026-09-30."
+          ]
+        },
+        "8.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Decisão Go/No-Go",
+          "description": "Status atual da autorização formal do projeto: Proposto, Em avaliação, Autorizado, Suspenso ou Cancelado.",
+          "x-field-id": "8.4",
+          "x-domain": {
+            "id": 8,
+            "name": "GESTÃO DE PROJETOS & PMBOK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B91",
+            "answer_cell": "E91",
+            "destination_sheet": "05_Gestao_Projetos"
+          },
+          "examples": [
+            "Ex: Em avaliação — aguardando confirmação do sponsor."
+          ]
+        },
+        "8.5": {
+          "$ref": "#/$defs/answer",
+          "title": "Abordagem do projeto",
+          "description": "Preditiva, Adaptativa/Ágil ou Híbrida, e por quê.",
+          "x-field-id": "8.5",
+          "x-domain": {
+            "id": 8,
+            "name": "GESTÃO DE PROJETOS & PMBOK"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B92",
+            "answer_cell": "E92",
+            "destination_sheet": "05_Gestao_Projetos"
+          },
+          "examples": [
+            "Ex: Híbrida — planejamento macro fixo, execução semanal iterativa."
+          ]
+        },
+        "9.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Objetivo estratégico (12+ meses)",
+          "description": "Descreva a direção de longo prazo do projeto.",
+          "x-field-id": "9.1",
+          "x-domain": {
+            "id": 9,
+            "name": "PLANEJAMENTO ESTRATÉGICO, TÁTICO E OPERACIONAL"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B96",
+            "answer_cell": "E96",
+            "destination_sheet": "05_Gestao_Projetos"
+          },
+          "examples": [
+            "Ex: Tornar-se a fonte única de operação do ecossistema Executar."
+          ]
+        },
+        "9.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Objetivo tático (trimestre/ciclo)",
+          "description": "O que precisa ser verdade daqui a 3 meses para o estratégico avançar.",
+          "x-field-id": "9.2",
+          "x-domain": {
+            "id": 9,
+            "name": "PLANEJAMENTO ESTRATÉGICO, TÁTICO E OPERACIONAL"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B97",
+            "answer_cell": "E97",
+            "destination_sheet": "05_Gestao_Projetos"
+          },
+          "examples": [
+            "Ex: Central de Controle com todos os domínios preenchidos e em uso ativo."
+          ]
+        },
+        "9.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Prioridade operacional da semana",
+          "description": "O que precisa avançar nos próximos 7 dias.",
+          "x-field-id": "9.3",
+          "x-domain": {
+            "id": 9,
+            "name": "PLANEJAMENTO ESTRATÉGICO, TÁTICO E OPERACIONAL"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B98",
+            "answer_cell": "E98",
+            "destination_sheet": "05_Gestao_Projetos"
+          },
+          "examples": [
+            "Ex: Confirmar owner e resolver as sobreposições de domínio pendentes."
+          ]
+        },
+        "9.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Dependência entre horizontes",
+          "description": "O que no nível tático bloqueia ou depende do estratégico.",
+          "x-field-id": "9.4",
+          "x-domain": {
+            "id": 9,
+            "name": "PLANEJAMENTO ESTRATÉGICO, TÁTICO E OPERACIONAL"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B99",
+            "answer_cell": "E99",
+            "destination_sheet": "05_Gestao_Projetos"
+          },
+          "examples": [
+            "Ex: O objetivo tático de preenchimento completo depende de um owner estratégico confirmado."
+          ]
+        },
+        "10.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Marco de médio prazo #1",
+          "description": "Próximo grande marco do projeto e data-alvo.",
+          "x-field-id": "10.1",
+          "x-domain": {
+            "id": 10,
+            "name": "ROADMAP, CRONOGRAMA, CICLOS E BACKLOG"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B103",
+            "answer_cell": "E103",
+            "destination_sheet": "06_Roadmap_Editorial"
+          },
+          "examples": [
+            "Ex: Central de Controle validada e em uso — 2026-09-15."
+          ]
+        },
+        "10.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Ciclo semanal atual",
+          "description": "Em qual fase do ciclo o projeto está agora: Editorial, Desenvolvimento ou Governança.",
+          "x-field-id": "10.2",
+          "x-domain": {
+            "id": 10,
+            "name": "ROADMAP, CRONOGRAMA, CICLOS E BACKLOG"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B104",
+            "answer_cell": "E104",
+            "destination_sheet": "06_Roadmap_Editorial"
+          },
+          "examples": [
+            "Ex: Governança — revisão de domingo."
+          ]
+        },
+        "10.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Item de backlog crítico",
+          "description": "Tarefa pendente que bloqueia o próximo marco.",
+          "x-field-id": "10.3",
+          "x-domain": {
+            "id": 10,
+            "name": "ROADMAP, CRONOGRAMA, CICLOS E BACKLOG"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B105",
+            "answer_cell": "E105",
+            "destination_sheet": "06_Roadmap_Editorial"
+          },
+          "examples": [
+            "Ex: Sincronizar backlog do Linear com a aba de execução."
+          ]
+        },
+        "10.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Cadência de revisão",
+          "description": "Com que frequência o roadmap é revisado e por quem.",
+          "x-field-id": "10.4",
+          "x-domain": {
+            "id": 10,
+            "name": "ROADMAP, CRONOGRAMA, CICLOS E BACKLOG"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B106",
+            "answer_cell": "E106",
+            "destination_sheet": "06_Roadmap_Editorial"
+          },
+          "examples": [
+            "Ex: Toda segunda-feira, pelo owner do projeto."
+          ]
+        },
+        "11.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Linha editorial",
+          "description": "Tema ou pilar de conteúdo predominante do período.",
+          "x-field-id": "11.1",
+          "x-domain": {
+            "id": 11,
+            "name": "EDITORIAL, CAMPANHAS E CONTEÚDO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B110",
+            "answer_cell": "E110",
+            "destination_sheet": "06_Roadmap_Editorial"
+          },
+          "examples": [
+            "Ex: Bastidores da construção do sistema Executar."
+          ]
+        },
+        "11.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Calendário de publicação",
+          "description": "Frequência e canais de publicação de conteúdo.",
+          "x-field-id": "11.2",
+          "x-domain": {
+            "id": 11,
+            "name": "EDITORIAL, CAMPANHAS E CONTEÚDO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B111",
+            "answer_cell": "E111",
+            "destination_sheet": "06_Roadmap_Editorial"
+          },
+          "examples": [
+            "Ex: 2x por semana, LinkedIn e newsletter."
+          ]
+        },
+        "11.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Campanha ativa",
+          "description": "Nome e objetivo da campanha em andamento, se houver.",
+          "x-field-id": "11.3",
+          "x-domain": {
+            "id": 11,
+            "name": "EDITORIAL, CAMPANHAS E CONTEÚDO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B112",
+            "answer_cell": "E112",
+            "destination_sheet": "06_Roadmap_Editorial"
+          },
+          "examples": [
+            "Ex: Nenhuma campanha ativa no momento."
+          ]
+        },
+        "11.4": {
+          "$ref": "#/$defs/answer",
+          "title": "Trilha de conteúdo",
+          "description": "Sequência de peças que levam o público de um ponto a outro.",
+          "x-field-id": "11.4",
+          "x-domain": {
+            "id": 11,
+            "name": "EDITORIAL, CAMPANHAS E CONTEÚDO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B113",
+            "answer_cell": "E113",
+            "destination_sheet": "06_Roadmap_Editorial"
+          },
+          "examples": [
+            "Ex: Post de bastidor → thread técnica → case de uso."
+          ]
+        },
+        "12.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Stakeholder principal",
+          "description": "Nome/grupo, papel, nível de interesse e influência.",
+          "x-field-id": "12.1",
+          "x-domain": {
+            "id": 12,
+            "name": "STAKEHOLDERS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B117",
+            "answer_cell": "E117",
+            "destination_sheet": "07_Conhecimento_Stakeholders"
+          },
+          "examples": [
+            "Ex: Owner do projeto — interesse alto, influência alta."
+          ]
+        },
+        "12.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Forma de comunicação",
+          "description": "Como e com que frequência este stakeholder é atualizado.",
+          "x-field-id": "12.2",
+          "x-domain": {
+            "id": 12,
+            "name": "STAKEHOLDERS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B118",
+            "answer_cell": "E118",
+            "destination_sheet": "07_Conhecimento_Stakeholders"
+          },
+          "examples": [
+            "Ex: Resumo semanal aos domingos, no ciclo de governança."
+          ]
+        },
+        "12.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Expectativa não alinhada",
+          "description": "Ponto de expectativa que ainda precisa de alinhamento explícito.",
+          "x-field-id": "12.3",
+          "x-domain": {
+            "id": 12,
+            "name": "STAKEHOLDERS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B119",
+            "answer_cell": "E119",
+            "destination_sheet": "07_Conhecimento_Stakeholders"
+          },
+          "examples": [
+            "Ex: Nenhuma pendência identificada."
+          ]
+        },
+        "13.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Runbook crítico #1",
+          "description": "Nome do procedimento e quando ele é acionado.",
+          "x-field-id": "13.1",
+          "x-domain": {
+            "id": 13,
+            "name": "RUNBOOKS, SOPS E ROTINAS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B123",
+            "answer_cell": "E123",
+            "destination_sheet": "07_Conhecimento_Stakeholders"
+          },
+          "examples": [
+            "Ex: Fechamento de ciclo — rodado toda quarta e sábado."
+          ]
+        },
+        "13.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Responsável pela rotina",
+          "description": "Quem executa este runbook hoje.",
+          "x-field-id": "13.2",
+          "x-domain": {
+            "id": 13,
+            "name": "RUNBOOKS, SOPS E ROTINAS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B124",
+            "answer_cell": "E124",
+            "destination_sheet": "07_Conhecimento_Stakeholders"
+          },
+          "examples": [
+            "Ex: Owner do projeto, manualmente."
+          ]
+        },
+        "13.3": {
+          "$ref": "#/$defs/answer",
+          "title": "SOP documentado?",
+          "description": "Existe um documento formal deste procedimento? Onde vive.",
+          "x-field-id": "13.3",
+          "x-domain": {
+            "id": 13,
+            "name": "RUNBOOKS, SOPS E ROTINAS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B125",
+            "answer_cell": "E125",
+            "destination_sheet": "07_Conhecimento_Stakeholders"
+          },
+          "examples": [
+            "Ex: Não determinado."
+          ]
+        },
+        "14.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Fonte de evidência principal",
+          "description": "Onde ficam guardadas as provas objetivas de estado: documentos, commits, tickets.",
+          "x-field-id": "14.1",
+          "x-domain": {
+            "id": 14,
+            "name": "PESQUISA, DADOS E CONHECIMENTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B129",
+            "answer_cell": "E129",
+            "destination_sheet": "07_Conhecimento_Stakeholders"
+          },
+          "examples": [
+            "Ex: Google Drive, pasta Prompt-Enginner, e o próprio XLSX Central."
+          ]
+        },
+        "14.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Pesquisa/dado pendente",
+          "description": "Informação que ainda precisa ser levantada antes de uma decisão.",
+          "x-field-id": "14.2",
+          "x-domain": {
+            "id": 14,
+            "name": "PESQUISA, DADOS E CONHECIMENTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B130",
+            "answer_cell": "E130",
+            "destination_sheet": "07_Conhecimento_Stakeholders"
+          },
+          "examples": [
+            "Ex: Confirmar se existe uma planilha anterior com domínios já preenchidos."
+          ]
+        },
+        "14.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Papel de agentes de IA no projeto",
+          "description": "Que tarefas um agente de IA está autorizado a executar sozinho vs. só propor.",
+          "x-field-id": "14.3",
+          "x-domain": {
+            "id": 14,
+            "name": "PESQUISA, DADOS E CONHECIMENTO"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B131",
+            "answer_cell": "E131",
+            "destination_sheet": "07_Conhecimento_Stakeholders"
+          },
+          "examples": [
+            "Ex: Agente propõe preenchimento; humano aprova antes de mudar status."
+          ]
+        },
+        "15.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Skill/plugin principal em uso",
+          "description": "Nome da skill/plugin e para que ela serve neste projeto.",
+          "x-field-id": "15.1",
+          "x-domain": {
+            "id": 15,
+            "name": "SKILLS, PLUGINS E FERRAMENTAS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B135",
+            "answer_cell": "E135",
+            "destination_sheet": "08_Skills_Plataformas"
+          },
+          "examples": [
+            "Ex: executar-xls — gera este próprio workbook."
+          ]
+        },
+        "15.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Ferramenta de automação conectada",
+          "description": "Sistema externo conectado (Linear, Drive, etc.) e o que ele resolve.",
+          "x-field-id": "15.2",
+          "x-domain": {
+            "id": 15,
+            "name": "SKILLS, PLUGINS E FERRAMENTAS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B136",
+            "answer_cell": "E136",
+            "destination_sheet": "08_Skills_Plataformas"
+          },
+          "examples": [
+            "Ex: Google Drive — repositório de documentos e evidências."
+          ]
+        },
+        "15.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Lacuna de ferramenta",
+          "description": "Automação que falta e seria útil.",
+          "x-field-id": "15.3",
+          "x-domain": {
+            "id": 15,
+            "name": "SKILLS, PLUGINS E FERRAMENTAS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B137",
+            "answer_cell": "E137",
+            "destination_sheet": "08_Skills_Plataformas"
+          },
+          "examples": [
+            "Ex: Não determinado."
+          ]
+        },
+        "16.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Plataforma principal",
+          "description": "Nome da plataforma e para que ela é usada no projeto.",
+          "x-field-id": "16.1",
+          "x-domain": {
+            "id": 16,
+            "name": "PLATAFORMAS, CONTAS E IDENTIFICADORES"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B141",
+            "answer_cell": "E141",
+            "destination_sheet": "08_Skills_Plataformas"
+          },
+          "examples": [
+            "Ex: claude.ai — projeto Control Center."
+          ]
+        },
+        "16.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Link/atalho crítico",
+          "description": "URL ou identificador que precisa estar sempre à mão.",
+          "x-field-id": "16.2",
+          "x-domain": {
+            "id": 16,
+            "name": "PLATAFORMAS, CONTAS E IDENTIFICADORES"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B142",
+            "answer_cell": "E142",
+            "destination_sheet": "08_Skills_Plataformas"
+          },
+          "examples": [
+            "Ex: Não determinado."
+          ]
+        },
+        "16.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Responsável pela conta",
+          "description": "Quem tem acesso administrativo a esta plataforma.",
+          "x-field-id": "16.3",
+          "x-domain": {
+            "id": 16,
+            "name": "PLATAFORMAS, CONTAS E IDENTIFICADORES"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B143",
+            "answer_cell": "E143",
+            "destination_sheet": "08_Skills_Plataformas"
+          },
+          "examples": [
+            "Ex: Owner do projeto."
+          ]
+        },
+        "17.1": {
+          "$ref": "#/$defs/answer",
+          "title": "Prompt canônico principal",
+          "description": "Nome do prompt-fonte e onde ele vive.",
+          "x-field-id": "17.1",
+          "x-domain": {
+            "id": 17,
+            "name": "PROMPT ENGINEERING & COMANDOS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B147",
+            "answer_cell": "E147",
+            "destination_sheet": "08_Skills_Plataformas"
+          },
+          "examples": [
+            "Ex: 02 · Project Control Agent — Google Drive, Prompt-Enginner/02-PROMPTS."
+          ]
+        },
+        "17.2": {
+          "$ref": "#/$defs/answer",
+          "title": "Comando/gatilho operacional",
+          "description": "Palavra ou frase que aciona uma rotina específica do agente.",
+          "x-field-id": "17.2",
+          "x-domain": {
+            "id": 17,
+            "name": "PROMPT ENGINEERING & COMANDOS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B148",
+            "answer_cell": "E148",
+            "destination_sheet": "08_Skills_Plataformas"
+          },
+          "examples": [
+            "Ex: Não determinado."
+          ]
+        },
+        "17.3": {
+          "$ref": "#/$defs/answer",
+          "title": "Regra anti-alucinação específica",
+          "description": "Restrição adicional que os agentes deste projeto devem sempre respeitar.",
+          "x-field-id": "17.3",
+          "x-domain": {
+            "id": 17,
+            "name": "PROMPT ENGINEERING & COMANDOS"
+          },
+          "x-excel": {
+            "sheet": "01_Formulario",
+            "id_cell": "B149",
+            "answer_cell": "E149",
+            "destination_sheet": "08_Skills_Plataformas"
+          },
+          "examples": [
+            "Ex: Nunca promover Status sem evidência registrada."
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "fields"
+  ],
+  "$defs": {
+    "answer": {
+      "description": "Valor de uma célula Resposta da planilha. Como as células usam formato General e podem permanecer vazias, o contrato aceita escalar ou null.",
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "null"
+      ]
+    }
+  },
+  "x-workbook": {
+    "source_file": "EXECUTAR_projetosaasentrypoint_EXPANDIDO.xlsx",
+    "source_sheet": "01_Formulario",
+    "id_column": "B",
+    "label_column": "C",
+    "instruction_column": "D",
+    "answer_column": "E",
+    "example_column": "F",
+    "field_count": 94,
+    "domain_count": 17,
+    "topology": [
+      {
+        "sheet": "00_Leia-me",
+        "role": "documentation",
+        "editable": false
+      },
+      {
+        "sheet": "01_Formulario",
+        "role": "source_of_truth",
+        "editable": true
+      },
+      {
+        "sheet": "02_Visao_Geral",
+        "role": "derived_view",
+        "editable": false,
+        "domains": [
+          1,
+          2
+        ]
+      },
+      {
+        "sheet": "03_Arquitetura_Tecnica",
+        "role": "derived_view",
+        "editable": false,
+        "domains": [
+          3,
+          4
+        ]
+      },
+      {
+        "sheet": "04_Operacao_Seguranca",
+        "role": "derived_view",
+        "editable": false,
+        "domains": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "sheet": "05_Gestao_Projetos",
+        "role": "derived_view",
+        "editable": false,
+        "domains": [
+          8,
+          9
+        ]
+      },
+      {
+        "sheet": "06_Roadmap_Editorial",
+        "role": "derived_view",
+        "editable": false,
+        "domains": [
+          10,
+          11
+        ]
+      },
+      {
+        "sheet": "07_Conhecimento_Stakeholders",
+        "role": "derived_view",
+        "editable": false,
+        "domains": [
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "sheet": "08_Skills_Plataformas",
+        "role": "derived_view",
+        "editable": false,
+        "domains": [
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "sheet": "09_Indice_IDs",
+        "role": "reverse_index",
+        "editable": false
+      }
+    ],
+    "domains": [
+      {
+        "id": 1,
+        "name": "NEGÓCIO & GTM",
+        "description": "Por que o produto existe, para quem, e como se sustenta financeiramente",
+        "source_row": 6
+      },
+      {
+        "id": 2,
+        "name": "PRODUTO",
+        "description": "PRD, requisitos funcionais e jornada do usuário — a mesma informação em três granularidades",
+        "source_row": 21
+      },
+      {
+        "id": 3,
+        "name": "ARQUITETURA & FULL STACK",
+        "description": "Como as peças se conectam — front, back, banco, infra, rotas",
+        "source_row": 36
+      },
+      {
+        "id": 4,
+        "name": "IMPLEMENTAÇÃO",
+        "description": "Backend, frontend, APIs, agentes integrados e dependências",
+        "source_row": 49
+      },
+      {
+        "id": 5,
+        "name": "OPERAÇÃO (DEPLOY & ROLLBACK)",
+        "description": "O que garante que o lançamento não quebra silenciosamente",
+        "source_row": 60
+      },
+      {
+        "id": 6,
+        "name": "GOVERNANÇA & SEGURANÇA",
+        "description": "Quem pode fazer o quê, onde segredos vivem, e como decisões de política são tomadas",
+        "source_row": 69
+      },
+      {
+        "id": 7,
+        "name": "DOCUMENTAÇÃO FUNDACIONAL",
+        "description": "O que permite que qualquer pessoa ou agente entre no projeto sem reconstruir contexto",
+        "source_row": 78
+      },
+      {
+        "id": 8,
+        "name": "GESTÃO DE PROJETOS & PMBOK",
+        "description": "Iniciação e governança do projeto — valor, sponsor e decisão Go/No-Go",
+        "source_row": 86
+      },
+      {
+        "id": 9,
+        "name": "PLANEJAMENTO ESTRATÉGICO, TÁTICO E OPERACIONAL",
+        "description": "Os três horizontes de decisão — onde queremos chegar, como, e o que fazer esta semana",
+        "source_row": 94
+      },
+      {
+        "id": 10,
+        "name": "ROADMAP, CRONOGRAMA, CICLOS E BACKLOG",
+        "description": "Marcos de médio prazo e o ritmo semanal de execução",
+        "source_row": 101
+      },
+      {
+        "id": 11,
+        "name": "EDITORIAL, CAMPANHAS E CONTEÚDO",
+        "description": "Conteúdo, calendário editorial, campanhas e trilhas de comunicação",
+        "source_row": 108
+      },
+      {
+        "id": 12,
+        "name": "STAKEHOLDERS",
+        "description": "Quem afeta ou é afetado pelo projeto, e como engajar cada um",
+        "source_row": 115
+      },
+      {
+        "id": 13,
+        "name": "RUNBOOKS, SOPS E ROTINAS",
+        "description": "Procedimentos padronizados e repetíveis do dia a dia operacional",
+        "source_row": 121
+      },
+      {
+        "id": 14,
+        "name": "PESQUISA, DADOS E CONHECIMENTO",
+        "description": "Base de conhecimento, evidências, pesquisa e o papel de agentes de IA no projeto",
+        "source_row": 127
+      },
+      {
+        "id": 15,
+        "name": "SKILLS, PLUGINS E FERRAMENTAS",
+        "description": "Inventário de skills, plugins e ferramentas usados para operar o projeto",
+        "source_row": 133
+      },
+      {
+        "id": 16,
+        "name": "PLATAFORMAS, CONTAS E IDENTIFICADORES",
+        "description": "Atalhos, links, contas, logins e identificadores usados no dia a dia",
+        "source_row": 139
+      },
+      {
+        "id": 17,
+        "name": "PROMPT ENGINEERING & COMANDOS",
+        "description": "Prompts canônicos e comandos operacionais que governam os agentes de IA deste projeto",
+        "source_row": 145
+      }
+    ]
+  }
+}
