@@ -1,0 +1,850 @@
+{
+  "skills": [
+    {
+      "plugin_id": "bio-research",
+      "name": "instrument-data-to-allotrope",
+      "path": "bio-research/skills/instrument-data-to-allotrope/SKILL.md",
+      "sha256": "6167bf1731e568b63110a8f27e987cfe386f44e64cd2d78d9080d5d7628a79c5"
+    },
+    {
+      "plugin_id": "bio-research",
+      "name": "nextflow-development",
+      "path": "bio-research/skills/nextflow-development/SKILL.md",
+      "sha256": "f30017df5d499427a701ec6cedfc5c9948ca3bd04ee1a2b6a585a29cd93ad0d7"
+    },
+    {
+      "plugin_id": "bio-research",
+      "name": "scientific-problem-selection",
+      "path": "bio-research/skills/scientific-problem-selection/SKILL.md",
+      "sha256": "9ec99e3e5b2f4cd7474ef2bb8a1b10ee1f97dbe688c7723c7ec0b18deb8ff0f4"
+    },
+    {
+      "plugin_id": "bio-research",
+      "name": "scvi-tools",
+      "path": "bio-research/skills/scvi-tools/SKILL.md",
+      "sha256": "03a69b32b77db86afe5f87b75db2ae4c92b03b6e9e16e2c5e66cde2d4ad9c5bc"
+    },
+    {
+      "plugin_id": "bio-research",
+      "name": "single-cell-rna-qc",
+      "path": "bio-research/skills/single-cell-rna-qc/SKILL.md",
+      "sha256": "49cb573916deec6fcf6cc2cb1b573469cbc8c34b84326597ce2db22d0202393f"
+    },
+    {
+      "plugin_id": "bio-research",
+      "name": "start",
+      "path": "bio-research/skills/start/SKILL.md",
+      "sha256": "6016fe5c28952feef14ac851134b35b56a1c86614d9163d21fb82205d7e7694b"
+    },
+    {
+      "plugin_id": "cowork-plugin-management",
+      "name": "cowork-plugin-customizer",
+      "path": "cowork-plugin-management/skills/cowork-plugin-customizer/SKILL.md",
+      "sha256": "d7a9455692f26479806b837aef09d4711b74f82b6e32ef304a5c33ae8feb441f"
+    },
+    {
+      "plugin_id": "cowork-plugin-management",
+      "name": "create-cowork-plugin",
+      "path": "cowork-plugin-management/skills/create-cowork-plugin/SKILL.md",
+      "sha256": "4769717426502a5517ae9d512095b49c223cccb0223e20268dfa6a44ef18ab94"
+    },
+    {
+      "plugin_id": "customer-support",
+      "name": "customer-escalation",
+      "path": "customer-support/skills/customer-escalation/SKILL.md",
+      "sha256": "90c33574a41371e8e116aaf40237141adcd6075ef8bcb9de993de2b543867b3e"
+    },
+    {
+      "plugin_id": "customer-support",
+      "name": "customer-research",
+      "path": "customer-support/skills/customer-research/SKILL.md",
+      "sha256": "9c504672d26dbb01ad4bb527a5352399760503aea0edf83bd3695e6bc346a128"
+    },
+    {
+      "plugin_id": "customer-support",
+      "name": "draft-response",
+      "path": "customer-support/skills/draft-response/SKILL.md",
+      "sha256": "1a201228b75a98fc3b5d45090cb7443d50df204b2ee748bfc8970790a64f0026"
+    },
+    {
+      "plugin_id": "customer-support",
+      "name": "kb-article",
+      "path": "customer-support/skills/kb-article/SKILL.md",
+      "sha256": "cfc300f5ecc5128910a8ff04514d565a45ca9178bf1dc2a40cc40e2ce4db9292"
+    },
+    {
+      "plugin_id": "customer-support",
+      "name": "ticket-triage",
+      "path": "customer-support/skills/ticket-triage/SKILL.md",
+      "sha256": "d0e5e95443e358ad2a74811b196071d10807ca95aa20351ab5760feeecee1294"
+    },
+    {
+      "plugin_id": "data",
+      "name": "analyze",
+      "path": "data/skills/analyze/SKILL.md",
+      "sha256": "4ee816363d944c7a959e43384576d979a414f37fff7071c0bfb8935aae10143e"
+    },
+    {
+      "plugin_id": "data",
+      "name": "build-dashboard",
+      "path": "data/skills/build-dashboard/SKILL.md",
+      "sha256": "6f23faa0b266820a23096f76df9d83e6b67597af4fc8c3306b4eba7e9f409f99"
+    },
+    {
+      "plugin_id": "data",
+      "name": "create-viz",
+      "path": "data/skills/create-viz/SKILL.md",
+      "sha256": "3b13a9c2c9d2b1d36f9c323d952d93f578216f2094bc80d4be6fd4ccbfe9b77d"
+    },
+    {
+      "plugin_id": "data",
+      "name": "data-context-extractor",
+      "path": "data/skills/data-context-extractor/SKILL.md",
+      "sha256": "6d05dec52ac3667b551898b9eb943f5ee08141bc8d2fabb69a8e39bb9ce7c754"
+    },
+    {
+      "plugin_id": "data",
+      "name": "data-visualization",
+      "path": "data/skills/data-visualization/SKILL.md",
+      "sha256": "5811e8b3547cda6bc8af118aaf0d7589e8861cdc9facce6372dc78aea99ab87d"
+    },
+    {
+      "plugin_id": "data",
+      "name": "explore-data",
+      "path": "data/skills/explore-data/SKILL.md",
+      "sha256": "af7590fa616360259da712b5ede5f79b817beb854c47a465f95774354988e8a2"
+    },
+    {
+      "plugin_id": "data",
+      "name": "sql-queries",
+      "path": "data/skills/sql-queries/SKILL.md",
+      "sha256": "dbd5a5e2d563d83ca6d4d033206f285f503296eabff4a35545cdb4cb5302bd9a"
+    },
+    {
+      "plugin_id": "data",
+      "name": "statistical-analysis",
+      "path": "data/skills/statistical-analysis/SKILL.md",
+      "sha256": "91a15cfc144efffcd622b09827362a73993a3ff30e3a78114801832477c9f8a0"
+    },
+    {
+      "plugin_id": "data",
+      "name": "validate-data",
+      "path": "data/skills/validate-data/SKILL.md",
+      "sha256": "1e424822043480375b80aef9416227b1c8083af749ca536568716265f79ca54b"
+    },
+    {
+      "plugin_id": "data",
+      "name": "write-query",
+      "path": "data/skills/write-query/SKILL.md",
+      "sha256": "4c7ef791db1f23504c457cc52de0d8855d26f176d5acf037260deb1b98e5e34e"
+    },
+    {
+      "plugin_id": "design",
+      "name": "accessibility-review",
+      "path": "design/skills/accessibility-review/SKILL.md",
+      "sha256": "ef42982af0d51238dda2ab16d08626712891bdd41864876c32d1e7b13fb3124f"
+    },
+    {
+      "plugin_id": "design",
+      "name": "design-critique",
+      "path": "design/skills/design-critique/SKILL.md",
+      "sha256": "3a4f260eb9f60b431782bf6d90f22afb480c0c67860267a032df58a3e1bd19cd"
+    },
+    {
+      "plugin_id": "design",
+      "name": "design-handoff",
+      "path": "design/skills/design-handoff/SKILL.md",
+      "sha256": "38f1efc807928030654218443ad07f6a37ac82de6b4d627a03113a3568d787b7"
+    },
+    {
+      "plugin_id": "design",
+      "name": "design-system",
+      "path": "design/skills/design-system/SKILL.md",
+      "sha256": "fb31bd0144c43955106f01927126ae9fd2d4148be44c8d5887b3391f40c31445"
+    },
+    {
+      "plugin_id": "design",
+      "name": "research-synthesis",
+      "path": "design/skills/research-synthesis/SKILL.md",
+      "sha256": "40048615dc81fc8b9b06104769498214d61a35ae4518a0995a12bbbd0ab945a1"
+    },
+    {
+      "plugin_id": "design",
+      "name": "user-research",
+      "path": "design/skills/user-research/SKILL.md",
+      "sha256": "fa18fc13d0f44aa869102962ef9466417ade726d659465195a40fbcf08cee156"
+    },
+    {
+      "plugin_id": "design",
+      "name": "ux-copy",
+      "path": "design/skills/ux-copy/SKILL.md",
+      "sha256": "d46a00a62ec637e9ca9d5f7823ea3e0a4ec26dffc53bb5035f59b48ebfcdcde7"
+    },
+    {
+      "plugin_id": "engineering",
+      "name": "architecture",
+      "path": "engineering/skills/architecture/SKILL.md",
+      "sha256": "de7db3170a3ae1a894c70ef6cb555fe15618ed9b9674d20895eda3d2a0a5f9a2"
+    },
+    {
+      "plugin_id": "engineering",
+      "name": "code-review",
+      "path": "engineering/skills/code-review/SKILL.md",
+      "sha256": "6303932f1b301c614a6f5a0099cd87a19e1cd1b7cbfa1a1e11e996edbca6426b"
+    },
+    {
+      "plugin_id": "engineering",
+      "name": "debug",
+      "path": "engineering/skills/debug/SKILL.md",
+      "sha256": "e50bb92cbcb2715139f3a3cb9ff282a8f0f9ae794f8f35d81338654e2601d32a"
+    },
+    {
+      "plugin_id": "engineering",
+      "name": "deploy-checklist",
+      "path": "engineering/skills/deploy-checklist/SKILL.md",
+      "sha256": "85ca53dc471970e3e12c36ec814ebf5f6cb9419016c55adb05ff34789bae3be9"
+    },
+    {
+      "plugin_id": "engineering",
+      "name": "documentation",
+      "path": "engineering/skills/documentation/SKILL.md",
+      "sha256": "1d469418f786a05be83d2a05f04d68788aeed584d13863a650f5ad73c6c4cf50"
+    },
+    {
+      "plugin_id": "engineering",
+      "name": "incident-response",
+      "path": "engineering/skills/incident-response/SKILL.md",
+      "sha256": "9eaa7a974c90395ac7116e82710f74546f38e69f735d78f684ee13fd79646e9a"
+    },
+    {
+      "plugin_id": "engineering",
+      "name": "standup",
+      "path": "engineering/skills/standup/SKILL.md",
+      "sha256": "598d9082631326ee810056c787188ee021c6325f990989732ba178ea111adf45"
+    },
+    {
+      "plugin_id": "engineering",
+      "name": "system-design",
+      "path": "engineering/skills/system-design/SKILL.md",
+      "sha256": "8f28eca99f2208872fc2483fcc93326b628f4f73116e91309a95e05da86a0ab5"
+    },
+    {
+      "plugin_id": "engineering",
+      "name": "tech-debt",
+      "path": "engineering/skills/tech-debt/SKILL.md",
+      "sha256": "ed3b4b1450c0fd9b8dad17313b5a4fafd8e6947d380b79b36a2e8259f3b1df0f"
+    },
+    {
+      "plugin_id": "engineering",
+      "name": "testing-strategy",
+      "path": "engineering/skills/testing-strategy/SKILL.md",
+      "sha256": "5c5e95830754bbdd838213fa05fc8f07523f591fd558fd3c86031ffd479f7a9e"
+    },
+    {
+      "plugin_id": "enterprise-search",
+      "name": "digest",
+      "path": "enterprise-search/skills/digest/SKILL.md",
+      "sha256": "d711d49b898eb303b74488dce75308e8737786d87210f1dca13ec325bc7f5737"
+    },
+    {
+      "plugin_id": "enterprise-search",
+      "name": "knowledge-synthesis",
+      "path": "enterprise-search/skills/knowledge-synthesis/SKILL.md",
+      "sha256": "8dc66c66ef0004010bbf2d569251163e90a6675b982e0cb99ef26b4dd1c5a0f6"
+    },
+    {
+      "plugin_id": "enterprise-search",
+      "name": "search",
+      "path": "enterprise-search/skills/search/SKILL.md",
+      "sha256": "5330512ac1f71c4526a7cb8a072902053220a924db052fbace20d584d7cf1d52"
+    },
+    {
+      "plugin_id": "enterprise-search",
+      "name": "search-strategy",
+      "path": "enterprise-search/skills/search-strategy/SKILL.md",
+      "sha256": "71d5ba2d219a72d696e079885cba2fb5455ba5da6b1404491f8b945bdd8694c6"
+    },
+    {
+      "plugin_id": "enterprise-search",
+      "name": "source-management",
+      "path": "enterprise-search/skills/source-management/SKILL.md",
+      "sha256": "221d8acdc5c686033bb073d2bba83841892f6b8be0888c0267247fd1dd34461d"
+    },
+    {
+      "plugin_id": "finance",
+      "name": "audit-support",
+      "path": "finance/skills/audit-support/SKILL.md",
+      "sha256": "6e53c9529c42bb92c11d00a58af5119f7383903d9cb3b911625089fec2ff4784"
+    },
+    {
+      "plugin_id": "finance",
+      "name": "close-management",
+      "path": "finance/skills/close-management/SKILL.md",
+      "sha256": "6c2df93bcd15eddf65017445fa44f3eb0b16a755711a5e0602d73ca595e73732"
+    },
+    {
+      "plugin_id": "finance",
+      "name": "financial-statements",
+      "path": "finance/skills/financial-statements/SKILL.md",
+      "sha256": "1a9ba1cc85495eef32fa250b8a4c05e4854430af574a290b855f919dbb557dfc"
+    },
+    {
+      "plugin_id": "finance",
+      "name": "journal-entry",
+      "path": "finance/skills/journal-entry/SKILL.md",
+      "sha256": "c085de41feb0b8c74771cdd631fff1f668ec253938c69fee47b6a953fc03a266"
+    },
+    {
+      "plugin_id": "finance",
+      "name": "journal-entry-prep",
+      "path": "finance/skills/journal-entry-prep/SKILL.md",
+      "sha256": "122715fb18246c2f04d31a5f7c07584ecbfc5c0b46ee09b4c0f4557767d7351e"
+    },
+    {
+      "plugin_id": "finance",
+      "name": "reconciliation",
+      "path": "finance/skills/reconciliation/SKILL.md",
+      "sha256": "aa17e90539f4d4d84130c910c7f527236bfaa71977c4c03493c8e8e515ddeea6"
+    },
+    {
+      "plugin_id": "finance",
+      "name": "sox-testing",
+      "path": "finance/skills/sox-testing/SKILL.md",
+      "sha256": "5e5939a070a25d9696b27aaec6c20e64084e6f58637994b2f7ec92744074ea23"
+    },
+    {
+      "plugin_id": "finance",
+      "name": "variance-analysis",
+      "path": "finance/skills/variance-analysis/SKILL.md",
+      "sha256": "467db7de3fb118550d013409254e2d4a9f87385a661e154655bf3431919b0ba1"
+    },
+    {
+      "plugin_id": "human-resources",
+      "name": "comp-analysis",
+      "path": "human-resources/skills/comp-analysis/SKILL.md",
+      "sha256": "1af196cd1c38cdb96565eadebcf13fa25e979469b3e06f4791e18baa7f2534a6"
+    },
+    {
+      "plugin_id": "human-resources",
+      "name": "draft-offer",
+      "path": "human-resources/skills/draft-offer/SKILL.md",
+      "sha256": "b50f677f4c8fb769b9cd0be51cd250e0e21a4530d579d5f400b7d7b1b1a63ea9"
+    },
+    {
+      "plugin_id": "human-resources",
+      "name": "interview-prep",
+      "path": "human-resources/skills/interview-prep/SKILL.md",
+      "sha256": "c687311babdeccf086aa5f6d86dcbfc3a9d1b8bb7124f072450ffa4315d98c4c"
+    },
+    {
+      "plugin_id": "human-resources",
+      "name": "onboarding",
+      "path": "human-resources/skills/onboarding/SKILL.md",
+      "sha256": "c9210cdd00f8c2998a01c6d1310a8742aafa82a5861fb7c1c18686b72a56da97"
+    },
+    {
+      "plugin_id": "human-resources",
+      "name": "org-planning",
+      "path": "human-resources/skills/org-planning/SKILL.md",
+      "sha256": "b3c6e33d251487225485c7fe455586f0cd490b282d7e41054273fa60820891ea"
+    },
+    {
+      "plugin_id": "human-resources",
+      "name": "people-report",
+      "path": "human-resources/skills/people-report/SKILL.md",
+      "sha256": "e68d00be15a681da288e6023df095a952add099db2c14873c47a69e3ab3634b8"
+    },
+    {
+      "plugin_id": "human-resources",
+      "name": "performance-review",
+      "path": "human-resources/skills/performance-review/SKILL.md",
+      "sha256": "a34e3f49e7c8619f07fd218cb2b6a6d57572dd7a0a78c72977dcd1739578e588"
+    },
+    {
+      "plugin_id": "human-resources",
+      "name": "policy-lookup",
+      "path": "human-resources/skills/policy-lookup/SKILL.md",
+      "sha256": "5fc79b5e81922431b5665d33552dcce7de499e2680b4a81720cb4e2a68015edf"
+    },
+    {
+      "plugin_id": "human-resources",
+      "name": "recruiting-pipeline",
+      "path": "human-resources/skills/recruiting-pipeline/SKILL.md",
+      "sha256": "a00b442f701faa6eb65b8ecc8fcf375d5a33ec827b987ba8b04edaef0e90b92f"
+    },
+    {
+      "plugin_id": "legal",
+      "name": "brief",
+      "path": "legal/skills/brief/SKILL.md",
+      "sha256": "7f1d6d63a74e14e76729d161bf76f2f624b1441d7e4655708e493083a0b93bd2"
+    },
+    {
+      "plugin_id": "legal",
+      "name": "compliance-check",
+      "path": "legal/skills/compliance-check/SKILL.md",
+      "sha256": "8dff8ebe7eda9ad5e38f3faf1016a7fc1eeba65bcdb7f5ae45ea507824bbc1c2"
+    },
+    {
+      "plugin_id": "legal",
+      "name": "legal-response",
+      "path": "legal/skills/legal-response/SKILL.md",
+      "sha256": "b3a0585ee00a53ccb159fbf5b7dd4d4b45c39e5e65cc8f4f39cbb134fef493db"
+    },
+    {
+      "plugin_id": "legal",
+      "name": "legal-risk-assessment",
+      "path": "legal/skills/legal-risk-assessment/SKILL.md",
+      "sha256": "9f7985e3a98ac8419b52067cdaa1b72f754fa38c20489e7f0bf9de36347d4d89"
+    },
+    {
+      "plugin_id": "legal",
+      "name": "meeting-briefing",
+      "path": "legal/skills/meeting-briefing/SKILL.md",
+      "sha256": "4d19bc2ddb2138d1b306b150c5d0900ce0a398d5ab690b8eba8101ef33d98baa"
+    },
+    {
+      "plugin_id": "legal",
+      "name": "review-contract",
+      "path": "legal/skills/review-contract/SKILL.md",
+      "sha256": "3a6413475f51adedbff130f4d5aabbeeacfb2abd323e0338bc91c21937fbfb76"
+    },
+    {
+      "plugin_id": "legal",
+      "name": "signature-request",
+      "path": "legal/skills/signature-request/SKILL.md",
+      "sha256": "bf702fbe7d21073c3e6952ee2c72f66bf6c56fc806b3abb7e44d7863d7534682"
+    },
+    {
+      "plugin_id": "legal",
+      "name": "triage-nda",
+      "path": "legal/skills/triage-nda/SKILL.md",
+      "sha256": "767a8f6759268e003ee882af8dfb56579aca2121b9dc49a2c65c4e77de93f768"
+    },
+    {
+      "plugin_id": "legal",
+      "name": "vendor-check",
+      "path": "legal/skills/vendor-check/SKILL.md",
+      "sha256": "38be57a5e9e959874d2cb78e8493211664bc452e6225cb5bdbb8b12e6f444d2e"
+    },
+    {
+      "plugin_id": "marketing",
+      "name": "brand-review",
+      "path": "marketing/skills/brand-review/SKILL.md",
+      "sha256": "759f29397a908c32521080247292a4e1c52ac01643bea70ccd6e807e86c1fa4b"
+    },
+    {
+      "plugin_id": "marketing",
+      "name": "campaign-plan",
+      "path": "marketing/skills/campaign-plan/SKILL.md",
+      "sha256": "f0b146074b64ee0fd52f7864e30191eab83878c8c1e3e7cf24754e13c7dbfad3"
+    },
+    {
+      "plugin_id": "marketing",
+      "name": "competitive-brief",
+      "path": "marketing/skills/competitive-brief/SKILL.md",
+      "sha256": "c1e5442facbc3206ac6a77392bef009fe9aff4ba7c2678e2f4118be2f6be82b3"
+    },
+    {
+      "plugin_id": "marketing",
+      "name": "content-creation",
+      "path": "marketing/skills/content-creation/SKILL.md",
+      "sha256": "17f0bfd536502a91c760accaa1ae6c0c76c3812973571729664133e282c5dded"
+    },
+    {
+      "plugin_id": "marketing",
+      "name": "draft-content",
+      "path": "marketing/skills/draft-content/SKILL.md",
+      "sha256": "0bfe029dcc039ff71a76b0fec3c5d900fba0e447eb9dcd505ab25b14be3577fd"
+    },
+    {
+      "plugin_id": "marketing",
+      "name": "email-sequence",
+      "path": "marketing/skills/email-sequence/SKILL.md",
+      "sha256": "4303252cbe340b19945b3e58d46430fdf42ea47b3e26d985e3ef1d6da5e36021"
+    },
+    {
+      "plugin_id": "marketing",
+      "name": "performance-report",
+      "path": "marketing/skills/performance-report/SKILL.md",
+      "sha256": "997397e23ba5124cdcbbf17e4be9f5cb36f2a2145b5648e02b2852c91c3cc140"
+    },
+    {
+      "plugin_id": "marketing",
+      "name": "seo-audit",
+      "path": "marketing/skills/seo-audit/SKILL.md",
+      "sha256": "25008ccdda6f4d9b7ba05f11120d0b9cc976c2d0b04f3d86605e63b1a54a8c40"
+    },
+    {
+      "plugin_id": "operations",
+      "name": "capacity-plan",
+      "path": "operations/skills/capacity-plan/SKILL.md",
+      "sha256": "3b8f1379471eae19e5be26c750681ad0c6054f4c8cdbf79c94309fcf46957ea8"
+    },
+    {
+      "plugin_id": "operations",
+      "name": "change-request",
+      "path": "operations/skills/change-request/SKILL.md",
+      "sha256": "b1ee71cc1fecb22c7d27e2e00171f5d62fb54c405095b51098dacfea0447d8d7"
+    },
+    {
+      "plugin_id": "operations",
+      "name": "compliance-tracking",
+      "path": "operations/skills/compliance-tracking/SKILL.md",
+      "sha256": "644d393abdfddc8c37f7a7804f601e7bbd476e95571e6dcb4d916e478ba8ebd5"
+    },
+    {
+      "plugin_id": "operations",
+      "name": "process-doc",
+      "path": "operations/skills/process-doc/SKILL.md",
+      "sha256": "fceeeddb363e813ba831f9f2de1adb4c7e45ad179366bbb9ea9e40377abe96a9"
+    },
+    {
+      "plugin_id": "operations",
+      "name": "process-optimization",
+      "path": "operations/skills/process-optimization/SKILL.md",
+      "sha256": "14099838fdbfca24057e934fc22ed17f94629c5e9c9cec470f32e3063d0575f9"
+    },
+    {
+      "plugin_id": "operations",
+      "name": "risk-assessment",
+      "path": "operations/skills/risk-assessment/SKILL.md",
+      "sha256": "82e29810a762c396a56f92bbd5c5afd252f7a07c6be69a246c28f7b82c4086d9"
+    },
+    {
+      "plugin_id": "operations",
+      "name": "runbook",
+      "path": "operations/skills/runbook/SKILL.md",
+      "sha256": "c5c3eaa4c22fff96ec7239ce67eb3e100661b20a2818749e2f7ee21787233185"
+    },
+    {
+      "plugin_id": "operations",
+      "name": "status-report",
+      "path": "operations/skills/status-report/SKILL.md",
+      "sha256": "8c3a21075294a5c5b7a1a7930613e53f0afbdbc12cf9e05d4bd08e6950c0a0d9"
+    },
+    {
+      "plugin_id": "operations",
+      "name": "vendor-review",
+      "path": "operations/skills/vendor-review/SKILL.md",
+      "sha256": "c2a959a7ed068e34a83984cf223754062e6819deb0ba1ca33eb747b4cc808d5e"
+    },
+    {
+      "plugin_id": "pdf-viewer",
+      "name": "view-pdf",
+      "path": "pdf-viewer/skills/view-pdf/SKILL.md",
+      "sha256": "8635c2ca95e740ea3794f96b2d0f59bea7ab0380bb6af893536f0e02ea5208ab"
+    },
+    {
+      "plugin_id": "product-management",
+      "name": "competitive-brief",
+      "path": "product-management/skills/competitive-brief/SKILL.md",
+      "sha256": "720916695f99a70e723be02d0123908c9c968ce56e1ffdeeb423014587017cd2"
+    },
+    {
+      "plugin_id": "product-management",
+      "name": "metrics-review",
+      "path": "product-management/skills/metrics-review/SKILL.md",
+      "sha256": "e92f364b668074c72b36fd0f69a6adef2ead66640b2c17dc824c043fb613d278"
+    },
+    {
+      "plugin_id": "product-management",
+      "name": "product-brainstorming",
+      "path": "product-management/skills/product-brainstorming/SKILL.md",
+      "sha256": "53ee71b6863b277aba87002d8a5bb58bd2a4172d7cfeb2e282a0161958edc8e7"
+    },
+    {
+      "plugin_id": "product-management",
+      "name": "roadmap-update",
+      "path": "product-management/skills/roadmap-update/SKILL.md",
+      "sha256": "bdb121e290b590d60b94bca84d1700a8803c78db9f68f2a28fd04ccfe8aceb9e"
+    },
+    {
+      "plugin_id": "product-management",
+      "name": "sprint-planning",
+      "path": "product-management/skills/sprint-planning/SKILL.md",
+      "sha256": "c078d3f838c783e9ab53ca1a4b4c04dcd7930a55a995731b8c020cd656cb1edd"
+    },
+    {
+      "plugin_id": "product-management",
+      "name": "stakeholder-update",
+      "path": "product-management/skills/stakeholder-update/SKILL.md",
+      "sha256": "bcdb8ee95dc34d025dcc3d98e7435c4dca45930581b3b7a8707f8770dd364e79"
+    },
+    {
+      "plugin_id": "product-management",
+      "name": "synthesize-research",
+      "path": "product-management/skills/synthesize-research/SKILL.md",
+      "sha256": "ae98c11102545c911a1ea5d8527be0e08a3db8e53327f2865f0db19bbb2d7e9c"
+    },
+    {
+      "plugin_id": "product-management",
+      "name": "write-spec",
+      "path": "product-management/skills/write-spec/SKILL.md",
+      "sha256": "ca6670913878b4ac4582727562bfced5271492a5a800d934f68c9e7bc1cd4dcc"
+    },
+    {
+      "plugin_id": "productivity",
+      "name": "memory-management",
+      "path": "productivity/skills/memory-management/SKILL.md",
+      "sha256": "ad42fd09cbab585b8ae8fcce54e711d37105d5d5b7d9ceaf9b29bf6441f7a88d"
+    },
+    {
+      "plugin_id": "productivity",
+      "name": "start",
+      "path": "productivity/skills/start/SKILL.md",
+      "sha256": "def467be29ec60f1567c9fa92dc4b1ca9a6d3ed85f964f338a02502a44779208"
+    },
+    {
+      "plugin_id": "productivity",
+      "name": "task-management",
+      "path": "productivity/skills/task-management/SKILL.md",
+      "sha256": "db1320873d68caab09cdbc1788e78d81e3b9b7cc6b499e2c4b975f25e873049f"
+    },
+    {
+      "plugin_id": "productivity",
+      "name": "update",
+      "path": "productivity/skills/update/SKILL.md",
+      "sha256": "27dbb2c732a9140ea3f01da6cdf7e533df5e75e9614c80e7e356c8f39c959799"
+    },
+    {
+      "plugin_id": "sales",
+      "name": "account-research",
+      "path": "sales/skills/account-research/SKILL.md",
+      "sha256": "9b73bf462b1e96516ed7de68c628c34c5416b233ddda249d5186fdd4bbdabc17"
+    },
+    {
+      "plugin_id": "sales",
+      "name": "call-prep",
+      "path": "sales/skills/call-prep/SKILL.md",
+      "sha256": "51b075cf1a1cecdd1022034de5a552971917a1fea2304f564bb550bdc6dbbf72"
+    },
+    {
+      "plugin_id": "sales",
+      "name": "call-summary",
+      "path": "sales/skills/call-summary/SKILL.md",
+      "sha256": "8aefb4bc513e403fdcb072ff42ccd560344353c4410780c2220a7dc64b9f946a"
+    },
+    {
+      "plugin_id": "sales",
+      "name": "competitive-intelligence",
+      "path": "sales/skills/competitive-intelligence/SKILL.md",
+      "sha256": "1153f80c8fcadc862fbebd23caaf237eb6c81132360ac603b99640fce6c1a052"
+    },
+    {
+      "plugin_id": "sales",
+      "name": "create-an-asset",
+      "path": "sales/skills/create-an-asset/SKILL.md",
+      "sha256": "02857091cc9927090a7fd128c9bc906f67b29533f095a08493c320174c0f8678"
+    },
+    {
+      "plugin_id": "sales",
+      "name": "daily-briefing",
+      "path": "sales/skills/daily-briefing/SKILL.md",
+      "sha256": "9f2c4976aed1326edbf6d7d9d499df63f3c178d2c14c6254c8a9c0a15eb0d04a"
+    },
+    {
+      "plugin_id": "sales",
+      "name": "draft-outreach",
+      "path": "sales/skills/draft-outreach/SKILL.md",
+      "sha256": "eeca7158539ae7e6f41025a099a34441e9b9bfaa130af4297e09b8c2253c8828"
+    },
+    {
+      "plugin_id": "sales",
+      "name": "forecast",
+      "path": "sales/skills/forecast/SKILL.md",
+      "sha256": "e1829c82fa2457ba83c63a506e85e87608068f3c8d1b3f427fe49fba8a19f056"
+    },
+    {
+      "plugin_id": "sales",
+      "name": "pipeline-review",
+      "path": "sales/skills/pipeline-review/SKILL.md",
+      "sha256": "43b396b8292b5e11d1797fd3a549d7ebadf09b79c1a4d20a5e1cbea31032f4ab"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "business-pulse",
+      "path": "small-business/skills/business-pulse/SKILL.md",
+      "sha256": "50feedf201218b878268d34c795b2f1b6de218e2bf2e9b9f4c85c4e57d5179e9"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "call-list",
+      "path": "small-business/skills/call-list/SKILL.md",
+      "sha256": "e661e49cc151911d80518f4000e41d99fd1ddfa48cdca1e8fd32499f0846e257"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "canva-creator",
+      "path": "small-business/skills/canva-creator/SKILL.md",
+      "sha256": "a0259b0004b384f203494c4c7d89b24e013ecc92314f5f0fe44c9c2c286c8af0"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "cash-flow-snapshot",
+      "path": "small-business/skills/cash-flow-snapshot/SKILL.md",
+      "sha256": "633f52a7ed4903d252c84425267a2bcf045cc268aef8b0532a353b1519e1ce49"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "close-month",
+      "path": "small-business/skills/close-month/SKILL.md",
+      "sha256": "78d9f218d5ad411efbfbb5210b5e6ad13bda6d6128c5614f546215d2c399fe9b"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "content-strategy",
+      "path": "small-business/skills/content-strategy/SKILL.md",
+      "sha256": "103b79696e06215b73bbb169b7c0844bde6b8bcee2808b012420eff5c9319526"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "contract-review",
+      "path": "small-business/skills/contract-review/SKILL.md",
+      "sha256": "3d762a0c730dd6c8a2ba065e5f93065b22bd630295f93013d491ec3ef5afa375"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "crm-cleanup",
+      "path": "small-business/skills/crm-cleanup/SKILL.md",
+      "sha256": "d0d55bc496cd59e74102300c2c14c86e4d01f3322ddf53180e2173cf112b0a23"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "crm-maintenance",
+      "path": "small-business/skills/crm-maintenance/SKILL.md",
+      "sha256": "d0da3e841c30522d32a54e50f3aa3c9c642adeafe55d95444e7416f081566f30"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "customer-pulse",
+      "path": "small-business/skills/customer-pulse/SKILL.md",
+      "sha256": "72fa8b27635aef79af4f2ae8fccdbc5a2b5dc67af31581ecd350e8da882748de"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "customer-pulse-check",
+      "path": "small-business/skills/customer-pulse-check/SKILL.md",
+      "sha256": "27e370aa30cc44dec2c9cb22d84e9fb84e03e1e1dacc76054b879644b561d0a3"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "friday-brief",
+      "path": "small-business/skills/friday-brief/SKILL.md",
+      "sha256": "7e044e55f195695cbfa63acc2160f6a6e51665daff1559c2c78cf9f2800c686f"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "handle-complaint",
+      "path": "small-business/skills/handle-complaint/SKILL.md",
+      "sha256": "e3c10483323206020adb444bd9df59214f90e69857834958a0f3c3a7c6ce229e"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "invoice-chase",
+      "path": "small-business/skills/invoice-chase/SKILL.md",
+      "sha256": "a6c9249101a91aa602964bbf74f3fb8e502f0f573759c7abe2d30218351244a3"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "job-post-builder",
+      "path": "small-business/skills/job-post-builder/SKILL.md",
+      "sha256": "c0d79d1d9f80dfa934904d3fc4e04052b64a756426a7887bffefd218c2e8eb17"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "lead-triage",
+      "path": "small-business/skills/lead-triage/SKILL.md",
+      "sha256": "54c6a871743377a899100c1dd5017d39b6bb7e94d389583dfb6fb36b85ec3a10"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "margin-analyzer",
+      "path": "small-business/skills/margin-analyzer/SKILL.md",
+      "sha256": "e405b365869b500694d5f825f252b908d67a61d13dfce44c35708add16907e22"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "monday-brief",
+      "path": "small-business/skills/monday-brief/SKILL.md",
+      "sha256": "d773a4e854fd0f99c3af20da54f8be02556e9f234d48c7defeb36b2a7f159fed"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "month-end-prep",
+      "path": "small-business/skills/month-end-prep/SKILL.md",
+      "sha256": "436a074bd58fc0a7e2cccd106ac690de1ffc593859b4c8fe17dde9895f6ca7b2"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "month-heads-up",
+      "path": "small-business/skills/month-heads-up/SKILL.md",
+      "sha256": "613c2f20f29013fc7493752f99349bb675f30df4a9dda5daabb6489c43c89611"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "plan-payroll",
+      "path": "small-business/skills/plan-payroll/SKILL.md",
+      "sha256": "c3f0486c23c6acf42591a5a0fbbf8a76be6c07faa436146e8213a9ecbe13eac6"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "price-check",
+      "path": "small-business/skills/price-check/SKILL.md",
+      "sha256": "ec4ea68abd8fbfaef47899685096cf0238a81539425baa1f76f2ab2ade5b1701"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "quarterly-review",
+      "path": "small-business/skills/quarterly-review/SKILL.md",
+      "sha256": "fd0a766ae50c2acc60f6be81553e2bb33f2baff8cd563051f4d833a56f2277e7"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "review-contract",
+      "path": "small-business/skills/review-contract/SKILL.md",
+      "sha256": "87900b6d3b2273471edd7a06f87fbb930bf162b0721ad3a448df58e1e1000114"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "run-campaign",
+      "path": "small-business/skills/run-campaign/SKILL.md",
+      "sha256": "060cb9420ac7f59b53b3c8a3e7792c2a8161364c2cfdc7a81f0ee6c9401fa0df"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "sales-brief",
+      "path": "small-business/skills/sales-brief/SKILL.md",
+      "sha256": "5af38ee269b815c1441671dd5acc230c0776a04e5c12f46e75915e6e0b81cb8d"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "smb-onboard",
+      "path": "small-business/skills/smb-onboard/SKILL.md",
+      "sha256": "f5f56662c52ec111d396425f354abda29b66a90132d111065b97a08c40e73fcd"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "smb-router",
+      "path": "small-business/skills/smb-router/SKILL.md",
+      "sha256": "816184340308c4ab7c6c4ccdd7c55c4c8ddad40a1ce2abf81bb864ac83d235d3"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "tax-prep",
+      "path": "small-business/skills/tax-prep/SKILL.md",
+      "sha256": "6941b55c7e5f0727a22175b52b36722b0143887783d233e7e355f85b427bafbd"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "tax-season-organizer",
+      "path": "small-business/skills/tax-season-organizer/SKILL.md",
+      "sha256": "b2dbeadd8482ff5e5f89d9ca57a7be534a3c9c623e9c882f5224d8be29a492d2"
+    },
+    {
+      "plugin_id": "small-business",
+      "name": "ticket-deflector",
+      "path": "small-business/skills/ticket-deflector/SKILL.md",
+      "sha256": "69ef24938ab685cb54faea79a5d7a6e55aba2527d4cbf03a1313fd611c74cfb8"
+    }
+  ]
+}
