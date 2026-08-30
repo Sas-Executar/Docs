@@ -21,3 +21,4 @@ SCH-SAAS-001,FS-IDX-002,01-master-index/01-schemas/EXECUTAR_projetosaasentrypoin
 TAX-ECM-001,FS-IDX-003,01-master-index/02-taxonomies/ECOSYSTEM_CARDS_REGISTER.csv,registro-de-roteamento,ativo
 TAX-SAAS-001,FS-IDX-003,01-master-index/02-taxonomies/SAAS_ENTRYPOINT_DOMAIN_MAP.csv,registro-de-roteamento,ativo
 GOV-PLAN-001,FS-OPS-002,70-operacao-governanca/01-planos-acao/PLANO_LANCAMENTO_ECOSSISTEMA.md,plano-de-acao,ativo
+SCH-FUS-001,FS-IDX-002,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,formulario-fusionado,ativo

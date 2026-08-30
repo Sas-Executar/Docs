@@ -1,0 +1,749 @@
+schema: FORMULARIO_FUNDACIONAL_FUSIONADO_V1
+language: pt-BR
+description: 'Fusão dos dois documentos fundacionais recebidos: o formulário de intake EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  (94 campos / 17 domínios, mantidos na íntegra e na ordem original) e o modelo de cobertura documental
+  ECOSYSTEM_MASTER_YAML_CARDS_V1 (75 cards / 12 fases), referenciado aqui como `related_ecosystem_cards`
+  por área. Este é o único documento de trabalho para o preenchimento interativo — cada campo começa com
+  `valor: null` e `status: pendente`.'
+sources:
+- 01-master-index/01-schemas/EXECUTAR_projetosaasentrypoint_EXPANDIDO.schema.json
+- 01-master-index/01-schemas/ECOSYSTEM_MASTER_YAML_CARDS_V1.yaml
+fill_protocol:
+  rule: O usuário escolhe (ou aceita a sugestão de) uma área, coleta os documentos locais relevantes e
+    envia. O Maestro extrai as respostas, preenche `valor` e muda `status` para `preenchido` ou `parcial`,
+    registrando proveniência e lacunas quando houver. Nenhuma área é preenchida sem material enviado pelo
+    usuário.
+  field_status_values:
+  - pendente
+  - parcial
+  - preenchido
+  area_status_values:
+  - pendente
+  - em_andamento
+  - completo
+suggested_start:
+  areas:
+  - 1
+  - 2
+  reason: 'São o início natural do próprio formulário original (planilha 02_Visao_Geral) e não dependem
+    de nenhuma outra área. Ancoram os cards raiz do modelo de 75 cards: GOV-001 (Ecosystem Charter, sem
+    depends_on) e STR-011/012/013/014 (problema, oportunidade, estado futuro, BRD).'
+areas:
+- area_id: 1
+  area_name: NEGÓCIO & GTM
+  area_description: Por que o produto existe, para quem, e como se sustenta financeiramente
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - STR-013
+  - STR-014
+  - BUS-030
+  - BUS-031
+  - GTM-090
+  fields:
+  - field_id: '1.1'
+    title: Problema central
+    description: Descreva em 1 frase o problema que o produto resolve.
+    example: 'Ex: Equipes técnicas perdem contexto entre sessões de IA e retrabalham decisões já tomadas.'
+    valor: null
+    status: pendente
+  - field_id: '1.2'
+    title: Público-alvo / ICP
+    description: Quem é o cliente ideal — perfil, tamanho, contexto de uso.
+    example: 'Ex: Founders técnicos solo ou squads pequenos construindo produtos com IA integrada.'
+    valor: null
+    status: pendente
+  - field_id: '1.3'
+    title: Proposta de valor
+    description: O que torna esse produto a escolha óbvia frente a alternativas.
+    example: 'Ex: Único agente que mantém memória estruturada entre sessões sem configuração manual.'
+    valor: null
+    status: pendente
+  - field_id: '1.4'
+    title: Canais de aquisição
+    description: Como novos usuários vão descobrir o produto (orgânico, paid, parcerias, comunidade).
+    example: 'Ex: Conteúdo técnico + comunidade de early adopters + parcerias com ferramentas complementares.'
+    valor: null
+    status: pendente
+  - field_id: '1.5'
+    title: Métrica North Star
+    description: A métrica única que melhor representa sucesso do produto.
+    example: 'Ex: Número de sessões semanais com reuso de contexto salvo.'
+    valor: null
+    status: pendente
+  - field_id: '1.6'
+    title: Métricas guardrail
+    description: Métricas que não podem degradar enquanto a North Star sobe.
+    example: 'Ex: Latência de resposta, taxa de erro em produção.'
+    valor: null
+    status: pendente
+  - field_id: '1.7'
+    title: CAC (custo de aquisição)
+    description: Custo estimado para adquirir um cliente pagante.
+    example: 'Ex: A definir após primeiro ciclo de aquisição paga.'
+    valor: null
+    status: pendente
+  - field_id: '1.8'
+    title: LTV (valor do tempo de vida)
+    description: Valor estimado que um cliente gera ao longo do relacionamento.
+    example: 'Ex: A definir com base em churn projetado.'
+    valor: null
+    status: pendente
+  - field_id: '1.9'
+    title: Margem por unidade/usuário
+    description: Custo variável (infra, API/tokens) por usuário ativo vs. receita.
+    example: 'Ex: Custo de API de IA por usuário/mês vs. preço do plano.'
+    valor: null
+    status: pendente
+  - field_id: '1.10'
+    title: Ponto de equilíbrio (breakeven)
+    description: Quantos clientes/receita necessários para cobrir custos fixos.
+    example: 'Ex: N clientes no plano X cobrem a infraestrutura base mensal.'
+    valor: null
+    status: pendente
+  - field_id: '1.11'
+    title: Teto de gasto de infraestrutura
+    description: Limite mensal aprovado por serviço (hosting, banco, API de IA).
+    example: 'Ex: Vercel $X, Supabase $X, Anthropic API $X — tetos configurados no console de cada provedor.'
+    valor: null
+    status: pendente
+  - field_id: '1.12'
+    title: Gatilhos de upgrade de infra
+    description: Condição objetiva que dispara upgrade de plano/tier.
+    example: 'Ex: Uso de API acima de 80% do teto por 3 dias consecutivos.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 2
+  area_name: PRODUTO
+  area_description: PRD, requisitos funcionais e jornada do usuário — a mesma informação em três granularidades
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - OFF-040
+  - REQ-052
+  fields:
+  - field_id: '2.1'
+    title: Nome do produto/feature
+    description: Nome de referência usado em toda a documentação.
+    example: 'Ex: EXECUTA Journal'
+    valor: null
+    status: pendente
+  - field_id: '2.2'
+    title: Contexto do PRD
+    description: Situação atual e por que este produto/feature é necessário agora.
+    example: 'Ex: Publicação editorial hoje exige edição manual de código; produto elimina essa fricção.'
+    valor: null
+    status: pendente
+  - field_id: '2.3'
+    title: Objetivos (goals)
+    description: O que o produto DEVE alcançar, de forma verificável.
+    example: 'Ex: Permitir publicar um artigo do celular sem tocar em código.'
+    valor: null
+    status: pendente
+  - field_id: '2.4'
+    title: Não-objetivos (non-goals)
+    description: O que está explicitamente fora de escopo, para evitar scope creep.
+    example: 'Ex: Não inclui edição colaborativa multi-usuário nesta fase.'
+    valor: null
+    status: pendente
+  - field_id: '2.5'
+    title: Requisitos funcionais (FRD)
+    description: Lista testável do que o sistema deve fazer.
+    example: 'Ex: Sistema deve gerar PR automaticamente a partir de um briefing preenchido.'
+    valor: null
+    status: pendente
+  - field_id: '2.6'
+    title: Critérios de aceite
+    description: Como se prova, de forma objetiva, que um requisito foi cumprido.
+    example: 'Ex: Artigo real publicado ponta a ponta sem edição manual de TypeScript.'
+    valor: null
+    status: pendente
+  - field_id: '2.7'
+    title: Persona principal
+    description: Quem usa o produto no dia a dia — nome fictício e papel.
+    example: 'Ex: ''Marina'', editora solo que aprova publicações pelo celular.'
+    valor: null
+    status: pendente
+  - field_id: '2.8'
+    title: Jornada — Descoberta
+    description: Como o usuário chega até o produto pela primeira vez.
+    example: 'Ex: Recebe link de preview gerado automaticamente pelo pipeline.'
+    valor: null
+    status: pendente
+  - field_id: '2.9'
+    title: Jornada — Ativação
+    description: O primeiro momento em que o usuário obtém valor real.
+    example: 'Ex: Primeira publicação aprovada e no ar via QR code físico.'
+    valor: null
+    status: pendente
+  - field_id: '2.10'
+    title: Jornada — Uso recorrente
+    description: O que traz o usuário de volta, sessão após sessão.
+    example: 'Ex: Fluxo semanal de briefing → preview → aprovação.'
+    valor: null
+    status: pendente
+  - field_id: '2.11'
+    title: Momento 'aha'
+    description: O instante exato em que o valor fica óbvio para o usuário.
+    example: 'Ex: Ver o artigo publicado automaticamente após aprovar pelo celular.'
+    valor: null
+    status: pendente
+  - field_id: '2.12'
+    title: User story de referência
+    description: 'Formato: Como [persona], quero [ação] para que [benefício].'
+    example: 'Ex: Como editora solo, quero aprovar publicações pelo celular para não depender do computador.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 3
+  area_name: ARQUITETURA & FULL STACK
+  area_description: Como as peças se conectam — front, back, banco, infra, rotas
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - ARC-060
+  - ARC-063
+  - ARC-068
+  fields:
+  - field_id: '3.1'
+    title: Stack — Frontend
+    description: Framework, biblioteca de estilo, ferramentas principais.
+    example: 'Ex: Next.js + Tailwind + design tokens DESK-OS.'
+    valor: null
+    status: pendente
+  - field_id: '3.2'
+    title: Stack — Backend
+    description: Runtime, linguagem, framework de servidor.
+    example: 'Ex: Node.js + TypeScript, funções serverless na Vercel.'
+    valor: null
+    status: pendente
+  - field_id: '3.3'
+    title: Banco de dados
+    description: Sistema, provedor, e por quê essa escolha.
+    example: 'Ex: Postgres via Supabase (dados de produto) + Neon (dados serverless).'
+    valor: null
+    status: pendente
+  - field_id: '3.4'
+    title: Infraestrutura / hosting
+    description: Onde a aplicação roda e é servida.
+    example: 'Ex: Vercel (apps), Supabase (auth+db), GitHub (código).'
+    valor: null
+    status: pendente
+  - field_id: '3.5'
+    title: Autenticação
+    description: Método de login e provedor.
+    example: 'Ex: Supabase Auth com email/senha + OAuth Google.'
+    valor: null
+    status: pendente
+  - field_id: '3.6'
+    title: Estrutura de repositório
+    description: Organização de pastas (monorepo, multi-repo, apps/packages).
+    example: 'Ex: Monorepo com apps/ (web-client, orchestrator) e packages/ (core, configs).'
+    valor: null
+    status: pendente
+  - field_id: '3.7'
+    title: Mapa de rotas principais
+    description: Rotas-chave da aplicação e o que cada uma faz.
+    example: 'Ex: /app/journal — editor; /health — status; /api/health — status detalhado.'
+    valor: null
+    status: pendente
+  - field_id: '3.8'
+    title: 'Decisão de arquitetura #1 (ADR)'
+    description: Uma decisão técnica relevante e a alternativa descartada.
+    example: 'Ex: Monorepo único em vez de múltiplos repositórios — decidido para reduzir divergência
+      de versão.'
+    valor: null
+    status: pendente
+  - field_id: '3.9'
+    title: 'Decisão de arquitetura #2 (ADR)'
+    description: Segunda decisão relevante, se houver.
+    example: 'Ex: Origem de produção lida de variável de ambiente, nunca hardcoded.'
+    valor: null
+    status: pendente
+  - field_id: '3.10'
+    title: Trade-offs aceitos
+    description: O que foi conscientemente sacrificado por outra vantagem.
+    example: 'Ex: Menor flexibilidade de deploy independente em troca de consistência de versão.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 4
+  area_name: IMPLEMENTAÇÃO
+  area_description: Backend, frontend, APIs, agentes integrados e dependências
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - REQ-051
+  - REQ-052
+  - VAL-081
+  fields:
+  - field_id: '4.1'
+    title: Modelo de dados / schema
+    description: Entidades principais e como se relacionam.
+    example: 'Ex: users, posts, previews, publications — relacionados por post_id.'
+    valor: null
+    status: pendente
+  - field_id: '4.2'
+    title: Endpoints de API principais
+    description: Lista dos endpoints mais importantes, método e função.
+    example: 'Ex: POST /api/publish — dispara publicação; GET /health — status do sistema.'
+    valor: null
+    status: pendente
+  - field_id: '4.3'
+    title: Agentes/Tools MCP integrados
+    description: Nome de cada agente/tool, servidor MCP e escopo de permissão.
+    example: 'Ex: 11 tools EXECUTA + 10 tools Vault, servidor executar-ai canônico.'
+    valor: null
+    status: pendente
+  - field_id: '4.4'
+    title: Dependências núcleo (obrigatórias)
+    description: Pacotes/serviços sem os quais o build falha.
+    example: 'Ex: 6 variáveis de ambiente núcleo exigidas no build.'
+    valor: null
+    status: pendente
+  - field_id: '4.5'
+    title: Dependências condicionais
+    description: Pacotes/serviços ativados apenas sob feature flag.
+    example: 'Ex: Tokens Editorial E2 exigidos apenas quando EDITORIAL_E2_ENABLED=true.'
+    valor: null
+    status: pendente
+  - field_id: '4.6'
+    title: Política de atualização de dependências
+    description: 'Como e quando dependências são atualizadas (ex: Dependabot).'
+    example: 'Ex: PRs de risco baixo mesclados imediatamente; risco alto isolado, um de cada vez, com
+      suíte de testes rodando.'
+    valor: null
+    status: pendente
+  - field_id: '4.7'
+    title: Componente frontend principal
+    description: A tela/fluxo mais crítico do produto.
+    example: 'Ex: Editor de Journal em /app/journal — criar, publicar, despublicar posts.'
+    valor: null
+    status: pendente
+  - field_id: '4.8'
+    title: Testes automatizados
+    description: O que é coberto por CI (lint, typecheck, test, build).
+    example: 'Ex: 204 testes (api) + 14 testes (web), rodando em todo PR.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 5
+  area_name: OPERAÇÃO (DEPLOY & ROLLBACK)
+  area_description: O que garante que o lançamento não quebra silenciosamente
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - DEL-075
+  - GTM-093
+  fields:
+  - field_id: '5.1'
+    title: Checklist pré-deploy
+    description: O que precisa estar verde antes de subir para produção.
+    example: 'Ex: Testes passando em CI, migrations testadas, segredos configurados.'
+    valor: null
+    status: pendente
+  - field_id: '5.2'
+    title: Checks de saúde pós-deploy
+    description: Endpoints/sinais verificados logo após o deploy.
+    example: 'Ex: GET /health retorna status ok; rotas principais respondem 200.'
+    valor: null
+    status: pendente
+  - field_id: '5.3'
+    title: Gatilho de rollback — taxa de erro
+    description: Limiar objetivo de erro que dispara rollback.
+    example: 'Ex: Taxa de erro acima de 5% em 15 minutos.'
+    valor: null
+    status: pendente
+  - field_id: '5.4'
+    title: Gatilho de rollback — latência
+    description: Limiar objetivo de latência que dispara rollback.
+    example: 'Ex: Latência P50 acima de 800ms sustentada.'
+    valor: null
+    status: pendente
+  - field_id: '5.5'
+    title: Gatilho de rollback — fluxo crítico
+    description: Qual fluxo, se falhar, exige rollback imediato.
+    example: 'Ex: Fluxo de publicação (briefing → PR → preview → produção).'
+    valor: null
+    status: pendente
+  - field_id: '5.6'
+    title: Procedimento de rollback
+    description: Passo a passo de como reverter um deploy problemático.
+    example: 'Ex: Reverter para o último deploy estável via painel Vercel + confirmar /health.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 6
+  area_name: GOVERNANÇA & SEGURANÇA
+  area_description: Quem pode fazer o quê, onde segredos vivem, e como decisões de política são tomadas
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - REQ-057
+  - GOV-002
+  - GOV-004
+  fields:
+  - field_id: '6.1'
+    title: Estratégia de branch
+    description: Trabalho direto em main vs. PR obrigatório — e quando cada um se aplica.
+    example: 'Ex: PR obrigatório para mudanças de produto; correções de config podem ir direto com aprovação.'
+    valor: null
+    status: pendente
+  - field_id: '6.2'
+    title: Gate humano obrigatório
+    description: Em quais mudanças um humano precisa aprovar antes do merge/deploy.
+    example: 'Ex: Toda mudança de schema de banco exige aprovação humana explícita.'
+    valor: null
+    status: pendente
+  - field_id: '6.3'
+    title: Armazenamento de segredos
+    description: Onde credenciais vivem — nunca em código versionado.
+    example: 'Ex: Variáveis de ambiente na Vercel, nunca em .env commitado.'
+    valor: null
+    status: pendente
+  - field_id: '6.4'
+    title: Rotação de credenciais
+    description: Frequência e gatilho para trocar chaves/segredos.
+    example: 'Ex: Rotação imediata se uma chave for exposta; revisão trimestral por padrão.'
+    valor: null
+    status: pendente
+  - field_id: '6.5'
+    title: Riscos de segurança conhecidos
+    description: Vulnerabilidades ou fallbacks inseguros já identificados.
+    example: 'Ex: Fallback público/OWNER identificado em auditoria — remediação em andamento.'
+    valor: null
+    status: pendente
+  - field_id: '6.6'
+    title: Escopo de autonomia do agente de AI
+    description: O que um agente (Claude Code etc.) pode fazer sem aprovação humana.
+    example: 'Ex: Pode abrir PR draft; não pode mesclar em main sem revisão humana.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 7
+  area_name: DOCUMENTAÇÃO FUNDACIONAL
+  area_description: O que permite que qualquer pessoa ou agente entre no projeto sem reconstruir contexto
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - GOV-002
+  - ARC-068
+  fields:
+  - field_id: '7.1'
+    title: README existe?
+    description: Status do README principal do repositório.
+    example: 'Ex: Pendente — precisa cobrir problema, público, arquitetura, resultados em até 3 min de
+      leitura.'
+    valor: null
+    status: pendente
+  - field_id: '7.2'
+    title: ADRs documentados
+    description: Quantas decisões de arquitetura estão formalizadas como ADR.
+    example: 'Ex: 0 formalizados; 2 decisões implícitas identificadas, pendentes de registro.'
+    valor: null
+    status: pendente
+  - field_id: '7.3'
+    title: Documentação de API
+    description: Status da referência de endpoints.
+    example: 'Ex: Pendente — endpoints existem no código mas sem doc formal.'
+    valor: null
+    status: pendente
+  - field_id: '7.4'
+    title: Guia de onboarding
+    description: Existe um guia para alguém novo configurar o ambiente?
+    example: 'Ex: Não existe ainda; setup depende de conhecimento tácito.'
+    valor: null
+    status: pendente
+  - field_id: '7.5'
+    title: Catálogo de skills/ferramentas
+    description: Se o projeto usa um conjunto de skills/agentes, estão documentados?
+    example: 'Ex: 13 skills usadas no projeto, catálogo navegável pendente de publicação.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 8
+  area_name: GESTÃO DE PROJETOS & PMBOK
+  area_description: Iniciação e governança do projeto — valor, sponsor e decisão Go/No-Go
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - GOV-001
+  - DEL-070
+  fields:
+  - field_id: '8.1'
+    title: Problema/oportunidade que justifica o projeto
+    description: Descreva em 1 frase por que este projeto deve existir, conforme o Project Charter.
+    example: 'Ex: Consolidar toda a gestão do projeto em uma única fonte de verdade, eliminando divergência
+      entre documentos.'
+    valor: null
+    status: pendente
+  - field_id: '8.2'
+    title: Sponsor / Patrocinador
+    description: Nome de quem tem autoridade para aprovar o projeto formalmente.
+    example: 'Ex: A definir — nenhum sponsor formal designado ainda.'
+    valor: null
+    status: pendente
+  - field_id: '8.3'
+    title: Critério de sucesso principal
+    description: Indicador objetivo que mostrará que o projeto deu certo, com meta e prazo.
+    example: 'Ex: 100% dos domínios do formulário preenchidos até 2026-09-30.'
+    valor: null
+    status: pendente
+  - field_id: '8.4'
+    title: Decisão Go/No-Go
+    description: 'Status atual da autorização formal do projeto: Proposto, Em avaliação, Autorizado, Suspenso
+      ou Cancelado.'
+    example: 'Ex: Em avaliação — aguardando confirmação do sponsor.'
+    valor: null
+    status: pendente
+  - field_id: '8.5'
+    title: Abordagem do projeto
+    description: Preditiva, Adaptativa/Ágil ou Híbrida, e por quê.
+    example: 'Ex: Híbrida — planejamento macro fixo, execução semanal iterativa.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 9
+  area_name: PLANEJAMENTO ESTRATÉGICO, TÁTICO E OPERACIONAL
+  area_description: Os três horizontes de decisão — onde queremos chegar, como, e o que fazer esta semana
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - STR-015
+  - DEL-071
+  fields:
+  - field_id: '9.1'
+    title: Objetivo estratégico (12+ meses)
+    description: Descreva a direção de longo prazo do projeto.
+    example: 'Ex: Tornar-se a fonte única de operação do ecossistema Executar.'
+    valor: null
+    status: pendente
+  - field_id: '9.2'
+    title: Objetivo tático (trimestre/ciclo)
+    description: O que precisa ser verdade daqui a 3 meses para o estratégico avançar.
+    example: 'Ex: Central de Controle com todos os domínios preenchidos e em uso ativo.'
+    valor: null
+    status: pendente
+  - field_id: '9.3'
+    title: Prioridade operacional da semana
+    description: O que precisa avançar nos próximos 7 dias.
+    example: 'Ex: Confirmar owner e resolver as sobreposições de domínio pendentes.'
+    valor: null
+    status: pendente
+  - field_id: '9.4'
+    title: Dependência entre horizontes
+    description: O que no nível tático bloqueia ou depende do estratégico.
+    example: 'Ex: O objetivo tático de preenchimento completo depende de um owner estratégico confirmado.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 10
+  area_name: ROADMAP, CRONOGRAMA, CICLOS E BACKLOG
+  area_description: Marcos de médio prazo e o ritmo semanal de execução
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - DEL-071
+  fields:
+  - field_id: '10.1'
+    title: 'Marco de médio prazo #1'
+    description: Próximo grande marco do projeto e data-alvo.
+    example: 'Ex: Central de Controle validada e em uso — 2026-09-15.'
+    valor: null
+    status: pendente
+  - field_id: '10.2'
+    title: Ciclo semanal atual
+    description: 'Em qual fase do ciclo o projeto está agora: Editorial, Desenvolvimento ou Governança.'
+    example: 'Ex: Governança — revisão de domingo.'
+    valor: null
+    status: pendente
+  - field_id: '10.3'
+    title: Item de backlog crítico
+    description: Tarefa pendente que bloqueia o próximo marco.
+    example: 'Ex: Sincronizar backlog do Linear com a aba de execução.'
+    valor: null
+    status: pendente
+  - field_id: '10.4'
+    title: Cadência de revisão
+    description: Com que frequência o roadmap é revisado e por quem.
+    example: 'Ex: Toda segunda-feira, pelo owner do projeto.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 11
+  area_name: EDITORIAL, CAMPANHAS E CONTEÚDO
+  area_description: Conteúdo, calendário editorial, campanhas e trilhas de comunicação
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - OFF-044
+  - GTM-090
+  fields:
+  - field_id: '11.1'
+    title: Linha editorial
+    description: Tema ou pilar de conteúdo predominante do período.
+    example: 'Ex: Bastidores da construção do sistema Executar.'
+    valor: null
+    status: pendente
+  - field_id: '11.2'
+    title: Calendário de publicação
+    description: Frequência e canais de publicação de conteúdo.
+    example: 'Ex: 2x por semana, LinkedIn e newsletter.'
+    valor: null
+    status: pendente
+  - field_id: '11.3'
+    title: Campanha ativa
+    description: Nome e objetivo da campanha em andamento, se houver.
+    example: 'Ex: Nenhuma campanha ativa no momento.'
+    valor: null
+    status: pendente
+  - field_id: '11.4'
+    title: Trilha de conteúdo
+    description: Sequência de peças que levam o público de um ponto a outro.
+    example: 'Ex: Post de bastidor → thread técnica → case de uso.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 12
+  area_name: STAKEHOLDERS
+  area_description: Quem afeta ou é afetado pelo projeto, e como engajar cada um
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - GOV-003
+  fields:
+  - field_id: '12.1'
+    title: Stakeholder principal
+    description: Nome/grupo, papel, nível de interesse e influência.
+    example: 'Ex: Owner do projeto — interesse alto, influência alta.'
+    valor: null
+    status: pendente
+  - field_id: '12.2'
+    title: Forma de comunicação
+    description: Como e com que frequência este stakeholder é atualizado.
+    example: 'Ex: Resumo semanal aos domingos, no ciclo de governança.'
+    valor: null
+    status: pendente
+  - field_id: '12.3'
+    title: Expectativa não alinhada
+    description: Ponto de expectativa que ainda precisa de alinhamento explícito.
+    example: 'Ex: Nenhuma pendência identificada.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 13
+  area_name: RUNBOOKS, SOPS E ROTINAS
+  area_description: Procedimentos padronizados e repetíveis do dia a dia operacional
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - OPS-100
+  fields:
+  - field_id: '13.1'
+    title: 'Runbook crítico #1'
+    description: Nome do procedimento e quando ele é acionado.
+    example: 'Ex: Fechamento de ciclo — rodado toda quarta e sábado.'
+    valor: null
+    status: pendente
+  - field_id: '13.2'
+    title: Responsável pela rotina
+    description: Quem executa este runbook hoje.
+    example: 'Ex: Owner do projeto, manualmente.'
+    valor: null
+    status: pendente
+  - field_id: '13.3'
+    title: SOP documentado?
+    description: Existe um documento formal deste procedimento? Onde vive.
+    example: 'Ex: Não determinado.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 14
+  area_name: PESQUISA, DADOS E CONHECIMENTO
+  area_description: Base de conhecimento, evidências, pesquisa e o papel de agentes de IA no projeto
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards:
+  - MKT-022
+  fields:
+  - field_id: '14.1'
+    title: Fonte de evidência principal
+    description: 'Onde ficam guardadas as provas objetivas de estado: documentos, commits, tickets.'
+    example: 'Ex: Google Drive, pasta Prompt-Enginner, e o próprio XLSX Central.'
+    valor: null
+    status: pendente
+  - field_id: '14.2'
+    title: Pesquisa/dado pendente
+    description: Informação que ainda precisa ser levantada antes de uma decisão.
+    example: 'Ex: Confirmar se existe uma planilha anterior com domínios já preenchidos.'
+    valor: null
+    status: pendente
+  - field_id: '14.3'
+    title: Papel de agentes de IA no projeto
+    description: Que tarefas um agente de IA está autorizado a executar sozinho vs. só propor.
+    example: 'Ex: Agente propõe preenchimento; humano aprova antes de mudar status.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 15
+  area_name: SKILLS, PLUGINS E FERRAMENTAS
+  area_description: Inventário de skills, plugins e ferramentas usados para operar o projeto
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards: []
+  fields:
+  - field_id: '15.1'
+    title: Skill/plugin principal em uso
+    description: Nome da skill/plugin e para que ela serve neste projeto.
+    example: 'Ex: executar-xls — gera este próprio workbook.'
+    valor: null
+    status: pendente
+  - field_id: '15.2'
+    title: Ferramenta de automação conectada
+    description: Sistema externo conectado (Linear, Drive, etc.) e o que ele resolve.
+    example: 'Ex: Google Drive — repositório de documentos e evidências.'
+    valor: null
+    status: pendente
+  - field_id: '15.3'
+    title: Lacuna de ferramenta
+    description: Automação que falta e seria útil.
+    example: 'Ex: Não determinado.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 16
+  area_name: PLATAFORMAS, CONTAS E IDENTIFICADORES
+  area_description: Atalhos, links, contas, logins e identificadores usados no dia a dia
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards: []
+  fields:
+  - field_id: '16.1'
+    title: Plataforma principal
+    description: Nome da plataforma e para que ela é usada no projeto.
+    example: 'Ex: claude.ai — projeto Control Center.'
+    valor: null
+    status: pendente
+  - field_id: '16.2'
+    title: Link/atalho crítico
+    description: URL ou identificador que precisa estar sempre à mão.
+    example: 'Ex: Não determinado.'
+    valor: null
+    status: pendente
+  - field_id: '16.3'
+    title: Responsável pela conta
+    description: Quem tem acesso administrativo a esta plataforma.
+    example: 'Ex: Owner do projeto.'
+    valor: null
+    status: pendente
+  area_status: pendente
+- area_id: 17
+  area_name: PROMPT ENGINEERING & COMANDOS
+  area_description: Prompts canônicos e comandos operacionais que governam os agentes de IA deste projeto
+  source_form: EXECUTAR_projetosaasentrypoint_EXPANDIDO
+  related_ecosystem_cards: []
+  fields:
+  - field_id: '17.1'
+    title: Prompt canônico principal
+    description: Nome do prompt-fonte e onde ele vive.
+    example: 'Ex: 02 · Project Control Agent — Google Drive, Prompt-Enginner/02-PROMPTS.'
+    valor: null
+    status: pendente
+  - field_id: '17.2'
+    title: Comando/gatilho operacional
+    description: Palavra ou frase que aciona uma rotina específica do agente.
+    example: 'Ex: Não determinado.'
+    valor: null
+    status: pendente
+  - field_id: '17.3'
+    title: Regra anti-alucinação específica
+    description: Restrição adicional que os agentes deste projeto devem sempre respeitar.
+    example: 'Ex: Nunca promover Status sem evidência registrada.'
+    valor: null
+    status: pendente
+  area_status: pendente
