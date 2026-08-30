@@ -21,13 +21,39 @@ fill_protocol:
   - pendente
   - em_andamento
   - completo
-suggested_start:
-  areas:
-  - 1
-  - 2
-  reason: 'São o início natural do próprio formulário original (planilha 02_Visao_Geral) e não dependem
-    de nenhuma outra área. Ancoram os cards raiz do modelo de 75 cards: GOV-001 (Ecosystem Charter, sem
-    depends_on) e STR-011/012/013/014 (problema, oportunidade, estado futuro, BRD).'
+sending_order:
+  status: confirmado_pelo_usuario
+  groups:
+  - group: 1
+    dia: 1
+    areas: [8, 9, 10]
+    label: Gestão de Projetos & PMBOK + Planejamento Estratégico/Tático/Operacional + Roadmap/Backlog
+    status: em_andamento
+  - group: 2
+    dia: 2
+    areas: [1, 2]
+    label: Negócio & GTM + Produto
+    status: pendente
+  - group: 3
+    dia: 3
+    areas: [11]
+    label: Editorial, Campanhas e Conteúdo
+    status: pendente
+  - group: 4
+    dia: 4
+    areas: [12, 13, 14, 15, 16, 17]
+    label: Stakeholders + Runbooks/SOPs + Pesquisa/Dados + Skills/Plugins + Plataformas/Contas + Prompt Engineering
+    status: pendente
+  - group: 5
+    dia: 5
+    areas: [5, 6, 7]
+    label: Operação (Deploy/Rollback) + Governança & Segurança + Documentação Fundacional
+    status: pendente
+  - group: 6
+    dia: 6
+    areas: [3, 4]
+    label: Arquitetura & Full Stack + Implementação
+    status: pendente
 areas:
 - area_id: 1
   area_name: NEGÓCIO & GTM
