@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import hashlib, json
 from pathlib import Path
-ROOT = Path(__file__).resolve().parents[7]
+ROOT = Path(__file__).resolve().parents[5]
 VENDOR = ROOT / '80-tecnologia-plataformas' / '05-gpt' / '03-skills' / 'anthropic-knowledge-work-plugins'
 OUT = Path(__file__).resolve().parents[1] / 'runtime' / 'registry' / 'skills-index.json'
 skills=[]

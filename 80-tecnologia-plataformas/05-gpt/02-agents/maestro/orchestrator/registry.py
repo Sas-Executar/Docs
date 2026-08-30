@@ -1,7 +1,7 @@
 import csv, json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[7]
+ROOT = Path(__file__).resolve().parents[5]
 FOLDER_REGISTRY = ROOT / '01-master-index' / 'CENTRAL_CONTROL.csv'
 SKILL_INDEX = Path(__file__).resolve().parents[1] / 'runtime' / 'registry' / 'skills-index.json'
 
