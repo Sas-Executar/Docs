@@ -22,3 +22,6 @@ TAX-ECM-001,FS-IDX-003,01-master-index/02-taxonomies/ECOSYSTEM_CARDS_REGISTER.cs
 TAX-SAAS-001,FS-IDX-003,01-master-index/02-taxonomies/SAAS_ENTRYPOINT_DOMAIN_MAP.csv,registro-de-roteamento,ativo
 GOV-PLAN-001,FS-OPS-002,70-operacao-governanca/01-planos-acao/PLANO_LANCAMENTO_ECOSSISTEMA.md,plano-de-acao,ativo
 SCH-FUS-001,FS-IDX-002,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,formulario-fusionado,ativo
+DATA-REG-001,FS-DAT-006,60-dados/40-canonical/REGISTRO_DOCUMENTAL_MECE_V1.csv,registro-documental,ativo
+TAX-ROT-001,FS-IDX-003,01-master-index/02-taxonomies/ROTEAMENTO_DOCUMENTAL_MECE.csv,mapa-de-roteamento,ativo
+TAX-MAP-001,FS-IDX-003,01-master-index/02-taxonomies/MAPA_DOC_ARQUIVO.csv,mapa-documento-arquivo,ativo

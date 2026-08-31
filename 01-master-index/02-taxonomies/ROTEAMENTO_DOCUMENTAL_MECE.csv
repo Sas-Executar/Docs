@@ -1,0 +1,215 @@
+documento_id,classificacao_id,nome_arquivo,eco_unit,frameworks_candidatos,campos_candidatos,valor_esperado,prioridade_leitura,justificativa
+DOC-C01-004,C01,02 - Estratégia Editorial e Artigo Fundador.md,ECO-02,SA-13;SA-11B,11.1;11.2;11.3;11.5,alto,1,"'Estrategia Editorial e Artigo Fundador' com secoes Artigo 01 fundador, Lancamento editorial e Autogerenciamento de riscos cognitivos."
+DOC-C01-005,C01,03 - Framework de Risco Cognitivo e Prior Art.md,ECO-03,SA-03A;SA-05;SA-11A,1.1;1.13;14.1,alto,1,"'Framework de Risco Cognitivo e Prior Art' com Principio orientador, Demanda social e posicionamento e A demanda alem da nao execucao."
+DOC-C02-004,C02,EXECUTAR_ENTREGAVEIS_GATES_POR_AREA.csv,TRANSVERSAL,SA-01;SA-02;SA-03A;SA-03B;SA-03C;SA-03D;SA-04A;SA-04B;SA-04C;SA-04D;SA-05;SA-06A;SA-06B;SA-07A;SA-07B;SA-08A/B/C;SA-09A/B/C/D;SA-10A;SA-10B;SA-11A;SA-11B;SA-12;SA-13,13.1;14.1,alto,1,"Colunas area, stream, gate, sas_id, deliverable_id e title: e a tabela que amarra entregaveis e gates aos IDs SAS, ou seja o indice dos frameworks."
+DOC-C02-016,C02,RC-P02_FRAMEWORK_V0_1.txt,ECO-03,SA-07B;SA-11B,1.3;2.3;14.1,alto,1,"RC-P02 'Cognitive Execution Risk Management - v0.1', EM_DESENVOLVIMENTO: versao nomeada do framework proprietario."
+DOC-C02-031,C02,RISCO_COGNITIVO_RESEARCH_MAP.txt,ECO-03,SA-05;SA-11A,1.1;14.1;14.2,alto,1,'MAPA DE PESQUISA' v2026-08-28 com TESE EM INVESTIGACAO: vulnerabilidades executivas como fontes endogenas de risco; nucleo conceitual.
+DOC-C02-039,C02,risco-cognitivo-bmc-gantt.html,TRANSVERSAL,SA-06B;SA-07A;SA-08A/B/C;SA-11A;SA-11B,1.1;1.3;1.4;1.9,alto,1,'Business Canvas + Gantt' do Risco Cognitivo: unico artefato do bloco que combina modelo de negocio completo com linha de tempo.
+DOC-C02-042,C02,texto 2.txt,TRANSVERSAL,SA-11A;SA-11B;SA-13,1.1;1.3;11.1;11.3,alto,1,"5W2H que fixa a ordem categoria intelectual antes do EXECUTAR: artigo fundador, campanha, sinais de audiencia; sequenciamento estrategico."
+DOC-C02-043,C02,texto.txt,ECO-03,SA-05;SA-11A;SA-11B,1.1;1.3;2.1,alto,1,'Visao central' com a tese-mae de riscos cognitivos endogenos e o nome tecnico provisorio Cognitive Execution Risk Management.
+DOC-C05-001,C05,Ecossistema .html,TRANSVERSAL,SA-06A;SA-06B;SA-07A;SA-07B,14.1;14.2,alto,1,Titulo 'Workbook Reader Integral' com WORKBOOK INDEX/ORDEM DAS FONTES listando Sas-06 e Sas-07: agregador integral das fontes SAS.
+DOC-C06-001,C06,gtm-launch-report.html,ECO-02,SA-13;SA-11B,1.4;1.5;11.2;11.3,alto,1,"'GTM Launch Deck 07/09' com Plano, Roadmap, Cronograma, objetivo operacional do GTM e unidade de trabalho Content Package."
+DOC-C07-002,C07,MATRIZ_GESTAO_PROJETOS_X_TDAH_ONE_PAGE_PAISAGEM.html,ECO-03,SA-04C;SA-07B,1.1;14.1;14.2,alto,1,"One page da Matriz Gestao de Projetos x TDAH: cruzamento funcoes de gestao x funcoes executivas, nucleo do framework proprietario."
+DOC-C07-003,C07,MATRIZ_GESTAO_PROJETOS_X_TDAH_EXTRAIDA.csv,ECO-03,SA-04C;SA-07A;SA-07B,1.1;14.1;14.2;14.3,alto,1,"CSV extraido com colunas ID, funcoes fundamentais de gestao de projetos, funcoes executivas: base tabular legivel por maquina da matriz."
+DOC-C07-004,C07,MATRIZ_GESTAO_PROJETOS_X_TDAH_ONE_PAGE.xlsx,ECO-03,SA-04C;SA-07B,1.1;14.1;14.2;14.4,alto,1,"XLSX com abas ONE_PAGE, MATRIZ_COMPLETA, SCHEMA e NOTAS_FONTE: versao completa da matriz mais rastro de procedencia das fontes."
+DOC-C07-007,C07,base_evidencias_tdah_adulto_WAREHOUSE.json,TRANSVERSAL,SA-01;SA-03B;SA-03C;SA-04D,1.14;14.1;14.2;14.3;14.4,alto,1,"Warehouse JSON de evidencias TDAH adulto com sha256, columns, row_count, records e evidencia_id: base quantitativa versionada do bloco."
+DOC-C07-009,C07,dashboard_sintese_tdah_694_V3_FINAL_LIGHT__REC-001102.html,TRANSVERSAL,SA-03B;SA-03C;SA-03D;SA-04D;SA-05;SA-09A;SA-09B;SA-09C;SA-09D;SA-10A;SA-11A,1.1;1.3;1.13;14.1;14.4,alto,1,"Sintese V3 Final declara ""Evidencias, mercado e decisoes do EXECUTAR"" e traz Posicionamento resultante, Sete lacunas e Composicao da base."
+DOC-C08-007,C08,05-CRITERIOS-DE-LANCAMENTO.md,TRANSVERSAL,SA-13,2.6;11.2;13.1,alto,1,"Criterios de lancamento com marcos datados (05/09 congelamento, 06/09, 07/09): gates e criterios de conclusao do go-to-market."
+DOC-C09-004,C09,01-APLICATIVO-VISAO.md,ECO-01,SA-11A;SA-11B;SA-12,1.1;1.3;2.1;2.3;2.4,alto,1,"Visao do Aplicativo Executar com ""Mensagem central"" e ""Para fechar"": declaracao de proposta de valor e pendencias do produto SAS."
+DOC-C09-006,C09,02-SERVICOS-VISAO.md,ECO-07,SA-06A;SA-06B;SA-11B,1.1;1.3;2.1,alto,1,"Visao do Estudio Executar com ""Mensagem central"", ""Modelo"" e ""Para fechar"": posicionamento e modelo de entrega do servico de consultoria."
+DOC-C09-013,C09,04-CURSO-VISAO.md,ECO-05,SA-06A;SA-11B;SA-13,1.3;2.1;2.3;2.5,alto,1,"Visao do Curso ""Gerenciando o TDAH Adulto"" com ""Estrutura"" e ""Para fechar no lancamento"": oferta nomeada, com escopo e gate de lancamento."
+DOC-C10-003,C10,01-ARQUITETURA-EDITORIAL.md,ECO-02,SA-04C;SA-11B,11.1;11.4;11.6,alto,1,"Arquitetura editorial unica com ""Categoria"", ""Tres pilares"", ""Quatro movimentos"" e ""Arco de cada peca"": espinha da linha editorial e das trilhas."
+DOC-C14-007,C14,PUB-005-AGENDA-MESTRA.md,TRANSVERSAL,SA-13,11.2;11.3;10.4;13.5,alto,1,PUB-005 'Agenda mestra': consolida a agenda de distribuicao dos canais; candidato natural a calendario editorial e cadencia.
+DOC-C15-004,C15,D01-25-08-CENTRAL-DE-LANCAMENTO.md,TRANSVERSAL,SA-13,10.1;10.5;13.1,alto,1,"D01 25/08 'Central de lancamento pronta' com Mudanca de estado, Resultado do dia e Fila unica do dia: molde real do ciclo diario."
+DOC-C15-011,C15,SEMANA-01-25-31.md,TRANSVERSAL,,10.2;10.5;13.5,alto,1,SEMANA-01 '25 a 31 de agosto' com secao Resultado: define o resultado esperado do primeiro ciclo semanal.
+DOC-C15-021,C15,D14-07-09-LANCAMENTO.md,TRANSVERSAL,SA-13,1.5;13.1;10.5,alto,1,D14 07/09 'Lancamento ativado e observado': dia do lancamento e da observacao; candidato a definir o que se observa apos ativar.
+DOC-C16-003,C16,MED-001-LIGACOES-E-FORMULARIOS.md,TRANSVERSAL,SA-13,1.5;1.6;14.1;16.1,alto,1,MED-001 'ligacoes e formularios': unico documento do bloco sobre instrumentacao de links e formularios; candidato a north star e guardrail.
+DOC-C16-004,C16,MED-002-EVIDENCIAS-DE-CONCLUSAO.md,TRANSVERSAL,,13.1;13.5;14.1;10.4,alto,1,MED-002 'Evidencias de conclusao': define o que conta como prova de feito; base do DoD usado nos dias D01-D14.
+DOC-C17-003,C17,MODELO-DIA.md,TRANSVERSAL,,13.1;13.5;10.2;10.5,alto,1,"'Modelo dia de producao' com Resultado do dia, Dependencias, Fazer hoje e Encerrar no mesmo fluxo: o SOP que gera todos os D01-D14."
+DOC-C17-005,C17,MODELO-PECA-EDITORIAL.md,ECO-02,,11.1;11.5;14.1,alto,1,"'Modelo peca editorial' com Situacao real, Pergunta central, Entender e Evidencias e referencias: define a estrutura da linha editorial."
+DOC-C18-002,C18,00-ABRA-AQUI.md,TRANSVERSAL,SA-13,10.1;13.1;11.3,alto,1,"'Lancamento Executar 07/09/2026' com secoes Sequencia do lancamento, Regra de passagem e Estrutura de apoio: governa ordem e dependencias do GTM."
+DOC-C18-004,C18,COMO-USAR.md,TRANSVERSAL,,13.1;13.5;10.2,alto,1,"'Como usar este cofre' com Logica de estado, 'nao sair do dia' e Flexibilidade: descreve o SOP de operacao diaria e o ciclo."
+DOC-C01-002,C01,00 - PAINEL - Risco Cognitivo.md,ECO-02,,11.1;11.5;14.1,medio,2,"'Hub de pesquisa e informacao' com Documentos e Rotas tematicas (Conceito e tese; TDAH, funcoes executivas e trabalho): indice de entrada do hub."
+DOC-C01-003,C01,"01 - TDAH, Funções Executivas e Risco Cognitivo.md",ECO-02,SA-01,1.1;11.5;14.1,alto,2,"Documento com Mapa inicial do artigo, Argumento autoral e tese e secao sobre TDAH adulto e Barkley: peca editorial ja redigida."
+DOC-C01-006,C01,04 - Marca Editorial Risco Cognitivo.md,ECO-02,SA-11B,1.4;11.6;16.1,alto,2,'Marca Editorial Risco Cognitivo' com Arquitetura de marca e canais e Assinatura editorial: define marca e onde ela se manifesta.
+DOC-C02-001,C02,RISCO_COGNITIVO_MASTER_CONTROL.txt,TRANSVERSAL,,13.1;13.2,medio,2,"RC-001-CONTROL 'Master Control - Operacao', STATUS ATIVO, HORIZONTE AGORA: documento de comando da operacao corrente."
+DOC-C02-002,C02,RISCO_COGNITIVO_MASTER_INDEX.csv,TRANSVERSAL,,14.1;14.2,alto,2,"Indice mestre com colunas ID, CONTEXTO, TIPO, STATUS, HORIZONTE, TITULO, SINTESE e DECISAO_OU_ACHADO: mapa de decisoes ja tomadas."
+DOC-C02-003,C02,RISCO_COGNITIVO_MASTER_INDEX.xlsx,TRANSVERSAL,,11.3;14.1;14.2,alto,2,"Mesma base do MASTER_INDEX mas com abas extras CONTEXT_SCHEMA, DIRECTORY_MAP e CAMPAIGN_01: superset do CSV homonimo."
+DOC-C02-007,C02,RC-000_AI_README.txt,TRANSVERSAL,,13.1;14.1,medio,2,"RC-000 'AI README - Ordem de leitura', ATIVO/AGORA: define a sequencia canonica de leitura do pacote RC, util antes de abrir o resto."
+DOC-C02-010,C02,RC-002_CONTEXT_ROUTER.txt,TRANSVERSAL,,13.1;14.1,medio,2,"RC-002 'Context Router', HORIZONTE REFERENCIA: roteia qual contexto responde a que pergunta; insumo direto para o proprio roteamento."
+DOC-C02-012,C02,RC-P01-ART01_MAPA_ARGUMENTATIVO.txt,ECO-02,,11.1;11.5,medio,2,"RC-P01-ART01 'Artigo fundador - mapa argumentativo', ATIVO/AGORA: estrutura de argumento da peca que abre a linha editorial."
+DOC-C02-013,C02,RC-P01-CAM01_CRONOGRAMA_14D.txt,ECO-02,SA-13,11.2;11.3,alto,2,"RC-P01-CAM01 'Campanha 01 - cronograma 14 dias', ATIVO/AGORA: calendario e escopo da primeira campanha editorial."
+DOC-C02-014,C02,RC-P01_PROJECT_BRIEF.txt,ECO-02,SA-13;SA-11B,1.1;11.1;11.3,alto,2,"RC-P01 'Lancamento editorial Risco Cognitivo', PARA PROJECT, ATIVO/AGORA: brief do projeto de lancamento do blog."
+DOC-C02-017,C02,RC-P03_SITE_CMS_BRIEF.txt,ECO-02,SA-07A,2.2;2.5;16.1,alto,2,"RC-P03 'Site/CMS Risco Cognitivo', ATIVO/AGORA: brief da plataforma de publicacao, requisitos e escolha de stack."
+DOC-C02-018,C02,RC-A01_POLITICA_EDITORIAL.txt,ECO-02,,11.1;13.2,alto,2,"RC-A01 'Governanca editorial e rigor', AREA, HORIZONTE CONTINUO: regras permanentes de linha editorial e criterio de rigor."
+DOC-C02-019,C02,RC-A02_BRAND_SYSTEM.txt,ECO-02,,11.6;11.7,alto,2,"RC-A02 'Marca e Design System', AREA, CONTINUO: identidade e sistema de design como area permanente do projeto."
+DOC-C02-020,C02,RC-A03_PIPELINE_EDITORIAL.txt,ECO-02,,11.2;13.1;13.2,alto,2,"RC-A03 'Operacao recorrente de publicacao', AREA, CONTINUO: pipeline editorial repetivel, materia-prima de runbook/SOP."
+DOC-C02-030,C02,RISCO_COGNITIVO_CORRELATED_TERMS.csv,ECO-03,SA-03A;SA-05,11.10;14.1,alto,2,"CSV de termos PT/EN com CAMPO, STATUS_NO_FRAMEWORK e LINK_PRIMARIO: vocabulario que delimita a categoria e alimenta SEO."
+DOC-C02-034,C02,BRAND_SYSTEM.txt,ECO-02,,11.6;11.7,alto,2,"'BRAND SYSTEM' marcado STATUS: SOURCE OF TRUTH, UPDATED 2026-08-28, com secao MARCA: versao textual canonica da identidade."
+DOC-C03-002,C03,text 3.txt,ECO-02,SA-03A;SA-04A;SA-05;SA-11A,1.1;1.3,alto,2,"'Nao planeje sucesso, planeje os riscos' + afirmacao de demanda social real maior que o recorte neurodivergencia e lacuna de posicionamento."
+DOC-C04-001,C04,Cronograma.md,TRANSVERSAL,,13.1;13.2,medio,2,"Cronograma de envio de 122 topicos em 17 areas por dia: governa a sequencia operacional do proprio preenchimento, nao conteudo de negocio."
+DOC-C04-002,C04,handoffexecutar.txt,ECO-01,SA-07B,2.2;13.1;16.1,alto,2,Handoff do repo Sas-Executar gerado do estado real (git log + GitHub API) para outro agente: estado tecnico e dependencias do app.
+DOC-C07-001,C07,EXECUTAR_Editorial_Quality_Assurance_Fluent.html,ECO-02,SA-07B,11.1;11.6;11.8;13.1,medio,2,"Titulo ""Editorial Quality Assurance""; secoes Quality Gate Editorial, FORMULA, DECISAO, RESPONSABILIDADE: gate e SOP de qualidade editorial."
+DOC-C08-003,C08,01-MAPA-DE-DEPENDENCIAS.md,TRANSVERSAL,SA-07A;SA-13,13.1;13.2,medio,2,"Mapa de dependencias com ""Cadeia principal"" e ""Dependencias criticas"": sequenciamento que estrutura a cadeia de execucao do lancamento."
+DOC-C08-006,C08,04-REGISTRO-DE-ROTAS.md,TRANSVERSAL,SA-13,1.4;16.1;16.2,medio,2,"Registro de rotas e destinos: mapeia para onde cada peca vai, candidato a canais e a inventario de plataformas/contas."
+DOC-C08-011,C08,09-FILA-UNICA-DO-LANCAMENTO.md,TRANSVERSAL,SA-13,11.2;13.1,medio,2,"Fila unica do lancamento com secao ""Sequencia"": ordem canonica de execucao das entregas do lancamento."
+DOC-C09-008,C09,03-PRODUTOS-VISAO.md,ECO-04,SA-06A;SA-11A,1.3;2.1,medio,2,"Visao de Produtos fisicos com uma secao ""Regra"": define o criterio que rege a linha fisica, escopo ainda enxuto."
+DOC-C09-011,C09,04-LIVROS-DIGITAIS-VISAO.md,ECO-06,SA-06A;SA-11A,1.3;2.1;2.3,medio,2,"Visao de Livros digitais com secao ""Para fechar"": define a linha de livros e as pendencias de fechamento."
+DOC-C09-015,C09,04-HOTMART-CADASTRO.md,ECO-05,SA-13,1.4;16.1;16.2,medio,2,"Cadastro na Hotmart com secoes ""Cadastrar"" e ""Evidencia"": conta de plataforma de distribuicao e prova de execucao."
+DOC-C09-016,C09,04-INFOPRODUTOS-VISAO.md,ECO-05,SA-06A;SA-11A;SA-13,1.3;2.1;11.2,alto,2,"Visao de Infoprodutos com ""Estrutura comum"" e ""Papel no lancamento"": padrao compartilhado da linha e seu encaixe no GTM."
+DOC-C09-018,C09,05-AFILIADOS-VISAO.md,ECO-08,SA-06A;SA-07A;SA-13,1.4;1.16;12.1,medio,2,"Visao de Afiliados com ""Nucleo inicial"" e ""Para fechar"": canal de distribuicao por terceiros e primeiros parceiros previstos."
+DOC-C10-005,C10,01-CONTEUDO-E-ROTEIRO.md,ECO-02,SA-04C,11.1;11.4;11.5,medio,2,"Conteudo e roteiro da Peca 001 (TDAH, tarefas, processos e projetos) com ""Encaixar"" e ""Origem"": roteiro e procedencia do material."
+DOC-C10-008,C10,04-CHAMADA-E-BRINDE.md,ECO-02,SA-13,11.3;11.5,medio,2,"Chamada e brinde da Peca 001 com ""Definir"" e ""Conferir"": CTA e isca de captacao associados a peca."
+DOC-C10-011,C10,PECA-001-TDAH-GESTAO.md,ECO-02,SA-04C,11.1;11.5,alto,2,"Peca 001 ""TDAH, tarefas, processos e projetos"" com Objetivo, Entender, Estruturar, Executar: conteudo tematico central do blog."
+DOC-C10-013,C10,01-CONTEUDO-E-ROTEIRO.md,ECO-02,SA-04C,11.1;11.4;11.5,medio,2,"Conteudo e roteiro da Peca 002 (TDAH e gestao de riscos) com ""Encaixar"" e ""Origem"": roteiro e procedencia do material."
+DOC-C10-016,C10,04-CHAMADA-E-BRINDE.md,ECO-02,SA-13,11.3;11.5,medio,2,"Chamada e brinde da Peca 002 com ""Definir"" e ""Conferir"": CTA e isca de captacao associados a peca."
+DOC-C10-019,C10,PECA-002-TDAH-GESTAO-DE-RISCOS.md,ECO-02,SA-04C,11.1;11.5,alto,2,"Peca 002 ""TDAH e gestao de riscos"" com Objetivo, Entender, Estruturar, Executar: tema que nomeia diretamente o blog Risco Cognitivo."
+DOC-C10-021,C10,01-CONTEUDO-E-ROTEIRO.md,ECO-02,SA-04C,11.1;11.4;11.5,medio,2,"Conteudo e roteiro da Peca 003 (Funcoes executivas) com ""Encaixar"" e ""Origem"": roteiro e procedencia do material."
+DOC-C10-024,C10,04-CHAMADA-E-BRINDE.md,ECO-02,SA-13,11.3;11.5,medio,2,"Chamada e brinde da Peca 003 com ""Definir"" e ""Conferir"": CTA e isca de captacao associados a peca."
+DOC-C10-027,C10,PECA-003-FUNCOES-EXECUTIVAS.md,ECO-02,SA-04C,11.1;11.5,alto,2,"Peca 003 ""Funcoes executivas aplicadas ao trabalho"" com Objetivo, Entender, Estruturar, Executar: ponte entre evidencia e dor do publico."
+DOC-C10-029,C10,BRINDE-001-MATERIAL-CANONICO.md,ECO-02,SA-13,1.4;11.5,alto,2,"Brinde 001 material canonico de entrada com ""Decisao pendente"", ""Deve conter"" e ""Sugestao de direcao"": isca de topo ainda em aberto."
+DOC-C11-004,C11,01-DEMONSTRACAO-APLICATIVO.md,ECO-01,SA-12,2.8;2.9;2.11,alto,2,"Demonstracao 01 do Aplicativo Executar com ""Cena A"", ""Cena B"" e ""Materiais"": roteiro de uso encenado, proxy da jornada e do momento aha."
+DOC-C11-006,C11,02-DEMO-AGENTE-007.md,ECO-01,SA-11B,2.5;2.11;11.3,medio,2,"Demonstracao 02 do Agente 007 com ""Cena A"", ""Cena B"" e ""Prova"": encenacao de capacidade com evidencia de funcionamento."
+DOC-C11-010,C11,04-DEMONSTRACAO-ESTUDIO.md,ECO-07,SA-11B,1.3;1.16;11.3,medio,2,"Demonstracao 04 do Estudio Executar com ""Cena A"", ""Cena B"" e ""Mensagem"": encenacao comercial do servico de consultoria."
+DOC-C12-003,C12,FORM-001-ESTUDIO.md,ECO-07,SA-04B;SA-04D,1.2;1.16;2.7;11.9,alto,2,"Formulario 001 do Estudio com ""Perguntas essenciais"" e ""Concluido quando"": instrumento de qualificacao de cliente na entrada do servico."
+DOC-C12-004,C12,FORM-002-CAPTACAO.md,ECO-02,SA-04B;SA-04D,1.2;1.4;11.9;1.16,medio,2,"Formulario 002 de Captacao editorial com secoes ""Uso"" e ""Concluido quando"": instrumento de captura de lead e escuta do publico."
+DOC-C12-005,C12,PAG-001-INICIAL.md,TRANSVERSAL,SA-11A;SA-11B,1.3;1.4;11.1,alto,2,"Pagina inicial com ""Objetivo"", ""Chamada principal"" e ""Fechar"": versao publica da proposta de valor e do CTA primario."
+DOC-C12-006,C12,PAG-002-SERVICOS.md,ECO-07,,1.3;1.4;1.16,medio,2,"Pagina Servicos com ""Objetivo"", ""Chamada principal"" e ""Fechar"": vitrine publica da oferta de consultoria."
+DOC-C14-003,C14,PUB-001-BLOG.md,ECO-02,SA-13,11.1;11.2;16.1,alto,2,PUB-001 'Blog e biblioteca' com secao Evidencia: plano de publicacao do canal proprio e criterio de comprovacao.
+DOC-C14-004,C14,PUB-002-YOUTUBE.md,ECO-08,SA-13,11.2;16.1,medio,2,PUB-002 'YouTube' com secao Evidencia: plano de publicacao e evidencia do canal de video.
+DOC-C14-005,C14,PUB-003-INSTAGRAM-TIKTOK.md,ECO-08,SA-13,11.2;16.1,medio,2,PUB-003 'Instagram e TikTok' com secao Evidencia: plano de publicacao e evidencia dos canais curtos.
+DOC-C15-005,C15,D02-26-08-ROTAS-E-CHAMADAS.md,TRANSVERSAL,SA-13,10.5;13.1;16.1,alto,2,D02 26/08 'Destinos de conversao resolvidos': dia dedicado a rotas e chamadas; candidato a mapear destinos e contas de conversao.
+DOC-C15-006,C15,D03-27-08-OFERTAS-E-CADASTROS.md,TRANSVERSAL,SA-13,10.5;13.1;16.1,alto,2,D03 27/08 'Ofertas prontas para receber trafego': dia de ofertas e cadastros; candidato a inventario de ofertas e plataformas.
+DOC-C15-015,C15,D10-03-09-PUBLICACAO-E-AGENDA.md,TRANSVERSAL,SA-13,11.2;11.3;16.1;10.5,alto,2,D10 03/09 'Agenda de distribuicao fechada': dia que consolida publicacao e agenda; par direto do PUB-005.
+DOC-C15-018,C15,SEMANA-02-01-05.md,TRANSVERSAL,,10.2;10.5;13.5,alto,2,SEMANA-02 '1 a 5 de setembro' com secao Resultado: define o resultado esperado do segundo ciclo semanal.
+DOC-C16-006,C16,MED-004-LANCAMENTO-07-09.md,TRANSVERSAL,SA-13,1.5;13.1;14.1,medio,2,MED-004 'Lancamento 07/09' com secao 'Fazer': lista de acoes e observacoes do dia do lancamento.
+DOC-C02-015,C02,RC-P02-VAL01_VALIDACAO.txt,ECO-03,SA-05;SA-09A/B/C/D;SA-10B,14.1;14.2,medio,3,"RC-P02-VAL01 'Validacao intelectual do framework' com STATUS PENDENTE: prova de solidez ainda nao feita, provavelmente pouco preenchido."
+DOC-C02-021,C02,RC-R01_EVIDENCIAS_TDAH.txt,ECO-03,SA-01;SA-04A,1.1;14.1,medio,3,"RC-R01 'TDAH, funcoes executivas e trabalho', STATUS REFERENCIA: base de evidencia do problema, nao decisao de negocio."
+DOC-C02-022,C02,RC-R02_EVIDENCIAS_RISCO_PM.txt,ECO-03,SA-01;SA-05,1.1;14.1,medio,3,"RC-R02 'Cognitive risk, neurodiversidade e project management', REFERENCIA: prior art que conecta o framework ao campo de PM."
+DOC-C02-023,C02,RC-R03_REFERENCIAS_TECH.txt,ECO-02,SA-07A,16.1;16.2,medio,3,"RC-R03 'Tecnologia, CMS e publicacao', REFERENCIA: opcoes de plataforma e ferramenta que sustentam a decisao de stack do site."
+DOC-C02-029,C02,RISCO_COGNITIVO_CONTACTS.csv,ECO-08,SA-04D;SA-05,12.1;12.2;11.3,medio,3,"CSV de contatos com colunas NOME, AREA, POR_QUE_RELEVANTE, CONTATO_PUBLICO e ABORDAGEM_RECOMENDADA: lista de stakeholders externos."
+DOC-C02-032,C02,RISCO_COGNITIVO_RESEARCH_SOURCES.csv,ECO-03,SA-01,14.1;14.3,medio,3,"CSV de fontes com CLUSTER, PRIORITY, SOURCE_TYPE, EVIDENCE_LEVEL, COUNTRY_REGION e YEAR: lastro bibliografico classificado."
+DOC-C02-035,C02,DESIGN_TOKENS.css,ECO-02,,11.7,medio,3,"Tokens rc-bg, rc-surface, rc-ink, rc-slate, rc-blue, rc-amber: paleta implementada em CSS, base concreta do design system."
+DOC-C02-040,C02,risco-cognitivo-painel-operacional-a4.html,TRANSVERSAL,,13.1,medio,3,"'Painel Operacional A4' com faixas AGORA, PROXIMO e DEPOIS: horizonte de execucao consolidado em uma pagina."
+DOC-C02-041,C02,risco-cognitivo-status-report.html,TRANSVERSAL,,13.1,medio,3,"'Status Report Estrategico' sem cabecalhos de secao capturados: promete leitura de estado, mas o inventario nao revela o que traz."
+DOC-C03-001,C03,text 2.txt,ECO-02,,11.6;16.1,medio,3,"Define handle @riscocognitivo, nome exibido e bio em Instagram/LinkedIn/YouTube: nomenclatura de canais e voz de perfil."
+DOC-C03-004,C03,text.txt,ECO-02,,11.1;11.2;11.5,medio,3,"5W2H do Artigo 01 fundador: por que nao comecar por TDAH, o que o primeiro artigo define e como os seguintes aprofundam."
+DOC-C04-003,C04,plano-semana-a4 2.html,TRANSVERSAL,,13.1;13.2,medio,3,"'Centro de Comando A4 | Plano dos 7 dias': plano semanal operacional; cabecalho raso, valor real so aparece no corpo."
+DOC-C07-005,C07,SCHEMA_MATRIZ_GESTAO_TDAH_V1.csv,ECO-03,,1.14;14.2;14.3,medio,3,"Schema em CSV com schema_version e row_id das colunas da matriz: contrato de dados, nao conteudo analitico."
+DOC-C07-006,C07,SCHEMA_MATRIZ_GESTAO_TDAH_V1.yaml,ECO-03,,1.14;14.2;14.3,medio,3,"Schema YAML com origem_documental, estado_epistemologico e estado_documental: governanca de proveniencia da base."
+DOC-C07-008,C07,dashboard_sintese_tdah_694_V2.html,ECO-03,SA-03B;SA-04D,14.1;14.4,medio,3,"Dashboard V2 TDAH x Evidencias x Framework 694 com ""Composicao atual da base"" e ""cobertura do framework 694 - analise legada"": versao superada pela V3."
+DOC-C07-010,C07,✅ ADM-26-21-08.docx,ECO-03,SA-07A;SA-07B,2.3;13.1,medio,3,"DOCX com diagrama ASCII ""FUNCAO DE GESTAO / Definir objetivo"": esboco da estrutura de funcoes que sustenta a metodologia."
+DOC-C08-002,C08,00-PAINEL-GERAL.md,TRANSVERSAL,,13.1,medio,3,"Painel geral com secao ""Proxima acao"": instrumento de controle de estado do pacote, util para runbook operacional."
+DOC-C08-004,C08,02-REGISTRO-DE-CHAMADAS.md,TRANSVERSAL,SA-13,1.4;11.1;11.3,medio,3,"Registro de chamadas para acao: consolida CTAs do pacote, candidato a alimentar campanha e linha editorial."
+DOC-C08-005,C08,03-REGISTRO-DE-MATERIAIS.md,TRANSVERSAL,,11.5;13.3,medio,3,"Registro de materiais com ""Regra de reutilizacao"": inventario de ativos reaproveitaveis, candidato a banco de conteudo."
+DOC-C08-008,C08,06-SOMATORIO-DE-CAPACIDADE.md,TRANSVERSAL,SA-07B;SA-10B,13.1,medio,3,"Somatorio de capacidade com secao ""Uso da reserva"": dimensiona capacidade operacional disponivel para o lancamento."
+DOC-C10-006,C10,02-IMAGENS-E-DIAGRAMAS.md,ECO-02,,11.6;11.7,medio,3,"Imagens e diagramas da Peca 001 com secao ""Referencias"": insumos visuais e fontes de imagem da peca."
+DOC-C10-007,C10,03-VIDEO.md,ECO-02,,11.3;11.5,medio,3,"Video da Peca 001 com secao ""Estrutura"": formato audiovisual derivado da mesma peca."
+DOC-C10-009,C10,05-PUBLICACAO-E-AGENDA.md,ECO-02,,11.2;16.1,medio,3,"Publicacao e agenda da Peca 001 sem subsecoes: data e canal de publicacao, candidato a calendario editorial."
+DOC-C10-010,C10,06-EVIDENCIA-DE-CONCLUSAO.md,ECO-02,,2.6;13.1,baixo,3,"Evidencia de conclusao da Peca 001 com ""Registrar"" e ""Concluido quando"": criterio de aceite e prova operacional."
+DOC-C10-014,C10,02-IMAGENS-E-DIAGRAMAS.md,ECO-02,,11.6;11.7,medio,3,"Imagens e diagramas da Peca 002 com secao ""Referencias"": insumos visuais e fontes de imagem da peca."
+DOC-C10-015,C10,03-VIDEO.md,ECO-02,,11.3;11.5,medio,3,"Video da Peca 002 com secao ""Estrutura"": formato audiovisual derivado da mesma peca."
+DOC-C10-017,C10,05-PUBLICACAO-E-AGENDA.md,ECO-02,,11.2;16.1,medio,3,"Publicacao e agenda da Peca 002 sem subsecoes: data e canal de publicacao, candidato a calendario editorial."
+DOC-C10-018,C10,06-EVIDENCIA-DE-CONCLUSAO.md,ECO-02,,2.6;13.1,baixo,3,"Evidencia de conclusao da Peca 002 com ""Registrar"" e ""Concluido quando"": criterio de aceite e prova operacional."
+DOC-C10-022,C10,02-IMAGENS-E-DIAGRAMAS.md,ECO-02,,11.6;11.7,medio,3,"Imagens e diagramas da Peca 003 com secao ""Referencias"": insumos visuais e fontes de imagem da peca."
+DOC-C10-023,C10,03-VIDEO.md,ECO-02,,11.3;11.5,medio,3,"Video da Peca 003 com secao ""Estrutura"": formato audiovisual derivado da mesma peca."
+DOC-C10-025,C10,05-PUBLICACAO-E-AGENDA.md,ECO-02,,11.2;16.1,medio,3,"Publicacao e agenda da Peca 003 sem subsecoes: data e canal de publicacao, candidato a calendario editorial."
+DOC-C10-026,C10,06-EVIDENCIA-DE-CONCLUSAO.md,ECO-02,,2.6;13.1,baixo,3,"Evidencia de conclusao da Peca 003 com ""Registrar"" e ""Concluido quando"": criterio de aceite e prova operacional."
+DOC-C10-031,C10,BANCO-DE-IDEIAS.md,ECO-02,,11.5,medio,3,"Banco de ideias sem subsecoes detectadas: reservatorio de pautas futuras, candidato natural a banco de conteudo."
+DOC-C11-008,C11,03-DEMO-MAPA-OS.md,ECO-03,SA-11B,1.3;2.11;11.3,medio,3,"Demonstracao 03 do Mapa-OS com ""Cena A"", ""Cena B"" e ""Mensagem"": encenacao do artefato metodologico e sua mensagem de valor."
+DOC-C12-007,C12,PAG-003-ESTUDIO.md,ECO-07,,1.3;1.4,medio,3,"Pagina Estudio com ""Objetivo"", ""Chamada principal"" e ""Fechar"": recorte publico do Estudio, sobreposta a PAG-002-SERVICOS."
+DOC-C12-008,C12,PAG-004-LOJA.md,ECO-04,,1.3;1.4;16.1,medio,3,"Pagina Loja com ""Objetivo"", ""Chamada principal"" e ""Fechar"": canal de venda; escopo entre produtos fisicos e infoprodutos nao explicitado."
+DOC-C12-009,C12,PAG-005-BIBLIOTECA.md,ECO-06,,1.4;11.5,medio,3,"Pagina Biblioteca com ""Objetivo"", ""Chamada principal"" e ""Fechar"": vitrine de acervo, provavel destino dos livros digitais."
+DOC-C13-004,C13,REFERENCIAS-VISUAIS.md,ECO-04,,11.6;2.1,medio,3,'Referencias visuais' com secoes Produtos fisicos e Livros digitais e biblioteca: unico texto que nomeia o escopo das referencias de produto.
+DOC-C14-006,C14,PUB-004-LINKEDIN.md,ECO-08,SA-13,11.2;16.1,medio,3,PUB-004 'LinkedIn' com secao Evidencia: plano de publicacao e evidencia do canal profissional.
+DOC-C15-001,C15,00-MERGULHE-AQUI.md,TRANSVERSAL,,11.2;10.1,medio,3,"'Calendario Mergulhe aqui' com Pastas, Notas e Ligacao direta: indice das semanas e do fechamento; da a estrutura do roadmap."
+DOC-C15-007,C15,D04-28-08-PECA-001.md,ECO-02,,11.1;11.5;10.5;13.1,medio,3,D04 28/08 'Peca 001 concluida ponta a ponta': dia de producao editorial com Resultado do dia e Fila unica do dia.
+DOC-C15-008,C15,D05-29-08-PECA-002.md,ECO-02,,11.1;11.5;10.5;13.1,medio,3,D05 29/08 'Peca 002 concluida ponta a ponta': mesmo molde de dia de producao editorial.
+DOC-C15-009,C15,D06-30-08-PECA-003.md,ECO-02,,11.1;11.5;10.5;13.1,medio,3,D06 30/08 'Peca 003 concluida ponta a ponta': mesmo molde de dia de producao editorial.
+DOC-C15-010,C15,D07-31-08-DEMONSTRACAO-APLICATIVO.md,ECO-01,SA-13,10.5;13.1;2.1,medio,3,"D07 31/08 'Demonstracao do aplicativo pronta e agendada': dia dedicado a demo do app, com Resultado do dia e Fila unica."
+DOC-C15-013,C15,D08-01-09-DEMONSTRACAO-AGENTE-007.md,ECO-01,,10.5;13.1;17.1,medio,3,D08 01/09 'Demonstracao do Agente 007 pronta': dia de demo de agente; candidato a inventario de prompts e comandos.
+DOC-C15-014,C15,D09-02-09-MAPA-OS-E-ESTUDIO.md,ECO-01,,10.5;13.1;17.1,medio,3,D09 02/09 'Demonstracoes Mapa-OS e Estudio fechadas': dia que fecha duas demos internas do ecossistema.
+DOC-C15-016,C15,D11-04-09-TESTE-PONTA-A-PONTA.md,TRANSVERSAL,SA-13,13.1;16.1;10.5,medio,3,D11 04/09 'Fluxos de conversao testados': teste ponta a ponta; candidato a runbook de verificacao e contas envolvidas.
+DOC-C15-017,C15,D12-05-09-CONGELAMENTO.md,TRANSVERSAL,,10.4;10.5;13.1,medio,3,D12 05/09 'Lancamento congelado e pronto': define o gate de congelamento antes do lancamento.
+DOC-C15-020,C15,D13-06-09-CONFERENCIA-ADMINISTRATIVA.md,TRANSVERSAL,,13.1;13.5;10.4,medio,3,"D13 06/09 'Conferencia administrativa concluida': dia de conferencia previa ao lancamento, com Fila unica do dia."
+DOC-C15-022,C15,FECHAMENTO-06-07.md,TRANSVERSAL,,10.4;13.1,medio,3,FECHAMENTO '6 e 7 de setembro' com secao Regra: enuncia a regra de encerramento do periodo.
+DOC-C16-005,C16,MED-003-CONFERENCIA-05-09.md,TRANSVERSAL,,10.4;13.1;14.1,medio,3,MED-003 'Conferencia 05/09' com secao 'Tem que estar pronto': checklist do gate de congelamento.
+DOC-C17-002,C17,MODELO-CHAMADA.md,TRANSVERSAL,SA-13,11.1;11.3;11.5,medio,3,'Modelo chamada para acao': template de CTA; candidato a padrao de campanha e a item do banco de conteudo.
+DOC-C18-001,C18,executar-editorial.css,TRANSVERSAL,,11.6;11.7,medio,3,Folha de estilo 'executar editorial' com tokens oe-paper/oe-ink/oe-orange: candidata a design system (11.7) e identidade visual (11.6).
+DOC-C18-003,C18,ARVORE-DE-PASTAS.txt,TRANSVERSAL,,14.3;16.1,medio,3,Arvore de pastas EXECUTAR-LANCAMENTO-0709 com 00-CENTRAL e 01-OFERTAS/01-APLICATIVO: mapa de onde cada evidencia mora.
+DOC-C18-005,C18,executar_status_report_obsidian_terminal.html,TRANSVERSAL,,10.4;13.5;1.5;14.1,medio,3,"'EXECUTAR Status Report' em HTML: candidato a formato de cadencia de revisao e ao painel de acompanhamento; cabecalho unico, conteudo nao lido."
+DOC-C01-007,C01,INTEGRIDADE_EDITORIAL.md,ECO-02,,14.1,baixo,4,"'Relatorio de integridade editorial' que apenas confere os quatro documentos do hub; meta-verificacao, sem conteudo proprio."
+DOC-C01-013,C01,README.md,TRANSVERSAL,,14.1;16.1,baixo,4,"'Hub Obsidian Editorial' descrevendo Estrutura, O que foi aplicado e CSS editorial: manual do vault, nao fonte de conteudo."
+DOC-C02-011,C02,RC-003_DIRECTORY_MANIFEST.txt,TRANSVERSAL,,14.1,baixo,4,"RC-003 'Directory Manifest', REFERENCIA: inventario de diretorios do pacote RC; util para localizar arquivos, nao para responder campos."
+DOC-C02-024,C02,RC-AR01_SUPERADOS.txt,TRANSVERSAL,,14.1,baixo,4,"RC-AR01 'Decisoes superadas', STATUS HISTORICO: serve para nao reintroduzir decisao morta; nao deve alimentar campo vigente."
+DOC-C02-025,C02,RC-AR02_VISUAL_HISTORY.txt,ECO-02,,11.6,baixo,4,"RC-AR02 'Historico de experimentos visuais', HISTORICO: registro de tentativas de identidade ja descartadas."
+DOC-C02-028,C02,RISCO_COGNITIVO_OS_PARA.zip,TRANSVERSAL,,,baixo,4,Zip 'RISCO_COGNITIVO_OS_PARA' com 19 arquivos cujos membros RC-000 a RC-AR02 ja estao inventariados um a um; leitura redundante.
+DOC-C02-033,C02,BRAND_GUIDE_SOURCE_OF_TRUTH.png,ECO-02,,11.6;11.7,baixo,4,"PNG 1491x1055 'BRAND GUIDE SOURCE OF TRUTH': imagem, conteudo nao extraivel como texto; confirma existencia da fonte de verdade visual."
+DOC-C02-036,C02,DESIGN_TOKENS.json,ECO-02,,11.7,baixo,4,"Mesmos tokens do DESIGN_TOKENS.css em JSON (brand, colors, bg, surface, ink...); provavel espelho nao sinalizado como duplicata."
+DOC-C02-037,C02,HOMEPAGE_REFERENCE_SOURCE_OF_TRUTH.png,ECO-02,,11.7;2.9,baixo,4,"PNG 1491x1055 'HOMEPAGE REFERENCE SOURCE OF TRUTH': referencia visual da home; imagem, sem texto extraivel."
+DOC-C02-038,C02,README.txt,TRANSVERSAL,,14.1,baixo,4,"README do RESEARCH + BRAND PACK gerado em 2026-08-28, listando 00_INDEX e demais pastas: sumario do pacote, nao conteudo."
+DOC-C03-003,C03,text 4.txt,ECO-02,,11.1,baixo,4,"Apenas o esqueleto ALVO/VETOR/ATOR/CONTEXTO/TENSAO: template de construcao argumentativa, sem conteudo preenchido visivel."
+DOC-C04-005,C04,plano-semana-a4.html,TRANSVERSAL,,13.1,baixo,4,Terceira variante de 'Centro de Comando A4 | Plano dos 7 dias' nao sinalizada como duplicata; ler so para decidir qual versao vale.
+DOC-C08-001,C08,00-MERGULHE-AQUI.md,TRANSVERSAL,,,baixo,4,"Indice ""Central - Mergulhe aqui"" com apenas Notas e Ligacao direta: porta de entrada de navegacao, sem conteudo substantivo."
+DOC-C08-009,C08,07-INVENTARIO-DO-PACOTE.md,TRANSVERSAL,,,baixo,4,"Inventario do pacote com secao ""Estrutura"": lista de arquivos e pastas, valor de navegacao e nao de conteudo."
+DOC-C08-010,C08,08-RELATORIO-DE-LIGACOES.md,TRANSVERSAL,,13.1,baixo,4,"Relatorio de ligacoes sem subsecoes detectadas: rastreia vinculos entre pecas, apoio a consistencia do pacote."
+DOC-C09-001,C09,00-MERGULHE-AQUI.md,TRANSVERSAL,,,baixo,4,"Indice ""Ofertas - Mergulhe aqui"" com Pastas, Notas e Ligacao direta: navegacao do diretorio de ofertas."
+DOC-C09-002,C09,00-MERGULHE-OFERTAS.md,TRANSVERSAL,,,baixo,4,"Titulo ""Mergulhe aqui"" sem secoes; mesma pasta e mesma funcao de DOC-C09-001, redundancia provavel nao marcada em duplicado_de."
+DOC-C09-003,C09,00-MERGULHE-AQUI.md,ECO-01,,,baixo,4,"Indice ""Aplicativo - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta do app."
+DOC-C09-005,C09,00-MERGULHE-AQUI.md,ECO-07,,,baixo,4,"Indice ""Servicos - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta de servicos."
+DOC-C09-007,C09,00-MERGULHE-AQUI.md,ECO-04,,,baixo,4,"Indice ""Produtos Fisicos - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta de produtos fisicos."
+DOC-C09-009,C09,00-MERGULHE-AQUI.md,ECO-05,,,baixo,4,"Indice ""Infoprodutos - Mergulhe aqui"" com Pastas, Notas e Ligacao direta: navegacao da pasta de infoprodutos."
+DOC-C09-010,C09,00-MERGULHE-AQUI.md,ECO-06,,,baixo,4,"Indice ""Livros Digitais - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta de livros."
+DOC-C09-012,C09,00-MERGULHE-AQUI.md,ECO-05,,,baixo,4,"Indice ""Curso - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta do curso."
+DOC-C09-014,C09,00-MERGULHE-AQUI.md,ECO-05,,,baixo,4,"Indice ""Hotmart - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta da plataforma."
+DOC-C09-017,C09,00-MERGULHE-AQUI.md,ECO-08,,,baixo,4,"Indice ""Afiliados - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta de afiliados."
+DOC-C10-001,C10,00-MERGULHE-AQUI.md,ECO-02,,,baixo,4,"Indice ""Editorial - Mergulhe aqui"" com Pastas, Notas e Ligacao direta: navegacao do diretorio editorial."
+DOC-C10-002,C10,00-MERGULHE-EDITORIAL.md,ECO-02,,,baixo,4,"Titulo ""Mergulhe aqui"" sem secoes; mesma pasta e mesma funcao de DOC-C10-001, redundancia provavel nao marcada em duplicado_de."
+DOC-C10-004,C10,00-MERGULHE-AQUI.md,ECO-02,,,baixo,4,"Indice da Peca 001 com ""Cadeia da peca"" e ""Regra"": define ordem de leitura da peca, sem conteudo editorial proprio."
+DOC-C10-012,C10,00-MERGULHE-AQUI.md,ECO-02,,,baixo,4,"Indice da Peca 002 com ""Cadeia da peca"" e ""Regra"": ordem de leitura da peca, sem conteudo proprio."
+DOC-C10-020,C10,00-MERGULHE-AQUI.md,ECO-02,,,baixo,4,"Indice da Peca 003 com ""Cadeia da peca"" e ""Regra"": ordem de leitura da peca, sem conteudo proprio."
+DOC-C10-028,C10,00-MERGULHE-AQUI.md,ECO-02,,,baixo,4,"Indice ""Brinde Canonico - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta do brinde."
+DOC-C10-030,C10,00-MERGULHE-AQUI.md,ECO-02,,,baixo,4,"Indice ""Banco De Ideias - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta de ideias."
+DOC-C11-001,C11,00-MERGULHE-AQUI.md,TRANSVERSAL,,,baixo,4,"Indice ""Demonstracoes - Mergulhe aqui"" com Pastas, Notas e Ligacao direta: navegacao do diretorio de demos."
+DOC-C11-002,C11,00-MERGULHE-DEMONSTRACOES.md,TRANSVERSAL,,,baixo,4,"Titulo ""Mergulhe aqui"" sem secoes; mesma pasta e mesma funcao de DOC-C11-001, redundancia provavel nao marcada em duplicado_de."
+DOC-C11-003,C11,00-MERGULHE-AQUI.md,ECO-01,,,baixo,4,"Indice ""Aplicativo - Mergulhe aqui"" na pasta de demonstracoes: navegacao, sem conteudo de demo."
+DOC-C11-005,C11,00-MERGULHE-AQUI.md,ECO-01,,,baixo,4,"Indice ""Agente 007 - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta da demo do agente."
+DOC-C11-007,C11,00-MERGULHE-AQUI.md,ECO-03,,,baixo,4,"Indice ""Mapa Os - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta da demo do Mapa-OS."
+DOC-C11-009,C11,00-MERGULHE-AQUI.md,ECO-07,,,baixo,4,"Indice ""Estudio - Mergulhe aqui"" com Notas e Ligacao direta: navegacao da pasta da demo do Estudio."
+DOC-C12-001,C12,00-MERGULHE-AQUI.md,TRANSVERSAL,,,baixo,4,"Indice ""Paginas E Formularios - Mergulhe aqui"" com Notas e Ligacao direta: navegacao do diretorio."
+DOC-C12-002,C12,00-MERGULHE-PAGINAS.md,TRANSVERSAL,,,baixo,4,"Titulo ""Mergulhe aqui"" sem secoes; mesma pasta e mesma funcao de DOC-C12-001, redundancia provavel nao marcada em duplicado_de."
+DOC-C13-001,C13,00-MERGULHE-AQUI.md,TRANSVERSAL,,11.5,baixo,4,"'Materiais Mergulhe aqui' com Pastas, Notas e Ligacao direta: indice de navegacao do acervo de materiais, nao conteudo substantivo."
+DOC-C13-003,C13,00-MERGULHE-AQUI.md,TRANSVERSAL,,11.6,baixo,4,'Referencias Visuais Mergulhe aqui' com Notas e Ligacao direta: porta de entrada da pasta de referencia visual.
+DOC-C14-001,C14,00-MERGULHE-AQUI.md,TRANSVERSAL,,11.2;16.1,baixo,4,"'Publicacao E Agenda Mergulhe aqui' com Notas e Ligacao direta: indice da pasta de publicacao, aponta para os PUB-00x."
+DOC-C15-003,C15,00-MERGULHE-AQUI.md,TRANSVERSAL,,10.5;11.2,baixo,4,"'Semana 25 31 Mergulhe aqui' com Notas e Ligacao direta: porta de entrada da primeira semana, sem conteudo de plano."
+DOC-C15-012,C15,00-MERGULHE-AQUI.md,TRANSVERSAL,,10.5;11.2,baixo,4,'Semana 01 05 Mergulhe aqui' com Notas e Ligacao direta: porta de entrada da segunda semana.
+DOC-C15-019,C15,00-MERGULHE-AQUI.md,TRANSVERSAL,,10.5;11.2,baixo,4,'Fechamento 06 07 Mergulhe aqui' com Notas e Ligacao direta: porta de entrada do bloco de fechamento.
+DOC-C16-001,C16,00-MERGULHE-AQUI.md,TRANSVERSAL,,14.1;1.5,medio,4,"'Medicao E Evidencias Mergulhe aqui' com Notas e Ligacao direta: indice dos MED-00x, aponta a estrutura de medicao."
+DOC-C17-001,C17,00-MERGULHE-AQUI.md,TRANSVERSAL,,11.5,baixo,4,'Modelos Mergulhe aqui' com Notas e Ligacao direta: indice dos modelos reutilizaveis.
+DOC-C17-004,C17,MODELO-MATERIAL.md,TRANSVERSAL,,11.5;11.7,medio,4,'Modelo material': template de ficha de material; candidato a estrutura do banco de conteudo.
+DOC-C01-001,C01,obsidian-editorial.css,ECO-02,,,baixo,5,duplicata exata de DOC-C18-001
+DOC-C01-008,C01,SHA256SUMS.txt,TRANSVERSAL,,,baixo,5,"Apenas hashes SHA256 de text.txt, text 2/3/4.txt: prova de integridade das fontes originais, sem conteudo aproveitavel."
+DOC-C01-009,C01,text 2.txt,ECO-02,,,baixo,5,duplicata exata de DOC-C03-001
+DOC-C01-010,C01,text 3.txt,ECO-02,,,baixo,5,duplicata exata de DOC-C03-002
+DOC-C01-011,C01,text 4.txt,ECO-02,,,baixo,5,duplicata exata de DOC-C03-003
+DOC-C01-012,C01,text.txt,ECO-02,,,baixo,5,duplicata exata de DOC-C03-004
+DOC-C02-005,C02,RISCO_COGNITIVO_MASTER_INDEX.csv,TRANSVERSAL,,,baixo,5,duplicata exata de DOC-C02-002
+DOC-C02-006,C02,RISCO_COGNITIVO_MASTER_INDEX.xlsx,TRANSVERSAL,,,baixo,5,duplicata exata de DOC-C02-003
+DOC-C02-008,C02,RC-000_MASTER_INDEX.csv,TRANSVERSAL,,,baixo,5,duplicata exata de DOC-C02-002
+DOC-C02-009,C02,RC-001_MASTER_CONTROL.txt,TRANSVERSAL,,,baixo,5,duplicata exata de DOC-C02-001
+DOC-C02-026,C02,RISCO_COGNITIVO_MASTER_CONTROL.txt,TRANSVERSAL,,,baixo,5,duplicata exata de DOC-C02-001
+DOC-C02-027,C02,RISCO_COGNITIVO_MASTER_INDEX.csv,TRANSVERSAL,,,baixo,5,duplicata exata de DOC-C02-002
+DOC-C04-004,C04,plano-semana-a4 3.html,TRANSVERSAL,,,baixo,5,duplicata exata de DOC-C04-003
+DOC-C13-002,C13,00-MERGULHE-MATERIAIS.md,TRANSVERSAL,,,baixo,5,Arquivo 00-MERGULHE-MATERIAIS com unico cabecalho 'Mergulhe aqui': stub de navegacao sem secoes; valor informacional minimo.
+DOC-C13-005,C13,referencia-biblioteca-livros-digitais.jpeg,ECO-05,,11.6,baixo,5,"JPEG 'referencia biblioteca livros digitais' 1536x864 RGB: so metadados visuais extraidos, sem texto; serve de moodboard, nao sustenta afirmacao."
+DOC-C13-006,C13,referencia-livro-digital-aplicando-tdah.jpeg,ECO-06,,11.6,baixo,5,"JPEG 'referencia livro digital aplicando tdah' 1086x1448 RGB: so metadados visuais, sem texto legivel nesta sessao."
+DOC-C13-007,C13,referencia-livro-digital-gerenciando-tdah.jpeg,ECO-06,,11.6,baixo,5,"JPEG 'referencia livro digital gerenciando tdah' 1086x1448 RGB: so metadados visuais, sem texto legivel nesta sessao."
+DOC-C13-008,C13,referencia-office-kit.jpeg,ECO-04,,11.6,baixo,5,"JPEG 'referencia office kit' 1536x864 RGB: so metadados visuais, sem texto; apoia moodboard de produto fisico, nao especificacao."
+DOC-C13-009,C13,referencia-organizacao-fisica.jpeg,ECO-04,,11.6,baixo,5,"JPEG 'referencia organizacao fisica' 1536x864 RGB: so metadados visuais, sem texto; referencia de linguagem visual apenas."
+DOC-C13-010,C13,referencia-timer-45.jpeg,ECO-04,,11.6,baixo,5,"JPEG 'referencia timer 45' 1536x1067 RGB: so metadados visuais, sem texto; indicio de item fisico a confirmar em fonte textual."
+DOC-C13-011,C13,00-MERGULHE-AQUI.md,TRANSVERSAL,,11.5,baixo,5,"00-MERGULHE-AQUI cujo unico cabecalho e 'Imagens': marcador de subpasta do banco de conteudo, sem corpo."
+DOC-C13-012,C13,00-MERGULHE-AQUI.md,TRANSVERSAL,,11.5,baixo,5,"00-MERGULHE-AQUI cujo unico cabecalho e 'Videos': marcador de subpasta do banco de conteudo, sem corpo."
+DOC-C13-013,C13,00-MERGULHE-AQUI.md,TRANSVERSAL,,11.5,baixo,5,00-MERGULHE-AQUI cujo unico cabecalho e 'Arquivos para baixar': marcador de subpasta de materiais baixaveis.
+DOC-C14-002,C14,00-MERGULHE-PUBLICACAO.md,TRANSVERSAL,,,baixo,5,00-MERGULHE-PUBLICACAO com unico cabecalho 'Mergulhe aqui': stub de navegacao sem secoes.
+DOC-C15-002,C15,00-MERGULHE-CALENDARIO.md,TRANSVERSAL,,,baixo,5,00-MERGULHE-CALENDARIO com unico cabecalho 'Mergulhe aqui': stub de navegacao sem secoes.
+DOC-C16-002,C16,00-MERGULHE-MEDICAO.md,TRANSVERSAL,,,baixo,5,00-MERGULHE-MEDICAO com unico cabecalho 'Mergulhe aqui': stub de navegacao sem secoes.
