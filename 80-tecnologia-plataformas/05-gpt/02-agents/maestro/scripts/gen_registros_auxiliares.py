@@ -10,6 +10,7 @@ os.makedirs(OUT, exist_ok=True)
 
 insights=[]
 for p in sorted(glob.glob(f'{SC}/strategic_insights*.csv')):
+    if 'CONSOLIDADO' in p.upper(): continue
     rodada = 'r2' if '_r2' in p else 'r1'
     for r in csv.DictReader(open(p, encoding='utf-8')):
         r['_rodada']=rodada; insights.append(r)
