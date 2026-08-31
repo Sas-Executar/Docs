@@ -16,8 +16,12 @@ fill_protocol:
     enviado pelo usuário.
   field_status_values:
   - pendente
-  - parcial
   - preenchido
+  - parcial
+  - lacuna
+  - hipotese
+  - conflito
+  - nao_aplicavel
   area_status_values:
   - pendente
   - em_andamento
@@ -25,6 +29,20 @@ fill_protocol:
   field_origem_values:
   - formulario_original
   - enriquecido_via_plugin
+  tipo_informacao_values:
+  - fato_interno
+  - evidencia_externa
+  - inferencia
+  - hipotese
+  - decisao
+  - recomendacao
+  confianca_values:
+  - alta
+  - media
+  - baixa
+  rastreabilidade: Conforme Basedocumental310826.md §07-Output Requirements (OUT-08 status, OUT-09 tipo
+    de informação, OUT-10 fonte primária, OUT-12 evidência, OUT-15 confiança, OUT-17 lacuna específica
+    em vez de TBD, OUT-24 próxima ação).
 sending_order:
   status: confirmado_pelo_usuario
   inicio: '2026-08-31'
@@ -37,7 +55,8 @@ sending_order:
     - 10
     label: Gestão de Projetos & PMBOK + Planejamento Estratégico/Tático/Operacional + Roadmap/Backlog
     total_campos: 16
-    status: em_andamento
+    status: preenchido_parcial
+    data_execucao: '2026-08-31'
   - group: 2
     dia: 2
     areas:
@@ -691,22 +710,52 @@ areas:
     example: 'Ex: Consolidar toda a gestão do projeto em uma única fonte de verdade, eliminando divergência
       entre documentos.'
     origem: formulario_original
-    valor: null
-    status: pendente
+    valor: 'Gap entre intenção e execução: pessoas capazes — sobretudo adultos neurodivergentes e autônomos
+      com múltiplos projetos — perdem tempo e energia organizando, priorizando, retomando contexto, lembrando
+      dependências e administrando ferramentas, a ponto de a própria organização virar fonte de atrito.
+      A oportunidade é ocupar a integração ainda pouco explorada entre neurodivergência, ergonomia cognitiva,
+      human factors e gestão de riscos aplicada à execução.'
+    status: parcial
+    tipo_informacao: fato_interno
+    confianca: alta
+    fonte_primaria: Basedocumental310826.md § 04-Analise-evidencias · sha256:62ca31db…aea4
+    evidencia: §02 Problema e Mercado (Gap Intenção–Execução; Carga Executiva; Adultos Neurodivergentes)
+      e §01 Síntese Estratégica (Integração Operacional).
+    lacuna: O próprio §03-T1 registra que a justificativa ainda precisa ser consolidada formalmente como
+      problema central + oportunidade de mercado em documento único.
+    proxima_acao: Consolidar 8.1 em declaração formal de problema/oportunidade no Project Charter (PC-01).
   - field_id: '8.2'
     title: Sponsor / Patrocinador
     description: Nome de quem tem autoridade para aprovar o projeto formalmente.
     example: 'Ex: A definir — nenhum sponsor formal designado ainda.'
     origem: formulario_original
-    valor: null
-    status: pendente
+    valor: Não há patrocinador formal definido neste estágio. A operação é conduzida por trabalhador solo
+      independente, que acumula de fato a autoridade decisória.
+    status: preenchido
+    tipo_informacao: fato_interno
+    confianca: alta
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · 01. Justificativa e Governança · Patrocínio · 8.2.
+    lacuna: ''
+    proxima_acao: Registrar formalmente a autoridade decisória do owner no Project Charter (PC-01/PC-02).
   - field_id: '8.3'
     title: Critério de sucesso principal
     description: Indicador objetivo que mostrará que o projeto deu certo, com meta e prazo.
     example: 'Ex: 100% dos domínios do formulário preenchidos até 2026-09-30.'
     origem: formulario_original
-    valor: null
-    status: pendente
+    valor: Captar clientes para a Consultoria EXECUTAR enquanto as demais linhas do ecossistema são desenvolvidas,
+      validadas e solidificadas — a consultoria funciona como principal mecanismo de geração de caixa
+      e de mapa de calor das necessidades reais do público.
+    status: parcial
+    tipo_informacao: decisao
+    confianca: alta
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · Critério de Sucesso · 8.3 + 03. Objetivos Táticos T1 + 09. Indicadores de Sucesso
+      · Receita.
+    lacuna: 'Falta meta numérica e prazo: quantos clientes, qual receita, até quando. O campo exige indicador
+      objetivo com meta e prazo.'
+    proxima_acao: Definir meta quantitativa de clientes/receita de consultoria e a data-alvo, ancorada
+      no roadmap set/2026–jan/2027.
   - field_id: '8.4'
     title: Decisão Go/No-Go
     description: 'Status atual da autorização formal do projeto: Proposto, Em avaliação, Autorizado, Suspenso
@@ -714,14 +763,30 @@ areas:
     example: 'Ex: Em avaliação — aguardando confirmação do sponsor.'
     origem: formulario_original
     valor: null
-    status: pendente
+    status: lacuna
+    tipo_informacao: ''
+    confianca: ''
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · Gate de Decisão · 8.4 registra explicitamente TBD.
+    lacuna: Não existem critérios objetivos definidos para continuar, corrigir, suspender ou despriorizar
+      cada linha do ecossistema.
+    proxima_acao: Definir critérios Go/No-Go por linha (app, blog, infoprodutos, físicos, consultoria,
+      livro), ancorados no Gate de Revisão de 24/10/2026.
   - field_id: '8.5'
     title: Abordagem do projeto
     description: Preditiva, Adaptativa/Ágil ou Híbrida, e por quê.
     example: 'Ex: Híbrida — planejamento macro fixo, execução semanal iterativa.'
     origem: formulario_original
     valor: null
-    status: pendente
+    status: lacuna
+    tipo_informacao: ''
+    confianca: ''
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: '§03-T1 · Modelo de Gestão · 8.5 registra TBD; restrição conhecida: operação predominantemente
+      solo.'
+    lacuna: Abordagem preditiva, ágil ou híbrida ainda não escolhida nem documentada.
+    proxima_acao: Selecionar e documentar a abordagem (o PMBOK 8 contempla preditiva, adaptativa e híbrida
+      — PDF Fundamentos §3.6), coerente com operação solo e baixo overhead administrativo.
   - field_id: '8.6'
     title: Relato de status
     description: Formato e cadência do relatório de status do projeto (verde/amarelo/vermelho).
@@ -730,9 +795,17 @@ areas:
     plugin: operations
     skill: status-report
     valor: null
-    status: pendente
+    status: lacuna
+    tipo_informacao: ''
+    confianca: ''
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · Status Executivo · 8.6 registra TBD; §10 Pontos em Aberto · Semáforo de Status
+      confirma.
+    lacuna: Não há padrão Verde/Amarelo/Vermelho com critérios objetivos de prazo, risco, bloqueio e resultado.
+    proxima_acao: Formalizar regras do semáforo de status e a cadência de emissão do relato.
   field_count: 6
-  area_status: pendente
+  area_status: em_andamento
+  fonte_preenchimento: Basedocumental310826.md (31/08/2026) · sha256:62ca31db…aea4
 - area_id: 9
   area_name: PLANEJAMENTO ESTRATÉGICO, TÁTICO E OPERACIONAL
   area_description: Os três horizontes de decisão — onde queremos chegar, como, e o que fazer esta semana
@@ -746,29 +819,70 @@ areas:
     description: Descreva a direção de longo prazo do projeto.
     example: 'Ex: Tornar-se a fonte única de operação do ecossistema Executar.'
     origem: formulario_original
-    valor: null
-    status: pendente
+    valor: Tornar-se referência em Risco Cognitivo e temas relacionados por meio de um ecossistema consolidado
+      de conteúdo, produtos, software, educação e serviços — construindo autoridade em território pouco
+      explorado via pesquisa, publicação, aplicação prática, casos e participação de especialistas.
+    status: preenchido
+    tipo_informacao: decisao
+    confianca: alta
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · 02. Objetivos Estratégicos · 9.1 + Autoridade + Ecossistema.
+    lacuna: ''
+    proxima_acao: ''
   - field_id: '9.2'
     title: Objetivo tático (trimestre/ciclo)
     description: O que precisa ser verdade daqui a 3 meses para o estratégico avançar.
     example: 'Ex: Central de Controle com todos os domínios preenchidos e em uso ativo.'
     origem: formulario_original
-    valor: null
-    status: pendente
+    valor: 'Ciclo atual (T1): Consultoria e Capitalização — priorizar consultoria para gerar receita,
+      aprender com clientes e construir mapa de calor das necessidades reais. Sequência tática subsequente:
+      T2 consolidação do App SAS-EXECUTAR; T3 produtos e infoprodutos; T4 comunidade e ONG. Em paralelo:
+      livro sobre risco cognitivo e parcerias com especialistas no blog.'
+    status: preenchido
+    tipo_informacao: inferencia
+    confianca: media
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · 03. Objetivos Táticos · T1–T4, Autoridade Editorial e Parcerias.
+    lacuna: 'Mapeamento inferido: a base documental lista os objetivos táticos T1–T4 mas não os rotula
+      explicitamente como o campo 9.2, nem fixa o horizonte trimestral de cada um.'
+    proxima_acao: Confirmar com o owner qual objetivo tático corresponde ao trimestre corrente e sua data
+      de fechamento.
   - field_id: '9.3'
     title: Prioridade operacional da semana
     description: O que precisa avançar nos próximos 7 dias.
     example: 'Ex: Confirmar owner e resolver as sobreposições de domínio pendentes.'
     origem: formulario_original
-    valor: null
-    status: pendente
+    valor: Lançar o blog, configurar as contas, definir a linha editorial e ativar o ecossistema editorial
+      antes do lançamento público do app beta — concluir a fundação editorial e os canais de aquisição
+      antes de avançar para o EXECUTAR beta.
+    status: preenchido
+    tipo_informacao: decisao
+    confianca: alta
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · 04. Prioridade Operacional · 9.3 + Sequência Blog → App; confirmado pelo roadmap
+      (blog 07/09/2026, app beta 14/09/2026).
+    lacuna: ''
+    proxima_acao: ''
   - field_id: '9.4'
     title: Dependência entre horizontes
     description: O que no nível tático bloqueia ou depende do estratégico.
     example: 'Ex: O objetivo tático de preenchimento completo depende de um owner estratégico confirmado.'
     origem: formulario_original
-    valor: null
-    status: pendente
+    valor: 'Cadeia material já descrita na base: Consultoria → Capitalização (caixa enquanto produtos
+      escaláveis amadurecem); Consultoria → Necessidades (clientes geram evidência de dores recorrentes);
+      Necessidades → App (aprendizado orienta funcionalidades do SAS-EXECUTAR); Conteúdo → Produtos (audiência
+      sustenta distribuição e validação); Produtos → Comunidade (comunidade/ONG só após consolidação de
+      autoridade e operação).'
+    status: parcial
+    tipo_informacao: fato_interno
+    confianca: media
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · 05. Dependências Estratégicas (cinco pares de dependência declarados).
+    lacuna: 'CONFLITO REGISTRADO: a linha 9.4 do §03-T1 marca "TBD — deve ser formalizada a cadeia de
+      dependências", mas o mesmo bloco §05 já enumera cinco dependências materiais. Falta a formalização
+      com predecessores, sucessores, bloqueios e gates explícitos.'
+    proxima_acao: Formalizar o grafo de dependências entre horizontes com gates verificáveis (resolve
+      também MASTER-04).
   - field_id: '9.5'
     title: Capacidade de recursos
     description: A equipe atual comporta os próximos objetivos, ou falta contratar/despriorizar.
@@ -776,10 +890,20 @@ areas:
     origem: enriquecido_via_plugin
     plugin: operations
     skill: capacity-plan
-    valor: null
-    status: pendente
+    valor: 'Não aplicável no modelo atual: não há planejamento formal de contratação ou ampliação imediata
+      de equipe. Restrição vigente: operação predominantemente individual, com capacidade limitada de
+      execução simultânea e necessidade de limite de WIP para evitar dispersão.'
+    status: preenchido
+    tipo_informacao: fato_interno
+    confianca: alta
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · 06. Recursos e Capacidade · 9.5 + Operação Solo + Limite de WIP.
+    lacuna: ''
+    proxima_acao: Definir o número máximo de iniciativas simultâneas (limite de WIP numérico) — hoje é
+      diretriz qualitativa.
   field_count: 5
-  area_status: pendente
+  area_status: em_andamento
+  fonte_preenchimento: Basedocumental310826.md (31/08/2026) · sha256:62ca31db…aea4
 - area_id: 10
   area_name: ROADMAP, CRONOGRAMA, CICLOS E BACKLOG
   area_description: Marcos de médio prazo e o ritmo semanal de execução
@@ -793,28 +917,61 @@ areas:
     example: 'Ex: Central de Controle validada e em uso — 2026-09-15.'
     origem: formulario_original
     valor: null
-    status: pendente
+    status: lacuna
+    tipo_informacao: ''
+    confianca: ''
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · 07. Marcos e Roadmap · 10.1 registra TBD.
+    lacuna: 'CONFLITO REGISTRADO: 10.1 está marcado TBD, mas o §05-Cronograma traz marcos datados (blog
+      07/09/2026; app beta 14/09/2026; serviços 21/09/2026; infoprodutos e físicos 28/09/2026; curso 19/10/2026;
+      Gate de Revisão 24/10/2026; manuscrito 12/12/2026; livro 10/01/2027). Falta eleger qual deles é
+      o marco de médio prazo #1 verificável.'
+    proxima_acao: 'Eleger o marco de médio prazo #1 — candidato mais forte: Gate de Revisão de 24/10/2026,
+      único ponto do roadmap que já é definido como decisão baseada em dados acumulados.'
   - field_id: '10.2'
     title: Ciclo semanal atual
     description: 'Em qual fase do ciclo o projeto está agora: Editorial, Desenvolvimento ou Governança.'
     example: 'Ex: Governança — revisão de domingo.'
     origem: formulario_original
-    valor: null
-    status: pendente
+    valor: 'Ciclo Zero — dedicado à preparação, estruturação e ativação inicial do ecossistema: canais,
+      conteúdo, contas, processos, ativos e preparação dos primeiros lançamentos.'
+    status: preenchido
+    tipo_informacao: fato_interno
+    confianca: alta
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · 07. Marcos e Roadmap · 10.2 + 08. Modelo Operacional · Ciclo Zero.
+    lacuna: O formulário original oferece as opções Editorial/Desenvolvimento/Governança; "Ciclo Zero"
+      é um estado anterior a essas três fases e não estava previsto na lista de opções.
+    proxima_acao: Ampliar o domínio de valores de 10.2 para incluir Ciclo Zero (fundação) além de Editorial,
+      Desenvolvimento e Governança.
   - field_id: '10.3'
     title: Item de backlog crítico
     description: Tarefa pendente que bloqueia o próximo marco.
     example: 'Ex: Sincronizar backlog do Linear com a aba de execução.'
     origem: formulario_original
     valor: null
-    status: pendente
+    status: lacuna
+    tipo_informacao: ''
+    confianca: ''
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · Backlog · 10.3 registra TBD; §10 Pontos em Aberto · Item Crítico confirma.
+    lacuna: 'Não foi identificado o único item cuja não execução bloqueia o próximo marco. Candidato derivável
+      de 9.3: o lançamento do blog em 07/09/2026 (predecessor declarado do app beta).'
+    proxima_acao: Confirmar com o owner o item de backlog crítico único e amarrá-lo ao marco de 10.1.
   - field_id: '10.4'
     title: Cadência de revisão
     description: Com que frequência o roadmap é revisado e por quem.
     example: 'Ex: Toda segunda-feira, pelo owner do projeto.'
     origem: formulario_original
-    valor: null
-    status: pendente
+    valor: 'Revisão quinzenal: a cada 15 dias estratégia, backlog e roadmap são confrontados com dados
+      reais de execução e mercado. Responsável: o owner do projeto (operação solo).'
+    status: preenchido
+    tipo_informacao: decisao
+    confianca: alta
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · 07. Marcos e Roadmap · 10.4 + 08. Modelo Operacional · Revisão Quinzenal.
+    lacuna: ''
+    proxima_acao: ''
   - field_id: '10.5'
     title: Planejamento de sprint
     description: Como o backlog é dimensionado contra a capacidade real do ciclo.
@@ -823,9 +980,18 @@ areas:
     plugin: product-management
     skill: sprint-planning
     valor: null
-    status: pendente
+    status: lacuna
+    tipo_informacao: ''
+    confianca: ''
+    fonte_primaria: Basedocumental310826.md § 03-T1 · sha256:62ca31db…aea4
+    evidencia: §03-T1 · Sprint · 10.5 registra TBD; §10 Pontos em Aberto · Capacidade confirma.
+    lacuna: 'Não existe mecanismo para selecionar trabalho por prioridade, dependência e capacidade real.
+      Restrição conhecida (9.5): operação solo exige regra simples e limite de WIP.'
+    proxima_acao: Criar regra mínima de planejamento que limite compromissos do ciclo à capacidade real
+      disponível.
   field_count: 5
-  area_status: pendente
+  area_status: em_andamento
+  fonte_preenchimento: Basedocumental310826.md (31/08/2026) · sha256:62ca31db…aea4
 - area_id: 11
   area_name: EDITORIAL, CAMPANHAS E CONTEÚDO
   area_description: Conteúdo, calendário editorial, campanhas e trilhas de comunicação
@@ -1167,3 +1333,74 @@ areas:
     status: pendente
   field_count: 4
   area_status: pendente
+instrumentos:
+  origem: Basedocumental310826.md (31/08/2026) — §02-Preenchimento e §07-Output Requirements
+  nota: 'A base documental expande o escopo: o formulário fundido de 17 áreas/122 campos passa a ser UM
+    de cinco instrumentos a preencher, e cada um deve ser preenchido por unidade de análise (8 áreas ECO),
+    não uma única vez.'
+  lista:
+  - id: INS-01
+    nome: XLS Projeto Entrypoint Expandido (formulário fundido)
+    ids: 17 áreas / 122 campos (94 originais + 28 de plugin)
+    estado: dia 1 preenchido parcialmente (áreas 8, 9, 10)
+    conflito: 'OUT-33 da base documental exige apenas 1.1–1.12, 8.1–8.5, 9.1–9.4, 10.1–10.4, 12.1–12.3,
+      14.1–14.3, 16.1–16.3 (34 campos). O formulário fundido tem 122. Pendente decisão do owner: preencher
+      os 122 ou apenas os 34 do escopo OUT-33.'
+  - id: INS-02
+    nome: Project Charter PMBOK 8
+    ids: PC-01, PC-02, PC-03, PC-04, PC-05A, PC-05B, PC-05C, PC-07
+    estado: não recebido
+    conflito: Instrumento ainda não enviado — só a instrução de preenchimento chegou.
+  - id: INS-03
+    nome: Workbook PMBOK 8 — Fundamentos
+    ids: WB-02 a WB-13 (12 domínios)
+    estado: não recebido
+    conflito: Instrumento ainda não enviado.
+  - id: INS-04
+    nome: Q&A Consequente
+    ids: QA-05, QA-06, QA-07, QA-08
+    estado: derivável
+    conflito: Deriva dos domínios predecessores; o PDF Fundamentos PMBOK 8 já fornece a matéria-prima
+      (7 domínios, ordem de processo, mapa mental, prioridade).
+  - id: INS-05
+    nome: Strategic Analysis Agent Runner
+    ids: SA-01 a SA-13 (13 frameworks) × 8 unidades ECO = 104 execuções
+    estado: runner recebido (ZIP), sem dados de entrada
+    conflito: O runner exige entrada JSONL com record_id/text/source_type; a base C01–C18 (214 arquivos)
+      ainda não foi enviada.
+  unidades_eco:
+  - ECO-01 SAS / App EXECUTAR
+  - ECO-02 Blog Risco Cognitivo
+  - ECO-03 Framework e Metodologia
+  - ECO-04 Produtos Físicos
+  - ECO-05 Infoprodutos
+  - ECO-06 Livro
+  - ECO-07 Serviços de Consultoria
+  - ECO-08 Ecossistema Creator
+  base_documental_pendente: C01–C18 · 214 arquivos · 18 classificações MECE · 22 tipos documentais (não
+    recebidos)
+conflitos_registrados:
+- id: CONF-01
+  campo: '9.4'
+  descricao: §03-T1 marca 9.4 como TBD, mas §05 do mesmo bloco enumera cinco dependências estratégicas
+    materiais.
+  acao: Formalizar o grafo em vez de tratar como ausência de dado.
+- id: CONF-02
+  campo: '10.1'
+  descricao: §03-T1 marca 10.1 como TBD, mas §05-Cronograma traz oito marcos datados entre 07/09/2026
+    e 10/01/2027.
+  acao: 'Eleger o marco #1 — candidato: Gate de Revisão de 24/10/2026.'
+- id: CONF-03
+  campo: '10.2'
+  descricao: O valor real é "Ciclo Zero", que não consta das opções previstas no formulário original (Editorial
+    / Desenvolvimento / Governança).
+  acao: Ampliar o domínio de valores do campo.
+- id: CONF-04
+  campo: escopo INS-01
+  descricao: OUT-33 exige 34 IDs do XLS Entrypoint; o formulário fundido tem 122 campos.
+  acao: Decisão do owner sobre o escopo de preenchimento.
+- id: CONF-05
+  campo: calendário
+  descricao: 'O cronograma de envio (dias 1–6, 31/08 a 05/09/2026) coexiste com o roadmap do projeto (07/09/2026
+    a 10/01/2027). São eixos distintos: preenchimento documental vs. execução do ecossistema.'
+  acao: Nenhuma — registrado para evitar leitura equivocada de conflito de datas.
