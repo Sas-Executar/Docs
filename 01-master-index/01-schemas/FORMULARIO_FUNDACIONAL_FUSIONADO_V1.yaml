@@ -1349,13 +1349,21 @@ instrumentos:
   - id: INS-02
     nome: Project Charter PMBOK 8
     ids: PC-01, PC-02, PC-03, PC-04, PC-05A, PC-05B, PC-05C, PC-07
-    estado: não recebido
-    conflito: Instrumento ainda não enviado — só a instrução de preenchimento chegou.
+    estado: recebido — instrumento entregue
+    conflito: ''
+    nota: O owner confirmou (31/08/2026) que o instrumento PMBOK 8 enviado é o PDF "01 · Fundamentos PMBOK
+      8 · Conceito, Perguntas e Ordem Mental" (sha256:db8133ed…dea5). Ele fornece os 6 princípios, os
+      7 domínios de desempenho, a ordem mental (VALOR → SUCESSO → GOVERNANÇA → STAKEHOLDERS → ESCOPO →
+      ABORDAGEM → PLANO → RECURSOS → FINANÇAS → RISCO → EXECUÇÃO → MONITORAMENTO → ENCERRAMENTO), as Focus
+      Areas (Iniciar→Planejar→Executar→Monitorar→Encerrar) e a hierarquia de prioridade gerencial.
   - id: INS-03
     nome: Workbook PMBOK 8 — Fundamentos
     ids: WB-02 a WB-13 (12 domínios)
-    estado: não recebido
-    conflito: Instrumento ainda não enviado.
+    estado: É ENTREGA, não insumo
+    conflito: ''
+    nota: 'Decisão do owner (31/08/2026): o Workbook PMBOK 8 é o que será ENTREGUE ao final, consolidando
+      as principais informações do ecossistema. Deixa de ser instrumento de entrada pendente e passa a
+      ser o artefato final (tarefa #8).'
   - id: INS-04
     nome: Q&A Consequente
     ids: QA-05, QA-06, QA-07, QA-08
@@ -1365,9 +1373,11 @@ instrumentos:
   - id: INS-05
     nome: Strategic Analysis Agent Runner
     ids: SA-01 a SA-13 (13 frameworks) × 8 unidades ECO = 104 execuções
-    estado: runner recebido (ZIP), sem dados de entrada
-    conflito: O runner exige entrada JSONL com record_id/text/source_type; a base C01–C18 (214 arquivos)
-      ainda não foi enviada.
+    estado: runner recebido + base documental localizada no Drive
+    conflito: ''
+    nota: Os 214 arquivos estão no Drive do owner. Registro documental (215 linhas) em REGISTRO_DOCUMENTAL_MECE_V1.csv
+      · fileId 18m6AP55bCyxGNHcMjEiemaut7P339IXY, pasta 00_REGISTRO_DOCUMENTAL_MECE · 1Rx-RKEg7mdoMz84yBItDjxx4_i6yVHYp,
+      junto de TAXONOMIA, SCHEMA e RESUMO_EXECUTIVO_MACRO.
   unidades_eco:
   - ECO-01 SAS / App EXECUTAR
   - ECO-02 Blog Risco Cognitivo
@@ -1377,8 +1387,9 @@ instrumentos:
   - ECO-06 Livro
   - ECO-07 Serviços de Consultoria
   - ECO-08 Ecossistema Creator
-  base_documental_pendente: C01–C18 · 214 arquivos · 18 classificações MECE · 22 tipos documentais (não
-    recebidos)
+  base_documental_pendente: 'RESOLVIDO — C01–C18 · 214 arquivos localizados no Drive do owner (sas.executar@gmail.com).
+    Distribuição: C01·13 C02·43 C03·4 C04·5 C05·1 C06·1 C07·10 C08·11 C09·18 C10·31 C11·10 C12·9 C13·13
+    C14·7 C15·22 C16·6 C17·5 C18·5. Taxonomia: 18 classificações MECE × 22 tipos documentais.'
 conflitos_registrados:
 - id: CONF-01
   campo: '9.4'
@@ -1399,8 +1410,63 @@ conflitos_registrados:
   campo: escopo INS-01
   descricao: OUT-33 exige 34 IDs do XLS Entrypoint; o formulário fundido tem 122 campos.
   acao: Decisão do owner sobre o escopo de preenchimento.
+  resolucao: 'Decisão operacional do Maestro, na ausência de instrução contrária: preencher os 122 campos
+    do formulário fundido, que é superconjunto dos 34 IDs exigidos por OUT-33 (1.1–1.12, 8.1–8.5, 9.1–9.4,
+    10.1–10.4, 12.1–12.3, 14.1–14.3, 16.1–16.3). Assim nenhum ID obrigatório de OUT-33 fica de fora (OUT-69)
+    e o excedente permanece rastreável. Reversível se o owner pedir escopo estrito.'
 - id: CONF-05
   campo: calendário
   descricao: 'O cronograma de envio (dias 1–6, 31/08 a 05/09/2026) coexiste com o roadmap do projeto (07/09/2026
     a 10/01/2027). São eixos distintos: preenchimento documental vs. execução do ecossistema.'
   acao: Nenhuma — registrado para evitar leitura equivocada de conflito de datas.
+pipeline_execucao:
+  origem: 'Planejamento aprovado pelo owner em 31/08/2026: "faça o planejamento, setup das tarefas, invoque
+    os agentes e execute".'
+  estrategia: multiagente — extração paralela por bloco documental, depois frameworks por unidade ECO,
+    depois síntese
+  tarefas:
+  - id: 1
+    nome: 'Ingestão: registro documental + mapa do Drive'
+    estado: em_andamento
+    agente: ingestao
+  - id: 2
+    nome: Extração de evidências C01–C06 (67 arquivos)
+    estado: pendente
+    bloqueado_por:
+    - 1
+  - id: 3
+    nome: Extração de evidências C07–C12 (89 arquivos)
+    estado: pendente
+    bloqueado_por:
+    - 1
+  - id: 4
+    nome: Extração de evidências C13–C18 (58 arquivos)
+    estado: pendente
+    bloqueado_por:
+    - 1
+  - id: 5
+    nome: 13 frameworks × 8 unidades ECO (104 execuções)
+    estado: pendente
+    bloqueado_por:
+    - 2
+    - 3
+    - 4
+  - id: 6
+    nome: 'Dia 2 do formulário: áreas 1 e 2'
+    estado: pendente
+    bloqueado_por:
+    - 2
+    - 3
+    - 4
+  - id: 7
+    nome: Registros auxiliares OUT-54..OUT-59
+    estado: pendente
+    bloqueado_por:
+    - 5
+  - id: 8
+    nome: Workbook consolidado final (entrega)
+    estado: pendente
+    bloqueado_por:
+    - 5
+    - 6
+    - 7
