@@ -82,3 +82,5 @@ TEC-READ-002,FS-TEC-023,80-tecnologia-plataformas/05-gpt/03-skills/README.md,mar
 TEC-READ-003,FS-TEC-006,80-tecnologia-plataformas/05-gpt/README.md,markdown,ativo
 DOC-READ-001,FS-ROOT-001,README.md,markdown,ativo
 DOC-TF-001,FS-ROOT-001,_TEMPLATE_FOLDER.md,markdown,ativo
+DOC-PMBOK8-001,FS-OPS-003,70-operacao-governanca/02-workflows/PMBOK8_FUNDAMENTOS_ORDEM_MENTAL.md,referencia-conceitual,ativo
+IDX-ITG-001,FS-IDX-005,01-master-index/04-reports/INDICE_TEMATICO_GRANULAR_V1.csv,indice-tematico,ativo

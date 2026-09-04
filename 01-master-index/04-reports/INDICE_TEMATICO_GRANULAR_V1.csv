@@ -1,0 +1,51 @@
+topico_id,topico,categoria,documento,caminho,localizador,tipo_localizador,quantidade_itens,resumo_status
+NEG-01,Negócio & GTM,Estratégico,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 1 (campos 1.1–1.16),area_campo,16,conflito=1; lacuna=4; parcial=5; preenchido=6
+NEG-02,GTM (Go-to-Market),Estratégico,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,"aba 03_FRAMEWORKS, framework=SA-13",framework,27,conflict=5; fact=21; gap=1
+NEG-03,Value Pools (onde o valor é capturado),Estratégico,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-06A,framework,11,conflict=2; fact=9
+FIN-01,Economia unitária (CAC/LTV/margem/breakeven/infra),Financeiro,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,"área 1, campos 1.7–1.11 e 1.15",area_campo,6,lacuna=3; parcial=3
+FIN-02,"Economics (preço, custo, margem por unidade)",Financeiro,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-06B,framework,19,conflict=1; fact=10; gap=6; inference=2
+FIN-03,Riscos financeiros/precificação,Financeiro,Risk Register,60-dados/90-evidence/OUT-57_RISK_REGISTER.csv,filtro texto: preço|custo|margem|financeiro,filtro_texto,26,26 riscos com sinal financeiro
+MKT-01,PESTEL,Mercado,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-01,framework,21,fact=19; gap=2
+MKT-02,Five Forces,Mercado,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-02,framework,18,fact=11; gap=4; inference=3
+MKT-03,Market Structure / TAM / SAM / SOM,Mercado,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-03A..D,framework,24,conflict=5; fact=8; gap=11
+MKT-04,Competitive Landscape,Mercado,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-05,framework,11,conflict=1; fact=7; gap=2; hypothesis=1
+CLI-01,"Segmentação, ICP, JTBD, Voice of Customer",Cliente,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-04A..D,framework,36,conflict=2; fact=24; gap=10
+CAP-01,Value Chain & Capabilities,Estratégico,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-07A/B,framework,23,conflict=1; fact=19; gap=2; inference=1
+CAP-02,3Cs (Customer/Company/Competitors),Estratégico,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-08A..C,framework,15,fact=11; gap=1; inference=3
+CAP-03,SWOT,Estratégico,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-09A..D,framework,26,conflict=1; fact=21; inference=4
+CAP-04,Market Attractiveness × Ability to Win / Where-How to Win,Estratégico,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,"framework=SA-10A/B, SA-11A/B",framework,33,conflict=5; fact=18; gap=3; hypothesis=1; inference=6
+PRD-01,"Produto (PRD, requisitos, jornada)",Produto,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 2 (campos 2.1–2.13),area_campo,13,parcial=6; preenchido=7
+PRD-02,MRD (Market Requirements Document),Produto,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,framework=SA-12,framework,15,conflict=2; fact=11; gap=2
+PMB-01,PMBOK 8 — 6 Princípios,PMBOK,Fundamentos PMBOK 8,70-operacao-governanca/02-workflows/PMBOK8_FUNDAMENTOS_ORDEM_MENTAL.md,linhas 179–207 (seção 4),secao_linhas,6,"referência conceitual, não é dado do projeto"
+PMB-02,PMBOK 8 — 7 Domínios de Desempenho,PMBOK,Fundamentos PMBOK 8,70-operacao-governanca/02-workflows/PMBOK8_FUNDAMENTOS_ORDEM_MENTAL.md,linhas 208–255 (seção 5),secao_linhas,7,"Governança, Escopo, Cronograma, Finanças, Stakeholders, Recursos, Risco"
+PMB-03,PMBOK 8 — Ordem Mental (13 pontos: Valor→Encerramento),PMBOK,Fundamentos PMBOK 8,70-operacao-governanca/02-workflows/PMBOK8_FUNDAMENTOS_ORDEM_MENTAL.md,linhas 61–178 (seção 3),secao_linhas,13,a lista completa de perguntas por ponto
+ESC-01,Escopo (ponto 5 da ordem mental),PMBOK,Fundamentos PMBOK 8,70-operacao-governanca/02-workflows/PMBOK8_FUNDAMENTOS_ORDEM_MENTAL.md,linhas 95–103,secao_linhas,1,"""O que será entregue?"" — resultado, entregáveis, requisitos, limites, exclusões"
+ESC-02,"Escopo do produto (não-objetivos, requisitos, aceite)",Produto,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,"área 2, campos 2.4–2.6",area_campo,3,preenchido=3
+GPR-01,"Project Charter (justificativa, sponsor, sucesso, Go/No-Go)",PMBOK,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 8 (campos 8.1–8.6),area_campo,6,lacuna=3; parcial=2; preenchido=1
+PLN-01,Planejamento Estratégico/Tático/Operacional,Planejamento,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 9 (campos 9.1–9.5),area_campo,5,parcial=1; preenchido=4
+ROD-01,"Roadmap, Cronograma, Ciclos, Backlog",Planejamento,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 10 (campos 10.1–10.5),area_campo,5,lacuna=3; preenchido=2
+ARQ-01,Arquitetura & Full Stack,Técnico,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 3 (campos 3.1–3.11),area_campo,11,pendente=11
+IMP-01,Implementação,Técnico,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 4 (campos 4.1–4.9),area_campo,9,pendente=9
+OPE-01,Operação (Deploy/Rollback),Técnico,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 5 (campos 5.1–5.8),area_campo,8,pendente=8
+GOV-01,Governança & Segurança,Governança,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 6 (campos 6.1–6.7),area_campo,7,pendente=7
+DOC-01,Documentação Fundacional,Governança,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 7 (campos 7.1–7.6),area_campo,6,pendente=6
+EDT-01,"Editorial, Marca, Design",Marketing,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 11 (campos 11.1–11.10),area_campo,10,pendente=10
+STK-01,Stakeholders,Governança,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 12 (campos 12.1–12.4),area_campo,4,pendente=4
+RUN-01,Runbooks & Rotinas,Operação,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 13 (campos 13.1–13.5),area_campo,5,pendente=5
+PSQ-01,"Pesquisa, Dados & Conhecimento",Dados,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,área 14 (campos 14.1–14.5),area_campo,5,pendente=5
+FER-01,"Skills, Plataformas & Prompts",Técnico,Formulário Fundacional,01-master-index/01-schemas/FORMULARIO_FUNDACIONAL_FUSIONADO_V1.yaml,áreas 15–17 (campos 15.1–17.4),area_campo,12,pendente=12
+RSC-01,Riscos (registro completo),Risco,Risk Register,60-dados/90-evidence/OUT-57_RISK_REGISTER.csv,todas as linhas,registro_completo,199,impacto alto/conflito: 199 registros
+LAC-01,Lacunas (o que falta pesquisar),Governança,Gap Register,60-dados/90-evidence/OUT-58_GAP_REGISTER.csv,todas as linhas,registro_completo,68,68 lacunas com pesquisa necessária
+DEC-01,Decisões & Conflitos não arbitrados,Governança,Decision Log,60-dados/90-evidence/OUT-56_DECISION_LOG.csv,todas as linhas,registro_completo,30,30 registros
+HIP-01,Hipóteses a testar,Estratégico,Hypothesis Register,60-dados/90-evidence/OUT-55_HYPOTHESIS_REGISTER.csv,todas as linhas,registro_completo,6,6 hipóteses
+EVD-01,Evidências (afirmação ↔ documento-fonte),Dados,Evidence Register,60-dados/90-evidence/OUT-54_EVIDENCE_REGISTER.csv,todas as linhas,registro_completo,680,680 pares evidência
+SRC-01,Fontes citadas (documentos-fonte usados),Dados,Source Register,60-dados/90-evidence/OUT-59_SOURCE_REGISTER.csv,todas as linhas,registro_completo,86,86/214 documentos citados
+BAS-01,"Base documental completa (214 arquivos, 18 classificações)",Dados,Registro Documental MECE,60-dados/40-canonical/REGISTRO_DOCUMENTAL_MECE_V1.csv,"todas as linhas, filtrar por classificacao_id C01–C18",registro_completo,214,"C01–C18, ver ROTEAMENTO_DOCUMENTAL_MECE.csv para unidade/framework/campo candidato"
+ECO-01,Unidade ECO-01 · App EXECUTAR,Unidade de Análise,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,"aba 03_FRAMEWORKS, entity=ECO-01",filtro_coluna,63,conflict=4; fact=48; gap=6; inference=5
+ECO-02,Unidade ECO-02 · Blog Risco Cognitivo,Unidade de Análise,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,"aba 03_FRAMEWORKS, entity=ECO-02",filtro_coluna,34,conflict=4; fact=26; gap=2; hypothesis=1; inference=1
+ECO-03,Unidade ECO-03 · Framework/Metodologia,Unidade de Análise,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,"aba 03_FRAMEWORKS, entity=ECO-03",filtro_coluna,20,fact=17; gap=1; inference=2
+ECO-04,Unidade ECO-04 · Produtos Físicos,Unidade de Análise,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,"aba 03_FRAMEWORKS, entity=ECO-04",filtro_coluna,42,conflict=6; fact=23; gap=11; inference=2
+ECO-05,Unidade ECO-05 · Infoprodutos,Unidade de Análise,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,"aba 03_FRAMEWORKS, entity=ECO-05",filtro_coluna,41,conflict=3; fact=23; gap=9; inference=6
+ECO-06,Unidade ECO-06 · Livro,Unidade de Análise,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,"aba 03_FRAMEWORKS, entity=ECO-06",filtro_coluna,28,conflict=4; fact=17; gap=6; hypothesis=1
+ECO-07,Unidade ECO-07 · Consultoria,Unidade de Análise,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,"aba 03_FRAMEWORKS, entity=ECO-07",filtro_coluna,16,fact=10; gap=4; inference=2
+ECO-08,Unidade ECO-08 · Ecossistema Creator,Unidade de Análise,Análise Estratégica,60-dados/40-canonical/STRATEGIC_INSIGHTS_V1.csv,"aba 03_FRAMEWORKS, entity=ECO-08",filtro_coluna,35,conflict=4; fact=25; gap=5; inference=1
